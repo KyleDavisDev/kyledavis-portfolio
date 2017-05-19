@@ -1,13 +1,15 @@
 import React from 'react';
-import {  NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 class Nav extends React.Component {
 	render() {
 
 		return(
-			<div className="navbarContainer">
-				<div id="navbar">
-					<a href='/'>Kyle Bonar</a>
+			<div className="navBarContainer">
+				<div id="navBar">
+					<NavLink to="/">
+						Kyle Bonar
+					</NavLink>
 
 					<div id="nav">
 						<ul>
