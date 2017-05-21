@@ -1,7 +1,30 @@
+@font-face {
+    font-family: droid-bold;
+    src: url("./fonts/DroidSans-Bold.ttf");
+}
+@font-face {
+    font-family: droid-reg;
+    src: url("./fonts/DroidSans.ttf");
+}
+
 body {
-	font-family: "Raleway","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:  droid-reg,Helvetica,Arial,sans-serif;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	background-color: #f1f1f1;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	color: #34ACAF;
+}
+
+a.active {
+	color: #692DAC;
 }
 .navBarContainer {
 	display: -webkit-box;
@@ -17,6 +40,11 @@ body {
 	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
+}
+
+.home-link {
+	font-size: 48px;
+	font-family: droid-bold,Helvetica,Arial,sans-serif;;
 }
 
 #navBar {
@@ -37,7 +65,8 @@ body {
 	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
-	max-width: 1200px;	    
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #navBar ul {
@@ -48,4 +77,8 @@ body {
 #navBar ul li {
 	display: inline-block;
 	padding: 0 10px;
+}
+
+.menu-link {
+	font-size: 34px;
 }
