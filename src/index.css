@@ -34,18 +34,19 @@ a.active {
 	font-family: droid-reg,Helvetica,Arial,sans-serif;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .navBarContainer {
 	display: -webkit-box;
-	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-flex: 1;
-	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 }
@@ -56,26 +57,24 @@ a.active {
 
 #navBar {
 	display: -webkit-box;
-	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	-webkit-box-flex: 1;
-	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 }
 
 .content-container {
-	display: block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -103,7 +102,43 @@ a.active {
 .projects-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
+	align-items: center;
 	max-width: 960px;
 	margin: 0 auto;
+	height: 500px;
+}
+
+.projects-text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 50%;
+}
+
+.projects-text-container h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.projects-text-container p {
+
+}
+
+.projects-icon-list-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5px 10px;
+}
+
+.project-card:hover {
+	opacity: 0.8;
 }
