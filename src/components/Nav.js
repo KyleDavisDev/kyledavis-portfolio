@@ -6,25 +6,25 @@ class Nav extends React.Component {
 
 		return(
 			<div className="navBarContainer">
-				<div id="navBar">
-					<Link className="home-link" exact to="/">
+				<div id="navBar" className="content-container">
+					<Link className="home-link droid-bold" exact to="/">
 						Kyle Bonar
 					</Link>
 
 					<div id="nav">
 						<ul>
 							<li>
-								<NavLink exact className="menu-link" activeClassName="active" to="/about">
+								<NavLink exact className="menu-link droid-reg" activeClassName="active" to="/about">
 									About
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className="menu-link" activeClassName="active" to="/projects">
+								<NavLink className="menu-link droid-reg" activeClassName="active" to="/projects">
 									Projects
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className="menu-link" activeClassName="active" to="/resume">
+								<NavLink className="menu-link droid-reg" activeClassName="active" to="/resume">
 									Resume
 								</NavLink>
 							</li>
