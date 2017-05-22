@@ -8,8 +8,8 @@ class Projects extends React.Component {
 		return(
 			<div className="projects-container">
 				<ProjectsTextTop />
-			
-				<ProjectsIconList />
+
+				<ProjectsIconList match={this.props.match}/>
 			</div>
 		)
 	}
