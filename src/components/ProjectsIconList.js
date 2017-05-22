@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 class ProjectsIconList extends Component {
 	constructor(props) {
@@ -6,15 +7,15 @@ class ProjectsIconList extends Component {
 
 		this.state = {
 			icons: [
-				{ name: "Example 1", imageURL: "/src/images/example.png"},
-				{ name: "Example 2", imageURL: "/src/images/example.png"},
-				{ name: "Example 3", imageURL: "/src/images/example.png"},
-				{ name: "Example 4", imageURL: "/src/images/example.png"},
-				{ name: "Example 5", imageURL: "/src/images/example.png"},
-				{ name: "Example 6", imageURL: "/src/images/example.png"},
-				{ name: "Example 7", imageURL: "/src/images/example.png"},
-				{ name: "Example 8", imageURL: "/src/images/example.png"},
-				{ name: "Example 9", imageURL: "/src/images/example.png"}
+				{ name: "Example 1", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 2", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 3", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 4", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 5", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 6", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 7", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 8", imageURL: "/src/images/example.png", title:"Example Title"},
+				{ name: "Example 9", imageURL: "/src/images/example.png", title:"Example Title"}
 			]
 		}
 	}
@@ -22,17 +23,16 @@ class ProjectsIconList extends Component {
 	render() {
 		return(
 			<div className="projects-icon-list-container">
-				{this.state.icons.map( (icon) =>
-						
-						<div className="project-card">
-							<img src={icon.imageURL} style={{height:75, width: 75}}/>
+				{this.state.icons.map( (icon) =>	
+						<NavLink className="project-card" activeClassName="active" to="/">
+							<img src={icon.imageURL} style={{height:75, width: 75}} title={icon.title} />
 							{icon.name}
-						</div>
-					
+						</NavLink>			
 				)}
 			</div>
 		)
 	}
+
 }
 
 module.exports = ProjectsIconList

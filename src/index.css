@@ -139,6 +139,6 @@ a.active {
 	margin: 5px 10px;
 }
 
-.project-card:hover {
+.project-card.active {
 	opacity: 0.8;
 }
