@@ -193,3 +193,30 @@ a.inline-link {
 .project-card:hover img {
 	opacity: 0.6;
 }
+
+.project-specific-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.project-specific-container .specific{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+}
+.project-specific-container .specific div {
+	margin: 0 10px;
+}
+
+.project-specific-container .specific .right {
+	flex: 1;
+}
+
+.project-specific-container .specific .project-title {
+	font-size: 30px;
+}
+
+.project-specific-container .specific .project-description {
+	
+}
