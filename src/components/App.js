@@ -6,7 +6,7 @@ import About from './About'
 import Home from './Home'
 import Projects from './Projects'
 import Resume from './Resume'
-import ProjectDetails from './ProjectDetails'
+import ProjectsSpecificDetails from './ProjectsSpecificDetails'
 
 
 class App extends React.Component {
@@ -20,7 +20,7 @@ class App extends React.Component {
 						<Route exact path="/" component={About} />
 						<Route exact path="/about" component={About} />
 						<Route exact path="/projects" component={Projects} />
-							<Route path="/projects/details" component={ProjectDetails} />
+							<Route path="/projects/details" component={ProjectsSpecificDetails} />
 						<Route exact path="/resume" component={Resume} />
 						<Route render={ function () {
 							return <p> Page not found. Sorry! </p>
