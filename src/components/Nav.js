@@ -7,7 +7,7 @@ class Nav extends React.Component {
 		return(
 			<div className="navBarContainer">
 				<div id="navBar" className="content-container">
-					<Link className="home-link droid-bold" exact to="/">
+					<Link className="home-link droid-bold" to="/">
 						Kyle Bonar
 					</Link>
 
@@ -24,7 +24,7 @@ class Nav extends React.Component {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className="menu-link droid-reg" activeClassName="active" to="/resume">
+								<NavLink exact className="menu-link droid-reg" activeClassName="active" to="/resume">
 									Resume
 								</NavLink>
 							</li>
