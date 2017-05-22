@@ -21,7 +21,7 @@ class About extends React.Component {
 				</p>
 
 				<p>
-					Thanks, Kyle Bonar
+					- Kyle Bonar
 				</p>
 			</div>
 		)
