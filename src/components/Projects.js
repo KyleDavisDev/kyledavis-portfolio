@@ -4,6 +4,9 @@ import ProjectsTextTop from './ProjectsTextTop'
 import ProjectsIconList from './ProjectsIconList'
 
 class Projects extends React.Component {
+	componentDidMount() {
+		document.title = "Projects";
+	}
 	render() {
 		return(
 			<div className="projects-container">
