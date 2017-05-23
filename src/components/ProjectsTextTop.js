@@ -7,11 +7,12 @@ class ProjectsTextTop extends Component {
 			<div className="projects-text-container">
 				<h2 className="droid-bold text-center"> My Projects </h2>
 
-				<p className="droid-reg">
-					Check out some of the things that I've created or have been a part of over the years. Clicking any of the images will take you to a page with more information on the project. You can also visit my <a className="inline-link" href="https://github.com/KyleBonar">GitHub</a> to checkout the source code for some of these.
+				<p className="droid-reg text-center">
+					Check out some of the things that I've created or have been a part of over the years.
 				</p>
 			</div>
 		)
 	}
 }
+
 module.exports = ProjectsTextTop
