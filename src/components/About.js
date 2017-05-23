@@ -12,7 +12,7 @@ class About extends React.Component {
 				</p>
 
 				<p className="droid-reg">
-					I am a <span className="droid-bold">Full Stack Dev</span> who is working with JavaScript as much as possible.
+					I am a <span className="droid-bold">Full Stack Dev</span> who likes to work with JavaScript as much as possible.
 				</p>
 
 				<p>
