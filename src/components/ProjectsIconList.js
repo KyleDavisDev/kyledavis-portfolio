@@ -7,15 +7,15 @@ class ProjectsIconList extends Component {
 
 		this.state = {
 			icons: [
-				{ displayName: "Department Website", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "tamu_physics"},
-				{ displayName: "Example 2", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"},
-				{ displayName: "Example 3", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"},
-				{ displayName: "Example 4", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"},
-				{ displayName: "Example 5", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"},
-				{ displayName: "Example 6", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"},
-				{ displayName: "Example 7", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"},
-				{ displayName: "Example 8", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"},
-				{ displayName: "Example 9", displayImageURL: "/src/images/example.png", title:"Example Title", linkURL: "/"}
+				{ displayName: "Physics Department", img: "Tamu-Physics-SS.png", title:"Physics Deparment at Texas A&M", linkURL: "tamu_physics"},
+				{ displayName: "Astronomy Department", img: "Tamu-Astronomy-SS.png", title:"Astronomy Deparment at Texas A&M", linkURL: "tamu_mitchell"},
+				{ displayName: "Example 3", img: "example.png", title:"Example Title", linkURL: "/"},
+				{ displayName: "Example 4", img: "example.png", title:"Example Title", linkURL: "/"},
+				{ displayName: "Example 5", img: "example.png", title:"Example Title", linkURL: "/"},
+				{ displayName: "Example 6", img: "example.png", title:"Example Title", linkURL: "/"},
+				{ displayName: "Example 7", img: "example.png", title:"Example Title", linkURL: "/"},
+				{ displayName: "Example 8", img: "example.png", title:"Example Title", linkURL: "/"},
+				{ displayName: "Example 9", img: "example.png", title:"Example Title", linkURL: "/"}
 			]
 		}
 	}
@@ -31,7 +31,7 @@ class ProjectsIconList extends Component {
 								pathname: this.props.match.url + '/details',
 								search: '?title=' + icon.linkURL 
 							}}>
-							<img src={icon.displayImageURL} style={{height:200, width: 200}} title={icon.title} />
+							<img src={`/src/images/${icon.img}`} style={{height:200, width: 200}} title={icon.title} alt={icon.title}/>
 							{icon.displayName}
 						</NavLink>			
 				)}
