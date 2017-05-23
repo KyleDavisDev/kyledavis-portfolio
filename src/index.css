@@ -10,7 +10,8 @@
 body {
 	font-family:  droid-reg,Helvetica,Arial,sans-serif;
 	margin: 0px;
-	background-color: #E6E6DC;
+	background-color: #ebebeb;
+	/*background-color: #e6e6dc;*/
 }
 
 a {
@@ -19,11 +20,13 @@ a {
 }
 
 a:hover, a.inline-link:hover {
-	color: #81A594;
+	color: #85cfac;
+	/*color: #81a594;*/
 }
 
 a.active {
-	color: #00628B;
+	color: #00a0e3;
+	/*color: #00628b;*/
 }
 
 a.inline-link {
@@ -31,6 +34,9 @@ a.inline-link {
 	text-decoration: underline;
 }
 
+h2 {
+	margin-bottom: 5px;
+}
 .droid-bold {
 	font-family: droid-bold,Helvetica,Arial,sans-serif;
 }
@@ -57,7 +63,7 @@ a.inline-link {
 	    -ms-flex: 1;
 	        -webkit-flex: 1;
 	        flex: 1;
-	margin-bottom: 20px;
+	margin: 10px 0 20px;
 }
 
 .home-link {
@@ -113,8 +119,10 @@ a.inline-link {
 	width:60%;
 	margin: 0 auto;
 }
-.about-container p {
-	width: 75%;
+
+.about-container .about-header {
+	font-size: 28px;
+	margin-bottom: 0px;
 }
 
 .projects-container {
@@ -219,4 +227,9 @@ a.inline-link {
 
 .project-specific-container .specific .project-description {
 	
+}
+
+.project-specific-container .specific .technology-image {
+	height: 50px;
+	margin: 0 5px;
 }
