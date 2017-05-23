@@ -7,11 +7,11 @@ class About extends React.Component {
 	render() {
 		return(
 			<div className="about-container">
-				<p className="droid-reg">					
+				<p className="about-header">					
 					<span className="droid-bold">Hello world!</span> Welcome to my portfolio website.
 				</p>
 
-				<p className="droid-reg">
+				<p>
 					I am a <span className="droid-bold">Full Stack Dev</span> who likes to work with JavaScript as much as possible.
 				</p>
 
