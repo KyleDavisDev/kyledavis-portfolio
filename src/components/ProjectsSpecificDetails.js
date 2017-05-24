@@ -10,15 +10,16 @@ class ProjectsSpecificDetails extends Component {
 			allProjects: [
 				{
 					urlName: "tamu_physics",
+					documentTitleName: "TAMU Physics",
 					name: "Texas A&M Physics Website",
-					description: " In just two short months, the Physics Department website was given a lot of love by receiving a new server host, an updated backend, a new responsive design, and a plethera of options for staff and faculty members to keep the content updated. This project was completed within a very small team and is the project I currently spend most of my time maintaining and adding additional functionality to.",
-					imageTitle: "",
+					description: "In just two short months, the Physics Department website was given a lot of love by receiving a new server host, an updated backend, a new responsive design, and a plethera of options for staff and faculty members to keep the content updated. This project was completed within a very small team and is the project I currently spend most of my time maintaining and adding additional functionality to.",
 					tools: [
 						{ name: "PHP 5.4", img: "PHP-logo.png" },
 						{ name: "Wordpress", img: "Wordpress-logo.png" },
 						{ name: "MySQL database", img: "MySQL-logo.png" },
 						{ name: "JQuery JavaScript library", img: "JQuery-logo.png" },
 						{ name: "JavaScript", img: "JS-logo.png" },
+						{ name: "HTML5", img: "HTML5-logo.png" },
 						{ name: "Foundation Zurb CSS library", img: "Foundation-logo.png" },
 						{ name: "CSS3", img: "CSS3-logo.png" }
 					],
@@ -26,105 +27,87 @@ class ProjectsSpecificDetails extends Component {
 				},
 				{
 					urlName: "tamu_mitchell",
+					documentTitleName: "TAMU Astronomy",
 					name: "Texas A&M Astronomy Website",
 					description: "As a student Web Development Assistant, I worked on a small team to recreate the Astronomy Department's home domain. We were responsible for migrating years of static content into a MySQL database, for both easier managment and record keeping, while also ensuring that every page be responsive. Several custom Wordpress themes were developed for this project and are actively maintained today.",
-					imageTitle: "",
 					tools: [
 						{ name: "PHP 5.4", img: "PHP-logo.png" },
 						{ name: "Wordpress", img: "Wordpress-logo.png" },
 						{ name: "MySQL database", img: "MySQL-logo.png" },
 						{ name: "JQuery JavaScript library", img: "JQuery-logo.png" },
 						{ name: "JavaScript", img: "JS-logo.png" },
+						{ name: "HTML5", img: "HTML5-logo.png" },
 						{ name: "Foundation Zurb CSS library", img: "Foundation-logo.png" },
 						{ name: "CSS3", img: "CSS3-logo.png" }
 					],
 					img: "Tamu-Astronomy-SS.png"
 				},
 				{
-					urlName: "Example 1",
-					name: "Texas A&M Physics Website",
-					description: "lorem ipsum",
-					imageTitle: "",
+					urlName: "Classic_Ping_Pong",
+					documentTitleName: "Ping Pong",
+					name: "Classic Ping Pong Application",
+					description: "A classic arcade game brought to you in a browser! This was my first time messing around with JavaScript's canvas method as well as creating an A.I. which acts as the opponent paddle. Users simply need to click on the canvas to start the game, and use the arrow up and down arrow keys to move their paddle. The ball speeds up over time so be careful! This code can be found in my GitHub.",
 					tools: [
-						{ name: "PHP 5.4", img: "PHP-logo.png" },
-						{ name: "Wordpress", img: "Wordpress-logo.png" },
-						{ name: "MySQL database", img: "MySQL-logo.png" },
-						{ name: "JQuery JavaScript library", img: "JQuery-logo.png" },
 						{ name: "JavaScript", img: "JS-logo.png" },
-						{ name: "Foundation Zurb CSS library", img: "Foundation-logo.png" },
+						{ name: "HTML5", img: "HTML5-logo.png" },
 						{ name: "CSS3", img: "CSS3-logo.png" }
+						
 					],
-					img: "example.png"
+					img: "PingPong-SS.png"
 				},
 				{
-					urlName: "Example 2",
-					name: "Texas A&M Physics Website",
-					description: "lorem ipsum",
-					imageTitle: "",
+					urlName: "Word_Counting_App",
+					documentTitleName: "Word Counter",
+					name: "Word Counting App",
+					description: "Fun application that counts the number of times each unique word appears within a text area and creates a \"bubble\" with a respective area. Becoming more comfortable with JavaScript's Object Oriented Programming and using JavaScript's canvas method to have a little fun were the main goals of this project. Even with a block of text 32,000 lines long and over 8,000 unique words, the application works like a charm. This code can be found in my gitHub.",
 					tools: [
-						{ name: "PHP 5.4", img: "PHP-logo.png" },
-						{ name: "Wordpress", img: "Wordpress-logo.png" },
-						{ name: "MySQL database", img: "MySQL-logo.png" },
-						{ name: "JQuery JavaScript library", img: "JQuery-logo.png" },
 						{ name: "JavaScript", img: "JS-logo.png" },
-						{ name: "Foundation Zurb CSS library", img: "Foundation-logo.png" },
+						{ name: "HTML5", img: "HTML5-logo.png" },
 						{ name: "CSS3", img: "CSS3-logo.png" }
 					],
-					img: "example.png"
+					img: "WordCounter-SS.png"
 				},
 				{
-					urlName: "Example 3",
-					name: "Texas A&M Physics Website",
-					description: "lorem ipsum",
-					imageTitle: "",
+					urlName: "Phyllotaxis_App",
+					documentTitleName: "Phyllotaxis",
+					name: "Phyllotaxis App",
+					description: "To create nice phyllotaxis images using only client-side rendering. Users can click anywhere within the canvas to create unique patterns and hopefully learn a bit too! The most common of phyllotaxis plants is the Aloe Polyphylla. This code can be found in my gitHub.",
 					tools: [
-						{ name: "PHP 5.4", img: "PHP-logo.png" },
-						{ name: "Wordpress", img: "Wordpress-logo.png" },
-						{ name: "MySQL database", img: "MySQL-logo.png" },
-						{ name: "JQuery JavaScript library", img: "JQuery-logo.png" },
 						{ name: "JavaScript", img: "JS-logo.png" },
-						{ name: "Foundation Zurb CSS library", img: "Foundation-logo.png" },
+						{ name: "HTML5", img: "HTML5-logo.png" },
 						{ name: "CSS3", img: "CSS3-logo.png" }
 					],
-					img: "example.png"
+					img: "Phyllotaxis-SS.png"
 				},
 				{
-					urlName: "Example 4",
-					name: "Texas A&M Physics Website",
-					description: "lorem ipsum",
-					imageTitle: "",
+					urlName: "Fractal_Trees_App",
+					documentTitleName: "Fractal Trees",
+					name: "Fractal Trees App",
+					description: "To create a nice application which captures the ideas of fractal design. Users can click the canvas and cause a single branch to split into two. When the user clicks again, the branches will split again, so forth and so on. At any time, the tree can reset while sliders allow for customization and design a unique tree. This code can be found on my gitHub.",
 					tools: [
-						{ name: "PHP 5.4", img: "PHP-logo.png" },
-						{ name: "Wordpress", img: "Wordpress-logo.png" },
-						{ name: "MySQL database", img: "MySQL-logo.png" },
-						{ name: "JQuery JavaScript library", img: "JQuery-logo.png" },
 						{ name: "JavaScript", img: "JS-logo.png" },
-						{ name: "Foundation Zurb CSS library", img: "Foundation-logo.png" },
+						{ name: "HTML5", img: "HTML5-logo.png" },
 						{ name: "CSS3", img: "CSS3-logo.png" }
 					],
-					img: "example.png"
+					img: "FractalTrees-SS.png"
 				},
 				{
-					urlName: "Example 5",
-					name: "Texas A&M Physics Website",
-					description: "lorem ipsum",
-					imageTitle: "",
+					urlName: "Double_Pendulum_Vis",
+					documentTitleName: "Double Pendulum",
+					name: "Double Pendulum Visualization",
+					description: "Inspired by my research as a senior in computational physics, the double pendulum is an excellent example of chaos theory. The notion that even the slightest change in initial conditions can lead to a drastic change in the overall outcome of a system is incredibly interesting. This application relies entirely on the browser to run the model and the user can modify the double pendulum by using sliders. This code can be found on my gitHub.",
 					tools: [
-						{ name: "PHP 5.4", img: "PHP-logo.png" },
-						{ name: "Wordpress", img: "Wordpress-logo.png" },
-						{ name: "MySQL database", img: "MySQL-logo.png" },
-						{ name: "JQuery JavaScript library", img: "JQuery-logo.png" },
 						{ name: "JavaScript", img: "JS-logo.png" },
-						{ name: "Foundation Zurb CSS library", img: "Foundation-logo.png" },
+						{ name: "HTML5", img: "HTML5-logo.png" },
 						{ name: "CSS3", img: "CSS3-logo.png" }
 					],
-					img: "example.png"
+					img: "DoublePendulum-SS.png"
 				},
 				{
 					urlName: "Example 6",
+					documentTitleName: "Example name",
 					name: "Texas A&M Physics Website",
 					description: "lorem ipsum",
-					imageTitle: "",
 					tools: [
 						{ name: "PHP 5.4", img: "PHP-logo.png" },
 						{ name: "Wordpress", img: "Wordpress-logo.png" },
@@ -138,9 +121,9 @@ class ProjectsSpecificDetails extends Component {
 				},
 				{
 					urlName: "Example 7",
+					documentTitleName: "Example name",
 					name: "Texas A&M Physics Website",
 					description: "lorem ipsum",
-					imageTitle: "",
 					tools: [
 						{ name: "PHP 5.4", img: "PHP-logo.png" },
 						{ name: "Wordpress", img: "Wordpress-logo.png" },
@@ -154,6 +137,7 @@ class ProjectsSpecificDetails extends Component {
 				}
 			]
 		}
+
 	}
 
 	//before render()
@@ -168,8 +152,13 @@ class ProjectsSpecificDetails extends Component {
 	}
 
 	//after render()
-	componentDidMount() {	
-		document.title = "Projects - " + this.state.name;
+	componentDidMount() {
+		let activeProject = this.state.allProjects.filter( (project) => {
+			return this.state.name === project.urlName
+		}).map( (project) => {
+			return project.documentTitleName
+		})
+		document.title = "Kyle Bonar - " + activeProject;
 	}
 
 
@@ -178,12 +167,16 @@ class ProjectsSpecificDetails extends Component {
 			<div className="project-specific-container"> 
 			{
 				this.state.allProjects.filter( (project) => {
-					return this.state.name === project.urlName
+					return this.state.name === project.urlName 
 				}).map( (project) => {
 					return (
 						<div key="project.name" className="specific">
 							<div className="left image-holder">
-								<img src={`/src/images/${project.img}`} style={{height:200, width:200}} title={project.imageTitle}/>
+								<img
+									src={`/src/images/${project.img}`}
+									className="specific-image"
+									title={project.imageTitle}
+								/>
 							</div>
 
 							<div className="right text-holder">
