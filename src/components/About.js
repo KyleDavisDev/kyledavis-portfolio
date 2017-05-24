@@ -2,7 +2,7 @@ import React from 'react';
 
 class About extends React.Component {
 	componentDidMount() {
-		document.title = "About";
+		document.title = "Kyle Bonar";
 	}
 	render() {
 		return(
@@ -16,7 +16,7 @@ class About extends React.Component {
 				</p>
 
 				<p>
-					I primarily focus on the front-end, I like to make pixel-perfect, minimalistic designs, but I also enjoy getting dirty on the backend with databases and server logic. 
+					I primarily focus on the front-end, I like to make pixel-perfect, minimalistic designs, but I also enjoy working with databases and server logic. 
 				</p>
 
 				<p>
