@@ -9,7 +9,7 @@
 
 body {
 	font-family:  droid-reg,Helvetica,Arial,sans-serif;
-	margin: 0px;
+	margin-top: 10px;
 	background-color: #ebebeb;
 	/*background-color: #e6e6dc;*/
 }
@@ -29,10 +29,6 @@ a.active {
 	/*color: #00628b;*/
 }
 
-a.inline-link {
-	color: #000;
-	text-decoration: underline;
-}
 
 h2 {
 	margin-bottom: 5px;
@@ -49,7 +45,7 @@ h2 {
 	text-align: center;
 }
 
-.navBarContainer {
+.nav-container {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -63,7 +59,7 @@ h2 {
 	    -ms-flex: 1;
 	        -webkit-flex: 1;
 	        flex: 1;
-	margin: 10px 0 20px;
+	margin: 0 0;
 }
 
 .home-link {
@@ -113,14 +109,14 @@ h2 {
 	font-size: 34px;
 }
 
-.about-container {
+.home-container {
 	display: block;
 	max-width: 960px;
 	width:60%;
-	margin: 0 auto;
+	margin: 30px auto 100px;
 }
 
-.about-container .about-header {
+.home-container .home-header {
 	font-size: 28px;
 	margin-bottom: 0px;
 }
@@ -144,7 +140,7 @@ h2 {
 	    -ms-flex-align: center;
 	        align-items: center;
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 30px auto 100px;
 }
 
 .projects-text-container {
@@ -195,7 +191,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 5px 10px;
+	margin: 5px 10px 15px;
 }
 
 .project-card:hover img {
@@ -204,15 +200,21 @@ h2 {
 
 .project-specific-container {
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 30px auto 100px;
 }
 
-.project-specific-container .specific{
+.project-specific-container .specific {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 
 }
+
+.project-specific-container .specific .specific-image {
+	height: 300px;
+	width: 300px;
+}
+
 .project-specific-container .specific div {
 	margin: 0 10px;
 }
@@ -232,4 +234,19 @@ h2 {
 .project-specific-container .specific .technology-image {
 	height: 50px;
 	margin: 0 5px;
+}
+
+.footer-container {
+	background-color: rgba(235,235,235,0.95);
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+.footer-container .footer-image {
+	height: 60px;
+	width: 60px;
+	margin: 10px;
 }
