@@ -5,7 +5,7 @@ import ProjectsIconList from './ProjectsIconList'
 
 class Projects extends React.Component {
 	componentDidMount() {
-		document.title = "Projects";
+		document.title = "Kyle Bonar - Projects";
 	}
 	render() {
 		return(
