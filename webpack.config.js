@@ -22,7 +22,13 @@ module.exports = {
 					presets: ["es2015", "react"]
 				}
 			}
-		}
+		},
+		{
+			test: /\.(png|jpg)$/,
+			use: {
+				loader: 'file-loader?name=[name].[ext]&outputPath=images/'
+			}
+		},
 	],
   },
   devServer: {
