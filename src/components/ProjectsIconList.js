@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-//images
+//ScreenShots
 import TamuPhysicsSS from '../images/Tamu-Physics-SS.png'
 import TamuAstronomySS from '../images/Tamu-Astronomy-SS.png'
 import PingPongSS from '../images/PingPong-SS.png'
