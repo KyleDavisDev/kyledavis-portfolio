@@ -64,6 +64,7 @@ h2 {
 
 .home-link {
 	font-size: 48px;
+	line-height: 1;
 }
 
 #navBar {
@@ -84,6 +85,7 @@ h2 {
 	    -ms-flex: 1;
 	        -webkit-flex: 1;
 	        flex: 1;
+	align-items: center;
 }
 
 .content-container {
@@ -98,6 +100,7 @@ h2 {
 #navBar ul {
 	list-style-type: none;
 	margin: 0px;
+	padding: 0px;
 }
 
 #navBar ul li {
@@ -112,8 +115,8 @@ h2 {
 .home-container {
 	display: block;
 	max-width: 960px;
-	width:60%;
 	margin: 30px auto 100px;
+	width: 60%;
 }
 
 .home-container .home-header {
@@ -157,7 +160,13 @@ h2 {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	max-width: 50%;
+	max-width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+	.projects-text-container {
+		max-width: 50%;
+	}
 }
 
 .projects-text-container h2 {
@@ -185,6 +194,7 @@ h2 {
 	-webkit-flex-wrap: wrap;
 	    -ms-flex-wrap: wrap;
 	        flex-wrap: wrap;
+	max-width: 960px;
 }
 
 .project-card {
@@ -205,9 +215,15 @@ h2 {
 
 .project-specific-container .specific {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
 
+@media screen and (min-width: 768px) {
+	.project-specific-container .specific {
+		flex-direction: row;
+		align-items: flex-start;
+	}
 }
 
 .project-specific-container .specific .specific-image {
