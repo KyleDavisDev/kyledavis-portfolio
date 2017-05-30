@@ -1,7 +1,9 @@
 import React from 'react';
 
-import ProjectsTextTop from './ProjectsTextTop'
-import ProjectsIconList from './ProjectsIconList'
+import ProjectsTextTop from './ProjectsTextTop.js'
+import ProjectsIconList from './ProjectsIconList.js'
+
+import './Projects.scss'
 
 class Projects extends React.Component {
 	componentDidMount() {

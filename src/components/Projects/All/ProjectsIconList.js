@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
 //ScreenShots
-import TamuPhysicsSS from '../images/Tamu-Physics-SS.png'
-import TamuAstronomySS from '../images/Tamu-Astronomy-SS.png'
-import PingPongSS from '../images/PingPong-SS.png'
-import WordCounterSS from '../images/WordCounter-SS.png'
-import PhyllotaxisSS from '../images/Phyllotaxis-SS.png'
-import FractalTreesSS from '../images/FractalTrees-SS.png'
-import DoublePendulumSS from '../images/DoublePendulum-SS.png'
-import Example from '../images/example.png'
+import TamuPhysicsSS from '../../../images/Tamu-Physics-SS.png'
+import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS.png'
+import PingPongSS from '../../../images/PingPong-SS.png'
+import WordCounterSS from '../../../images/WordCounter-SS.png'
+import PhyllotaxisSS from '../../../images/Phyllotaxis-SS.png'
+import FractalTreesSS from '../../../images/FractalTrees-SS.png'
+import DoublePendulumSS from '../../../images/DoublePendulum-SS.png'
+import Example from '../../../images/example.png'
 
 class ProjectsIconList extends Component {
 	constructor(props) {

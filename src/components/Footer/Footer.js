@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 
+import './Footer.scss'
+
 //Logos
-import GitHubLogo from '../images/GitHub-logo.png'
-import LinkedInLogo from '../images/LinkedIn-logo.png'
+import GitHubLogo from '../../images/GitHub-logo.png'
+import LinkedInLogo from '../../images/LinkedIn-logo.png'
 
 class Footer extends Component {
 	render() {

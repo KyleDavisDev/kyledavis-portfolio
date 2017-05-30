@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom'
 
+import './Nav.scss'
+
 class Nav extends React.Component {
 	render() {
 
@@ -13,7 +15,6 @@ class Nav extends React.Component {
 
 					<div id="nav">
 						<ul>
-
 							<li>
 								<NavLink className="menu-link" activeClassName="active" to="/projects">
 									Projects

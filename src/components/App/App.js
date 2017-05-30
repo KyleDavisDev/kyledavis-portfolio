@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Nav from './Nav'
-import Home from './Home'
-import Projects from './Projects'
-import ProjectsSpecificDetails from './ProjectsSpecificDetails'
-import Resume from './Resume'
-import Footer from './Footer'
+import './App.scss'
+
+import Nav from '../Navigation/Nav.js'
+import Home from '../Home/Home.js'
+import Projects from '../Projects/All/Projects.js'
+import ProjectsSpecificDetails from '../Projects/Specific/ProjectsSpecificDetails.js'
+import Resume from '../Resume/Resume.js'
+import Footer from '../Footer/Footer.js'
 
 
 

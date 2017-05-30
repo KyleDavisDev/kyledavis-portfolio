@@ -1,25 +1,27 @@
 import React, { Component } from 'react'
 import QueryString from 'query-string'
 
+import './ProjectsSpecificDetails.scss'
+
 //ScreenShots
-import TamuPhysicsSS from '../images/Tamu-Physics-SS.png'
-import TamuAstronomySS from '../images/Tamu-Astronomy-SS.png'
-import PingPongSS from '../images/PingPong-SS.png'
-import WordCounterSS from '../images/WordCounter-SS.png'
-import PhyllotaxisSS from '../images/Phyllotaxis-SS.png'
-import FractalTreesSS from '../images/FractalTrees-SS.png'
-import DoublePendulumSS from '../images/DoublePendulum-SS.png'
-import Example from '../images/example.png'
+import TamuPhysicsSS from '../../../images/Tamu-Physics-SS.png'
+import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS.png'
+import PingPongSS from '../../../images/PingPong-SS.png'
+import WordCounterSS from '../../../images/WordCounter-SS.png'
+import PhyllotaxisSS from '../../../images/Phyllotaxis-SS.png'
+import FractalTreesSS from '../../../images/FractalTrees-SS.png'
+import DoublePendulumSS from '../../../images/DoublePendulum-SS.png'
+import Example from '../../../images/example.png'
 
 //Logos
-import PHPLogo from '../images/PHP-logo.png'
-import WordPressLogo from '../images/Wordpress-logo.png'
-import MySQLLogo from '../images/MySQL-logo.png'
-import JQueryLogo from '../images/JQuery-logo.png'
-import JSLogo from '../images/JS-logo.png'
-import HTML5Logo from '../images/HTML5-logo.png'
-import FoundationLogo from '../images/Foundation-logo.png'
-import CSS3Logo from '../images/CSS3-logo.png'
+import PHPLogo from '../../../images/PHP-logo.png'
+import WordPressLogo from '../../../images/Wordpress-logo.png'
+import MySQLLogo from '../../../images/MySQL-logo.png'
+import JQueryLogo from '../../../images/JQuery-logo.png'
+import JSLogo from '../../../images/JS-logo.png'
+import HTML5Logo from '../../../images/HTML5-logo.png'
+import FoundationLogo from '../../../images/Foundation-logo.png'
+import CSS3Logo from '../../../images/CSS3-logo.png'
 
 
 class ProjectsSpecificDetails extends Component {
