@@ -10,12 +10,10 @@ import ProjectsSpecificDetails from '../Projects/Specific/ProjectsSpecificDetail
 import Resume from '../Resume/Resume.js'
 import Footer from '../Footer/Footer.js'
 
-
-
 class App extends React.Component {
 	render() {
 		return(
-			<BrowserRouter>
+			<BrowserRouter >
 				<div className="container">
 					<Nav />
 
