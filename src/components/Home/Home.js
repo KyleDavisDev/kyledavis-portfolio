@@ -38,7 +38,6 @@ class Home extends React.Component {
 	}
 
 	_initGA()  {
-		console.log('GA init')
 		ReactGA.initialize('UA-100074461-1')
 	}
 	_logPageView() {

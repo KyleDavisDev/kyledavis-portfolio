@@ -16,7 +16,6 @@ class Projects extends React.Component {
 	render() {
 		return(
 			<div className="projects-container">
-				{console.log(window.location.pathname + window.location.search)}
 				<ProjectsTextTop />
 
 				<ProjectsIconList match={this.props.match}/>
@@ -25,7 +24,6 @@ class Projects extends React.Component {
 	}
 
 	_initGA()  {
-		console.log('GA init')
 		ReactGA.initialize('UA-100074461-1')
 	}
 	_logPageView() {
