@@ -2,10 +2,15 @@ import React from 'react';
 
 import './Home.scss'
 
+import ReactGA from 'react-ga'
+
 class Home extends React.Component {
 	componentDidMount() {
 		document.title = "Kyle Bonar";
+		this._initGA()
+		this._logPageView()
 	}
+
 	render() {
 		return(
 			<div className="home-container">
@@ -31,6 +36,16 @@ class Home extends React.Component {
 			</div>
 		)
 	}
+
+	_initGA()  {
+		console.log('GA init')
+		ReactGA.initialize('UA-100074461-1')
+	}
+	_logPageView() {
+		ReactGA.set({ page: window.location.pathname + window.location.search });
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}
+
 }
 
 module.exports = Home
