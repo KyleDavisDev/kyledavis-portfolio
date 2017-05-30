@@ -26,7 +26,7 @@ module.exports = {
 			}
 		},
 		{
-			test: /\.(png|jpg)$/,
+			test: /\.(png|jpg|pdf)$/,
 			use: {
 				loader: 'file-loader?name=[name].[ext]&outputPath=images/'
 			}
