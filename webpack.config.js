@@ -2,7 +2,9 @@
     ./webpack.config.js
 */
 const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 
 module.exports = {
   entry: './src/index.js',
@@ -29,14 +31,30 @@ module.exports = {
 				loader: 'file-loader?name=[name].[ext]&outputPath=images/'
 			}
 		},
+		{
+			test: /\.scss$/,
+			use: ExtractTextPlugin.extract({
+				fallbackLoader: 'style-loader',
+				loader: ['css-loader', 'sass-loader'],
+				publicPath: '/dist'
+			})
+		},
+		{
+			test: /\.(eot|svg|ttf|woff|woff2)$/,
+			use: {
+				loader: 'file-loader?name=[name].[ext]&outputPath=/fonts/'
+			}
+        }
 	],
-  },
-  devServer: {
-  	historyApiFallback: true
-  },
-  plugins: [new HtmlWebpackPlugin({
-  	template: './src/index.html',
-  	filename: 'index.html',
-  	inject: 'body'
-  })]
+	},
+	devServer: {
+		historyApiFallback: true
+	},
+	plugins: [new HtmlWebpackPlugin({
+		template: './src/index.html',
+		filename: 'index.html',
+		inject: 'body'
+		}),
+  		new ExtractTextPlugin("styles.css")
+	]
 }
