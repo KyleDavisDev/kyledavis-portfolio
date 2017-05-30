@@ -41,7 +41,7 @@ class ProjectsIconList extends Component {
 							pathname: this.props.match.url + '/details',
 							search: '?title=' + icon.linkURL 
 						}}>
-						<img src={icon.img} style={{height:200, width: 200}} title={icon.title} alt={icon.title}/>
+						<img src={icon.img} className="card-image" title={icon.title} alt={icon.title}/>
 						{icon.displayName}
 					</NavLink>			
 				)}
