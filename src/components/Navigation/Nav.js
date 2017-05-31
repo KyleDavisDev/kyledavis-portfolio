@@ -21,9 +21,9 @@ class Nav extends React.Component {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink exact className="menu-link" activeClassName="active" to="/resume">
+								<a className="menu-link" target="_blank" href="/resume">
 									Resume
-								</NavLink>
+								</a>
 							</li>
 						</ul>
 					</div>
