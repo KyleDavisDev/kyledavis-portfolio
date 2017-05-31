@@ -6,6 +6,7 @@ import './ProjectsSpecificDetails.scss'
 //ScreenShots
 import TamuPhysicsSS from '../../../images/Tamu-Physics-SS.png'
 import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS.png'
+import KyleBonarOriginalWebsite from '../../../images/kyle_bonar_original_website.png'
 import PingPongSS from '../../../images/PingPong-SS.png'
 import WordCounterSS from '../../../images/WordCounter-SS.png'
 import PhyllotaxisSS from '../../../images/Phyllotaxis-SS.png'
@@ -14,6 +15,8 @@ import DoublePendulumSS from '../../../images/DoublePendulum-SS.png'
 import Example from '../../../images/example.png'
 
 //Logos
+import LinuxLogo from '../../../images/Linux-logo.png'
+import NginxLogo from '../../../images/Nginx-logo.png'
 import PHPLogo from '../../../images/PHP-logo.png'
 import WordPressLogo from '../../../images/Wordpress-logo.png'
 import MySQLLogo from '../../../images/MySQL-logo.png'
@@ -37,7 +40,7 @@ class ProjectsSpecificDetails extends Component {
 					name: "Texas A&M Physics Website",
 					description: "In just two short months, the Physics Department website was given a lot of love by receiving a new server host, an updated backend, a new responsive design, and a plethera of options for staff and faculty members to keep the content updated. This project was completed within a very small team and is the project I currently spend most of my time maintaining and adding additional functionality to.",
 					tools: [
-						{ name: "PHP 5.4", img: PHPLogo },
+						{ name: "PHP 5.4 Server Language", img: PHPLogo },
 						{ name: "Wordpress", img: WordPressLogo },
 						{ name: "MySQL database", img: MySQLLogo },
 						{ name: "JQuery JavaScript library", img: JQueryLogo },
@@ -54,7 +57,7 @@ class ProjectsSpecificDetails extends Component {
 					name: "Texas A&M Astronomy Website",
 					description: "As a student Web Development Assistant, I worked on a small team to recreate the Astronomy Department's home domain. We were responsible for migrating years of static content into a MySQL database, for both easier managment and record keeping, while also ensuring that every page be responsive. Several custom Wordpress themes were developed for this project and are actively maintained today.",
 					tools: [
-						{ name: "PHP 5.4", img: PHPLogo },
+						{ name: "PHP 5.4 Server Language", img: PHPLogo },
 						{ name: "Wordpress", img: WordPressLogo },
 						{ name: "MySQL database", img: MySQLLogo },
 						{ name: "JQuery JavaScript library", img: JQueryLogo },
@@ -64,6 +67,21 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "CSS3", img: CSS3Logo }
 					],
 					img: TamuAstronomySS
+				},
+				{
+					urlName: "kyle_bonar_original",
+					documentTitleName: "Original Website",
+					name: "Kyle Bonar First Personal Website",
+					description: "When I started this project, I simply wanted to show off some projects that I had built, I had no idea the steps involved to put a website out on the internet. Starting from scratch, I had to configure a fresh server, install all of the propor tools, register and connect to the proper domain name, and impliment security protocols. Luckily, with enough documentation and triple-checking each and every step, I was able to create this all my own. The webpage may not be the most visually appealing thing but I am incredibly proud of myself for sticking it out, and not getting overwhelmed by the immense challenge. Lastly, this project was built on the LEMP stack although, as it stands, is mostly just a static webpage.",
+					tools: [
+						{ name: "Linux Server Language", img: LinuxLogo },
+						{ name: "Nginx Web Server", img: NginxLogo },
+						{ name: "PHP 5.4 Server Language", img: PHPLogo },
+						{ name: "JavaScript", img: JSLogo },
+						{ name: "HTML5", img: HTML5Logo },
+						{ name: "CSS3", img: CSS3Logo }
+					],
+					img: KyleBonarOriginalWebsite
 				},
 				{
 					urlName: "Classic_Ping_Pong",
@@ -132,7 +150,7 @@ class ProjectsSpecificDetails extends Component {
 					name: "Texas A&M Physics Website",
 					description: "lorem ipsum",
 					tools: [
-						{ name: "PHP 5.4", img: PHPLogo },
+						{ name: "PHP 5.4 Server Language", img: PHPLogo },
 						{ name: "Wordpress", img: WordPressLogo },
 						{ name: "MySQL database", img: MySQLLogo },
 						{ name: "JQuery JavaScript library", img: JQueryLogo },
@@ -148,7 +166,7 @@ class ProjectsSpecificDetails extends Component {
 					name: "Texas A&M Physics Website",
 					description: "lorem ipsum",
 					tools: [
-						{ name: "PHP 5.4", img: PHPLogo },
+						{ name: "PHP 5.4 Server Language", img: PHPLogo },
 						{ name: "Wordpress", img: WordPressLogo },
 						{ name: "MySQL database", img: MySQLLogo },
 						{ name: "JQuery JavaScript library", img: JQueryLogo },
