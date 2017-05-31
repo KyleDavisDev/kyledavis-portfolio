@@ -6,6 +6,10 @@ app.use(express.static('dist'));
 // app.use(express.static('src/images'));
 // app.set('views', './build');
 
+app.get('/resume', function(req, res) {
+	res.sendFile(`${process.cwd()}/dist/images/Bonar_Kyle_resume.pdf`);
+});
+
 app.get('*', function(req, res) {
 	res.sendFile(`${process.cwd()}/dist/index.html`);
 });
