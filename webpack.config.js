@@ -11,7 +11,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
-    publicPath: '/'
+    publicPath: 'http://localhost:8080/', //Dev server
+	//publicPath: 'http://kylebonar.com/', //Production server
   },
   module: {
 	rules: [
@@ -36,13 +37,13 @@ module.exports = {
 			use: ExtractTextPlugin.extract({
 				fallbackLoader: 'style-loader',
 				loader: ['css-loader', 'sass-loader'],
-				publicPath: '/dist'
+				publicPath: '/'
 			})
 		},
 		{
 			test: /\.(eot|svg|ttf|woff|woff2)$/,
 			use: {
-				loader: 'file-loader?name=[name].[ext]&outputPath=/fonts/'
+				loader: 'file-loader?name=[name].[ext]&outputPath=fonts/'
 			}
         }
 	],
