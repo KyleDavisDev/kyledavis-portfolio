@@ -7,6 +7,7 @@ import './ProjectsSpecificDetails.scss'
 import TamuPhysicsSS from '../../../images/Tamu-Physics-SS.png'
 import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS.png'
 import KyleBonarOriginalWebsite from '../../../images/kyle_bonar_original_website.png'
+import CustomWebIcons from '../../../images/Custom-Icons-SS.png'
 import PingPongSS from '../../../images/PingPong-SS.png'
 import WordCounterSS from '../../../images/WordCounter-SS.png'
 import PhyllotaxisSS from '../../../images/Phyllotaxis-SS.png'
@@ -25,6 +26,7 @@ import JSLogo from '../../../images/JS-logo.png'
 import HTML5Logo from '../../../images/HTML5-logo.png'
 import FoundationLogo from '../../../images/Foundation-logo.png'
 import CSS3Logo from '../../../images/CSS3-logo.png'
+import AdobeIllustratorLogo from '../../../images/Adobe-Illustrator-CC-logo.png'
 
 
 class ProjectsSpecificDetails extends Component {
@@ -82,6 +84,16 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "CSS3", img: CSS3Logo }
 					],
 					img: KyleBonarOriginalWebsite
+				},
+				{
+					urlName: "illustrator_web_icons",
+					documentTitleName: "Adobe Illustrator Web Icons",
+					name: "Adobe Illustrator Web Icons",
+					description: "",
+					tools: [
+						{ name: "Adobe Illustrator CC", img: AdobeIllustratorLogo }			
+					],
+					img: CustomWebIcons
 				},
 				{
 					urlName: "Classic_Ping_Pong",
@@ -143,38 +155,6 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "CSS3", img: CSS3Logo }
 					],
 					img: DoublePendulumSS
-				},
-				{
-					urlName: "Example 6",
-					documentTitleName: "Example name",
-					name: "Texas A&M Physics Website",
-					description: "lorem ipsum",
-					tools: [
-						{ name: "PHP 5.4 Server Language", img: PHPLogo },
-						{ name: "Wordpress", img: WordPressLogo },
-						{ name: "MySQL database", img: MySQLLogo },
-						{ name: "JQuery JavaScript library", img: JQueryLogo },
-						{ name: "JavaScript", img: JSLogo },
-						{ name: "Foundation Zurb CSS library", img: FoundationLogo },
-						{ name: "CSS3", img: CSS3Logo }
-					],
-					img: Example
-				},
-				{
-					urlName: "Example 7",
-					documentTitleName: "Example name",
-					name: "Texas A&M Physics Website",
-					description: "lorem ipsum",
-					tools: [
-						{ name: "PHP 5.4 Server Language", img: PHPLogo },
-						{ name: "Wordpress", img: WordPressLogo },
-						{ name: "MySQL database", img: MySQLLogo },
-						{ name: "JQuery JavaScript library", img: JQueryLogo },
-						{ name: "JavaScript", img: JSLogo },
-						{ name: "Foundation Zurb CSS library", img: FoundationLogo },
-						{ name: "CSS3", img: CSS3Logo }
-					],
-					img: Example
 				}
 			]
 		}
@@ -183,8 +163,10 @@ class ProjectsSpecificDetails extends Component {
 
 	//before render()
 	componentWillMount() {
-		//grab query string from URL
+		//grab query string from URL, and make lower case
 		let urlString = QueryString.parse(this.props.location.search)
+		urlString.title = urlString.title.toLowerCase()
+		console.log(urlString)
 
 		this.setState({
 			name: urlString.title
@@ -194,21 +176,21 @@ class ProjectsSpecificDetails extends Component {
 
 	//after render()
 	componentDidMount() {
+		//match url query with specific entry in the state data
 		let activeProject = this.state.allProjects.filter( (project) => {
-			return this.state.name === project.urlName
+			return this.state.name === project.urlName.toLowerCase()
 		}).map( (project) => {
 			return project.documentTitleName
 		})
 		document.title = "Kyle Bonar - " + activeProject;
 	}
 
-
 	render() {
 		return(
 			<div className="project-specific-container"> 
 			{
 				this.state.allProjects.filter( (project) => {
-					return this.state.name === project.urlName 
+					return this.state.name === project.urlName.toLowerCase()
 				}).map( (project) => {
 					return (
 						<div key="project.name" className="specific">
@@ -247,9 +229,10 @@ class ProjectsSpecificDetails extends Component {
 								</div>
 
 								<div className="project-pictures">
-									<h2>Picture</h2>
-									<div className="pictures-container">
-									</div>
+									<h2>Other</h2>
+									<p>
+										
+									</p>
 								</div>
 							</div>
 
