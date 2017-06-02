@@ -63,7 +63,7 @@ class ProjectsSpecificDetails extends Component {
 					urlName: "tamu_physics",
 					documentTitleName: "TAMU Physics",
 					name: "Texas A&M Physics Website",
-					description: "In just two short months, the Physics Department website was given a lot of love by receiving a new server host, an updated backend, a new responsive design, and a plethera of options for staff and faculty members to keep the content updated. This project was completed within a very small team and is the project I currently spend most of my time maintaining and adding additional functionality to.",
+					description: "In just two short months, the Physics Department's website was given a massive overhaul. Everything from choosing a new server host, to updating the backend logic and databases, to making the design responsive, to providing the staff and faculty members a practical way to update and manage content throughout the site. On a massive team of exactly two people, I played a huge role in getting this project up and running.",
 					tools: [
 						{ name: "PHP 5.4 Server Language", img: PHPLogo },
 						{ name: "Wordpress", img: WordPressLogo },
@@ -271,13 +271,16 @@ class ProjectsSpecificDetails extends Component {
 
 							<div className="right text-holder">
 								<div className="project-title droid-bold">
+									<a href={project.external.linkPath} target="_blank" className="project-linkout">		
 									{project.name}
-									<img 
-										src={project.external.img}
-										title={project.external.name}
-										alt={project.external.name}
-										className="external-link"
-									/>
+									
+										<img 
+											src={project.external.img}
+											title={project.external.name}
+											alt={project.external.name}
+											className="external-link"
+										/>
+									</a>
 								</div>
 
 								<div className="project-description">
