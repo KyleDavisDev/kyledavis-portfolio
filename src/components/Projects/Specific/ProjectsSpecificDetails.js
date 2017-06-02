@@ -4,31 +4,34 @@ import QueryString from 'query-string'
 import './ProjectsSpecificDetails.scss'
 
 //ScreenShots
-import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
-import TamuPhysicsSS from '../../../images/Tamu-Physics-SS-min.png'
-import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS-min.png'
-import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
 import CustomWebIcons from '../../../images/Custom-Icons-SS-min.png'
-import PingPongSS from '../../../images/PingPong-SS-min.png'
-import WordCounterSS from '../../../images/WordCounter-SS-min.png'
-import PhyllotaxisSS from '../../../images/Phyllotaxis-SS-min.png'
-import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
 import DoublePendulumSS from '../../../images/DoublePendulum-SS-min.png'
+import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
+import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
+import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
+import PhyllotaxisSS from '../../../images/Phyllotaxis-SS-min.png'
+import PingPongSS from '../../../images/PingPong-SS-min.png'
+import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS-min.png'
+import TamuPhysicsSS from '../../../images/Tamu-Physics-SS-min.png'
+import WordCounterSS from '../../../images/WordCounter-SS-min.png'
 
 //Logos
-import LinuxLogo from '../../../images/Linux-Logo.png'
-import NginxLogo from '../../../images/Nginx-Logo.png'
-import PHPLogo from '../../../images/PHP-Logo.png'
-import WordPressLogo from '../../../images/Wordpress-Logo.png'
-import MySQLLogo from '../../../images/MySQL-Logo.png'
-import JQueryLogo from '../../../images/JQuery-Logo.png'
-import JSLogo from '../../../images/JS-Logo.png'
-import HTML5Logo from '../../../images/HTML5-Logo.png'
-import FoundationLogo from '../../../images/Foundation-Logo.png'
-import CSS3Logo from '../../../images/CSS3-Logo.png'
 import AdobeIllustratorLogo from '../../../images/Adobe-Illustrator-CC-Logo.png'
+import CSS3Logo from '../../../images/CSS3-Logo.png'
+import ExpressLogo from '../../../images/ExpressJS-Logo.png'
+import FoundationLogo from '../../../images/Foundation-Logo.png'
+import HTML5Logo from '../../../images/HTML5-Logo.png'
+import JSLogo from '../../../images/JS-Logo.png'
+import JQueryLogo from '../../../images/JQuery-Logo.png'
 import LinkOutLogo from '../../../images/LinkOut-Logo.png'
-
+import LinuxLogo from '../../../images/Linux-Logo.png'
+import MySQLLogo from '../../../images/MySQL-Logo.png'
+import NginxLogo from '../../../images/Nginx-Logo.png'
+import NodeJSLogo from '../../../images/NodeJS-Logo.png'
+import PHPLogo from '../../../images/PHP-Logo.png'
+import ReactJSLogo from '../../../images/ReactJS-Logo.png'
+import SassLogo from '../../../images/Sass-Logo.png'
+import WordPressLogo from '../../../images/Wordpress-Logo.png'
 
 class ProjectsSpecificDetails extends Component {
 	constructor(props) {
@@ -43,14 +46,11 @@ class ProjectsSpecificDetails extends Component {
 					name: "ReactJS Portfolio",
 					description: "",
 					tools: [
-						{ name: "PHP 5.4 Server Language", img: PHPLogo },
-						{ name: "Wordpress", img: WordPressLogo },
-						{ name: "MySQL database", img: MySQLLogo },
-						{ name: "JQuery JavaScript library", img: JQueryLogo },
-						{ name: "JavaScript", img: JSLogo },
+						{ name: "NodeJS Server Language", img: NodeJSLogo },
+						{ name: "ExpressJS Routing", img: ExpressLogo },
+						{ name: "ReactJS Library", img: ReactJSLogo },
 						{ name: "HTML5", img: HTML5Logo },
-						{ name: "Foundation Zurb CSS library", img: FoundationLogo },
-						{ name: "CSS3", img: CSS3Logo }
+						{ name: "Sass CSS", img: SassLogo }
 					],
 					img: KyleBonarReactWebsite,
 					external: {

@@ -2,23 +2,23 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
 //ScreenShots
-import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
-import TamuPhysicsSS from '../../../images/Tamu-Physics-SS-min.png'
-import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS-min.png'
-import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
 import CustomWebIcons from '../../../images/Custom-Icons-SS-min.png'
-import PingPongSS from '../../../images/PingPong-SS-min.png'
-import WordCounterSS from '../../../images/WordCounter-SS-min.png'
-import PhyllotaxisSS from '../../../images/Phyllotaxis-SS-min.png'
-import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
 import DoublePendulumSS from '../../../images/DoublePendulum-SS-min.png'
+import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
+import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
+import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
+import PhyllotaxisSS from '../../../images/Phyllotaxis-SS-min.png'
+import PingPongSS from '../../../images/PingPong-SS-min.png'
+import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS-min.png'
+import TamuPhysicsSS from '../../../images/Tamu-Physics-SS-min.png'
+import WordCounterSS from '../../../images/WordCounter-SS-min.png'
 
 class ProjectsIconList extends Component {
 	constructor(props) {
 		super(props)
 
 		this.state = {
-			icons: [
+			cards: [
 				{ displayName: "ReactJS Portfolio", img: KyleBonarReactWebsite, title:"Kyle Bonar ReactJS Website", linkURL: "kyle_bonar_react"},
 				{ displayName: "Physics Department", img: TamuPhysicsSS, title:"Physics Deparment at Texas A&M", linkURL: "tamu_physics"},
 				{ displayName: "Astronomy Department", img: TamuAstronomySS, title:"Astronomy Deparment at Texas A&M", linkURL: "tamu_mitchell"},
@@ -36,7 +36,7 @@ class ProjectsIconList extends Component {
 	render() {
 		return(
 			<div className="projects-icon-list-container">
-				{this.state.icons.map( (icon) =>	
+				{this.state.cards.map( (icon) =>	
 					<NavLink
 						key={icon.displayName}
 						className="project-card"
