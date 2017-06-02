@@ -16,17 +16,18 @@ import DoublePendulumSS from '../../../images/DoublePendulum-SS.png'
 import Example from '../../../images/example.png'
 
 //Logos
-import LinuxLogo from '../../../images/Linux-logo.png'
-import NginxLogo from '../../../images/Nginx-logo.png'
-import PHPLogo from '../../../images/PHP-logo.png'
-import WordPressLogo from '../../../images/Wordpress-logo.png'
-import MySQLLogo from '../../../images/MySQL-logo.png'
-import JQueryLogo from '../../../images/JQuery-logo.png'
-import JSLogo from '../../../images/JS-logo.png'
-import HTML5Logo from '../../../images/HTML5-logo.png'
-import FoundationLogo from '../../../images/Foundation-logo.png'
-import CSS3Logo from '../../../images/CSS3-logo.png'
-import AdobeIllustratorLogo from '../../../images/Adobe-Illustrator-CC-logo.png'
+import LinuxLogo from '../../../images/Linux-Logo.png'
+import NginxLogo from '../../../images/Nginx-Logo.png'
+import PHPLogo from '../../../images/PHP-Logo.png'
+import WordPressLogo from '../../../images/Wordpress-Logo.png'
+import MySQLLogo from '../../../images/MySQL-Logo.png'
+import JQueryLogo from '../../../images/JQuery-Logo.png'
+import JSLogo from '../../../images/JS-Logo.png'
+import HTML5Logo from '../../../images/HTML5-Logo.png'
+import FoundationLogo from '../../../images/Foundation-Logo.png'
+import CSS3Logo from '../../../images/CSS3-Logo.png'
+import AdobeIllustratorLogo from '../../../images/Adobe-Illustrator-CC-Logo.png'
+import LinkOutLogo from '../../../images/LinkOut-Logo.png'
 
 
 class ProjectsSpecificDetails extends Component {
@@ -51,7 +52,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "Foundation Zurb CSS library", img: FoundationLogo },
 						{ name: "CSS3", img: CSS3Logo }
 					],
-					img: TamuPhysicsSS
+					img: TamuPhysicsSS,
+					external: {
+						linkPath: "http://physics.tamu.edu",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "tamu_mitchell",
@@ -68,7 +74,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "Foundation Zurb CSS library", img: FoundationLogo },
 						{ name: "CSS3", img: CSS3Logo }
 					],
-					img: TamuAstronomySS
+					img: TamuAstronomySS,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "kyle_bonar_original",
@@ -83,7 +94,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "HTML5", img: HTML5Logo },
 						{ name: "CSS3", img: CSS3Logo }
 					],
-					img: KyleBonarOriginalWebsite
+					img: KyleBonarOriginalWebsite,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "illustrator_web_icons",
@@ -93,7 +109,12 @@ class ProjectsSpecificDetails extends Component {
 					tools: [
 						{ name: "Adobe Illustrator CC", img: AdobeIllustratorLogo }			
 					],
-					img: CustomWebIcons
+					img: CustomWebIcons,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "Classic_Ping_Pong",
@@ -106,7 +127,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "CSS3", img: CSS3Logo }
 						
 					],
-					img: PingPongSS
+					img: PingPongSS,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "Word_Counting_App",
@@ -118,7 +144,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "HTML5", img: HTML5Logo },
 						{ name: "CSS3", img: CSS3Logo }
 					],
-					img: WordCounterSS
+					img: WordCounterSS,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "Phyllotaxis_App",
@@ -130,7 +161,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "HTML5", img: HTML5Logo },
 						{ name: "CSS3", img: CSS3Logo }
 					],
-					img: PhyllotaxisSS
+					img: PhyllotaxisSS,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "Fractal_Trees_App",
@@ -142,7 +178,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "HTML5", img: HTML5Logo },
 						{ name: "CSS3", img: CSS3Logo }
 					],
-					img: FractalTreesSS
+					img: FractalTreesSS,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				},
 				{
 					urlName: "Double_Pendulum_Vis",
@@ -154,7 +195,12 @@ class ProjectsSpecificDetails extends Component {
 						{ name: "HTML5", img: HTML5Logo },
 						{ name: "CSS3", img: CSS3Logo }
 					],
-					img: DoublePendulumSS
+					img: DoublePendulumSS,
+					external: { 
+						linkPath: "",
+						img: LinkOutLogo,
+						name: ""
+					}
 				}
 			]
 		}
@@ -205,6 +251,12 @@ class ProjectsSpecificDetails extends Component {
 							<div className="right text-holder">
 								<div className="project-title droid-bold">
 									{project.name}
+									<img 
+										src={project.external.img}
+										title={project.external.name}
+										alt={project.external.name}
+										className="external-link"
+									/>
 								</div>
 
 								<div className="project-description">
@@ -228,12 +280,6 @@ class ProjectsSpecificDetails extends Component {
 									</p>
 								</div>
 
-								<div className="project-pictures">
-									<h2>Other</h2>
-									<p>
-										
-									</p>
-								</div>
 							</div>
 
 						</div>
