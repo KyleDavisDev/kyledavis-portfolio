@@ -21,6 +21,8 @@
         .specific-image {
             height: 300px;
             width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         div {
@@ -33,6 +35,10 @@
 
         .project-title {
             font-size: 30px;
+
+            .project-linkout:hover img {
+                opacity: 0.7;
+            }
         }
         
         .technology-image {
