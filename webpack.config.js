@@ -29,21 +29,29 @@ module.exports = {
 		{
 			test: /\.(png|jpg|pdf)$/,
 			use: {
-				loader: 'file-loader?name=[name].[ext]&outputPath=images/'
+				loader: 'file-loader',
+				options: {
+					name: '[name].[ext]',
+					outputPath: 'images/'
+				}
 			}
 		},
 		{
 			test: /\.scss$/,
 			use: ExtractTextPlugin.extract({
-				fallbackLoader: 'style-loader',
-				loader: ['css-loader', 'sass-loader'],
+				fallback: 'style-loader',
+				use: ['css-loader', 'sass-loader'],
 				publicPath: '/'
 			})
 		},
 		{
 			test: /\.(eot|svg|ttf|woff|woff2)$/,
 			use: {
-				loader: 'file-loader?name=[name].[ext]&outputPath=fonts/'
+				loader: 'file-loader',
+				options: {
+					name: '[name].[ext]',
+					outputPath: 'fonts/'
+				}
 			}
         }
 	],
@@ -51,7 +59,8 @@ module.exports = {
 	devServer: {
 		historyApiFallback: true
 	},
-	plugins: [new HtmlWebpackPlugin({
+	plugins: [
+		new HtmlWebpackPlugin({
 		template: './src/index.html',
 		filename: 'index.html',
 		inject: 'body'
