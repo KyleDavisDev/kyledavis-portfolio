@@ -2,15 +2,16 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
 //ScreenShots
-import TamuPhysicsSS from '../../../images/Tamu-Physics-SS.png'
-import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS.png'
-import KyleBonarOriginalWebsite from '../../../images/kyle_bonar_original_website.png'
-import CustomWebIcons from '../../../images/Custom-Icons-SS.png'
-import PingPongSS from '../../../images/PingPong-SS.png'
-import WordCounterSS from '../../../images/WordCounter-SS.png'
-import PhyllotaxisSS from '../../../images/Phyllotaxis-SS.png'
-import FractalTreesSS from '../../../images/FractalTrees-SS.png'
-import DoublePendulumSS from '../../../images/DoublePendulum-SS.png'
+import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
+import TamuPhysicsSS from '../../../images/Tamu-Physics-SS-min.png'
+import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS-min.png'
+import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
+import CustomWebIcons from '../../../images/Custom-Icons-SS-min.png'
+import PingPongSS from '../../../images/PingPong-SS-min.png'
+import WordCounterSS from '../../../images/WordCounter-SS-min.png'
+import PhyllotaxisSS from '../../../images/Phyllotaxis-SS-min.png'
+import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
+import DoublePendulumSS from '../../../images/DoublePendulum-SS-min.png'
 
 class ProjectsIconList extends Component {
 	constructor(props) {
@@ -18,6 +19,7 @@ class ProjectsIconList extends Component {
 
 		this.state = {
 			icons: [
+				{ displayName: "ReactJS Portfolio", img: KyleBonarReactWebsite, title:"Kyle Bonar ReactJS Website", linkURL: "kyle_bonar_react"},
 				{ displayName: "Physics Department", img: TamuPhysicsSS, title:"Physics Deparment at Texas A&M", linkURL: "tamu_physics"},
 				{ displayName: "Astronomy Department", img: TamuAstronomySS, title:"Astronomy Deparment at Texas A&M", linkURL: "tamu_mitchell"},
 				{ displayName: "Kyle Bonar Original", img: KyleBonarOriginalWebsite, title:"Kyle Bonar original website", linkURL: "kyle_bonar_original"},

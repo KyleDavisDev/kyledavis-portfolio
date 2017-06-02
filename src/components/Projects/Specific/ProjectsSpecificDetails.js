@@ -4,16 +4,16 @@ import QueryString from 'query-string'
 import './ProjectsSpecificDetails.scss'
 
 //ScreenShots
-import TamuPhysicsSS from '../../../images/Tamu-Physics-SS.png'
-import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS.png'
-import KyleBonarOriginalWebsite from '../../../images/kyle_bonar_original_website.png'
-import CustomWebIcons from '../../../images/Custom-Icons-SS.png'
-import PingPongSS from '../../../images/PingPong-SS.png'
-import WordCounterSS from '../../../images/WordCounter-SS.png'
-import PhyllotaxisSS from '../../../images/Phyllotaxis-SS.png'
-import FractalTreesSS from '../../../images/FractalTrees-SS.png'
-import DoublePendulumSS from '../../../images/DoublePendulum-SS.png'
-import Example from '../../../images/example.png'
+import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
+import TamuPhysicsSS from '../../../images/Tamu-Physics-SS-min.png'
+import TamuAstronomySS from '../../../images/Tamu-Astronomy-SS-min.png'
+import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
+import CustomWebIcons from '../../../images/Custom-Icons-SS-min.png'
+import PingPongSS from '../../../images/PingPong-SS-min.png'
+import WordCounterSS from '../../../images/WordCounter-SS-min.png'
+import PhyllotaxisSS from '../../../images/Phyllotaxis-SS-min.png'
+import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
+import DoublePendulumSS from '../../../images/DoublePendulum-SS-min.png'
 
 //Logos
 import LinuxLogo from '../../../images/Linux-Logo.png'
@@ -37,6 +37,28 @@ class ProjectsSpecificDetails extends Component {
 		this.state = {
 			name: "",
 			allProjects: [
+				{
+					urlName: "kyle_bonar_react",
+					documentTitleName: "React Portfolio",
+					name: "ReactJS Portfolio",
+					description: "",
+					tools: [
+						{ name: "PHP 5.4 Server Language", img: PHPLogo },
+						{ name: "Wordpress", img: WordPressLogo },
+						{ name: "MySQL database", img: MySQLLogo },
+						{ name: "JQuery JavaScript library", img: JQueryLogo },
+						{ name: "JavaScript", img: JSLogo },
+						{ name: "HTML5", img: HTML5Logo },
+						{ name: "Foundation Zurb CSS library", img: FoundationLogo },
+						{ name: "CSS3", img: CSS3Logo }
+					],
+					img: KyleBonarReactWebsite,
+					external: {
+						linkPath: "/",
+						img: LinkOutLogo,
+						name: ""
+					}
+				},
 				{
 					urlName: "tamu_physics",
 					documentTitleName: "TAMU Physics",
@@ -211,11 +233,10 @@ class ProjectsSpecificDetails extends Component {
 	componentWillMount() {
 		//grab query string from URL, and make lower case
 		let urlString = QueryString.parse(this.props.location.search)
-		urlString.title = urlString.title.toLowerCase()
-		console.log(urlString)
+		urlString = urlString.title.toLowerCase()
 
 		this.setState({
-			name: urlString.title
+			name: urlString
 		})
 
 	}
