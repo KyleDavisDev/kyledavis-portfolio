@@ -6,6 +6,7 @@ import './ProjectsSpecificDetails.scss'
 //ScreenShots
 import CustomWebIcons from '../../../images/Custom-Icons-SS-min.png'
 import DoublePendulumSS from '../../../images/DoublePendulum-SS-min.png'
+import FeatureSpotlight from '../../../images/FeatureSpotlight-SS-min.png'
 import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
 import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
 import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
@@ -17,6 +18,7 @@ import WordCounterSS from '../../../images/WordCounter-SS-min.png'
 
 //Logos
 import AdobeIllustratorLogo from '../../../images/Adobe-Illustrator-CC-Logo.png'
+import BootstrapLogo from '../../../images/Bootstrap-logo.png'
 import CSS3Logo from '../../../images/CSS3-Logo.png'
 import ExpressLogo from '../../../images/ExpressJS-Logo.png'
 import FoundationLogo from '../../../images/Foundation-Logo.png'
@@ -40,10 +42,26 @@ class ProjectsSpecificDetails extends Component {
 			name: "",
 			allProjects: [
 				{
+					urlName: "feature_spotlight",
+					documentTitleName: "Feature Sptlight",
+					name: "Feature Spotlight",
+					description: "This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In producation, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
+					tools: [
+						{ name: "HTML5", img: HTML5Logo },
+						{ name: "Bootstrap CSS Library", img: BootstrapLogo },
+						{ name: "CSS3", img: CSS3Logo }
+					],
+					img: FeatureSpotlight,
+					external: {
+						linkPath: "https://crane.it.utsa.edu:8443/resources/appSpotlight/dining/index.html",
+						name: "UTSA Feature Spotlight"
+					}
+				},
+				{
 					urlName: "kyle_bonar_react",
 					documentTitleName: "React Portfolio",
 					name: "ReactJS Portfolio",
-					description: "A total revamp of my original portfolio website! This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook's \"create-react-app\", which greatly simplies getting started with ReactJS, however I didn't like the idea of not knowing what was going on under the hood. Because of this, I spent a good while figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole.",
+					description: "A complete rewrite of my original portfolio website! This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook's \"create-react-app\", which greatly simplies getting started with ReactJS, however I didn't like the idea of not knowing what was going on under the hood. Because of this, I spent a good while figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole.",
 					tools: [
 						{ name: "NodeJS Server Language", img: NodeJSLogo },
 						{ name: "ExpressJS Routing", img: ExpressLogo },
@@ -122,13 +140,13 @@ class ProjectsSpecificDetails extends Component {
 					urlName: "illustrator_web_icons",
 					documentTitleName: "Adobe Illustrator Web Icons",
 					name: "Adobe Illustrator Web Icons",
-					description: "",
+					description: "As a UI/UX Developer for The University of Texas at San Antonio, I have spent a fair amount of time inside of the Adobe Suite. In doing so, I have created many icons, logos, and document designs which are currently being used across UTSA including UTSA Mobile App itself. I have also grown more comfortable in optimizing high resolution images into a more web appropriate form to increase page load times and to decrease page load sizes.",
 					tools: [
 						{ name: "Adobe Illustrator CC", img: AdobeIllustratorLogo }			
 					],
 					img: CustomWebIcons,
 					external: { 
-						linkPath: "/",
+						linkPath: "https://github.com/KyleBonar/utsa-icons",
 						name: "GitHub of Web Icons"
 					}
 				},

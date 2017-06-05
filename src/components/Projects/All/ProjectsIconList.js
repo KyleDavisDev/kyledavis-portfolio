@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 //ScreenShots
 import CustomWebIcons from '../../../images/Custom-Icons-SS-min.png'
 import DoublePendulumSS from '../../../images/DoublePendulum-SS-min.png'
+import FeatureSpotlight from '../../../images/FeatureSpotlight-SS-min.png'
 import FractalTreesSS from '../../../images/FractalTrees-SS-min.png'
 import KyleBonarReactWebsite from '../../../images/KyleBonarReactWebsite-SS-min.png'
 import KyleBonarOriginalWebsite from '../../../images/KyleBonarOriginalWebsite-SS-min.png'
@@ -19,6 +20,7 @@ class ProjectsIconList extends Component {
 
 		this.state = {
 			cards: [
+				{ displayName: "Feature Spotlight", img: FeatureSpotlight, title:"UTSA Feature Spotlight", linkURL: "feature_spotlight"},
 				{ displayName: "ReactJS Portfolio", img: KyleBonarReactWebsite, title:"Kyle Bonar ReactJS Website", linkURL: "kyle_bonar_react"},
 				{ displayName: "Physics Department", img: TamuPhysicsSS, title:"Physics Deparment at Texas A&M", linkURL: "tamu_physics"},
 				{ displayName: "Astronomy Department", img: TamuAstronomySS, title:"Astronomy Deparment at Texas A&M", linkURL: "tamu_mitchell"},
