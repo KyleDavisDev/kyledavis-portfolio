@@ -23,7 +23,6 @@ import FoundationLogo from '../../../images/Foundation-Logo.png'
 import HTML5Logo from '../../../images/HTML5-Logo.png'
 import JSLogo from '../../../images/JS-Logo.png'
 import JQueryLogo from '../../../images/JQuery-Logo.png'
-import LinkOutLogo from '../../../images/LinkOut-Logo.png'
 import LinuxLogo from '../../../images/Linux-Logo.png'
 import MySQLLogo from '../../../images/MySQL-Logo.png'
 import NginxLogo from '../../../images/Nginx-Logo.png'
@@ -44,7 +43,7 @@ class ProjectsSpecificDetails extends Component {
 					urlName: "kyle_bonar_react",
 					documentTitleName: "React Portfolio",
 					name: "ReactJS Portfolio",
-					description: "",
+					description: "A total revamp of my original portfolio website! This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook's \"create-react-app\", which greatly simplies getting started with ReactJS, however I didn't like the idea of not knowing what was going on under the hood. Because of this, I spent a good while figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole.",
 					tools: [
 						{ name: "NodeJS Server Language", img: NodeJSLogo },
 						{ name: "ExpressJS Routing", img: ExpressLogo },
@@ -55,8 +54,7 @@ class ProjectsSpecificDetails extends Component {
 					img: KyleBonarReactWebsite,
 					external: {
 						linkPath: "/",
-						img: LinkOutLogo,
-						name: ""
+						name: "Kyle Bonar ReactJS Portfolio Website"
 					}
 				},
 				{
@@ -77,8 +75,7 @@ class ProjectsSpecificDetails extends Component {
 					img: TamuPhysicsSS,
 					external: {
 						linkPath: "http://physics.tamu.edu",
-						img: LinkOutLogo,
-						name: ""
+						name: "TAMU Physics Website"
 					}
 				},
 				{
@@ -98,9 +95,8 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: TamuAstronomySS,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "http://mitchell.physics.tamu.edu",
+						name: "TAMU Astronomy Website"
 					}
 				},
 				{
@@ -118,9 +114,8 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: KyleBonarOriginalWebsite,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "/",
+						name: "Original Kyle Bonar Website"
 					}
 				},
 				{
@@ -133,16 +128,15 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: CustomWebIcons,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "/",
+						name: "GitHub of Web Icons"
 					}
 				},
 				{
 					urlName: "Classic_Ping_Pong",
 					documentTitleName: "Ping Pong",
 					name: "Classic Ping Pong Application",
-					description: "A classic arcade game brought to you in a browser! This was my first time messing around with JavaScript's canvas method as well as creating an A.I. which acts as the opponent paddle. Users simply need to click on the canvas to start the game, and use the arrow up and down arrow keys to move their paddle. The ball speeds up over time so be careful! This code can be found in my GitHub.",
+					description: "A classic arcade game brought to you in a browser! This was my first time messing around with HTML5's canvas as well as creating a very simple A.I.. Users simply need to click on the canvas to start the game, and use the arrow up and down arrow keys to move their paddle. The ball speeds up over time so be careful! This code can be found in my GitHub.",
 					tools: [
 						{ name: "JavaScript", img: JSLogo },
 						{ name: "HTML5", img: HTML5Logo },
@@ -151,9 +145,8 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: PingPongSS,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "/",
+						name: "Simple Pong Game"
 					}
 				},
 				{
@@ -168,9 +161,8 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: WordCounterSS,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "/",
+						name: "Fun Word Counting Application"
 					}
 				},
 				{
@@ -185,9 +177,8 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: PhyllotaxisSS,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "/",
+						name: "Phyllotaxis Art"
 					}
 				},
 				{
@@ -202,16 +193,15 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: FractalTreesSS,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "/",
+						name: "Fractal Tree Application"
 					}
 				},
 				{
 					urlName: "Double_Pendulum_Vis",
 					documentTitleName: "Double Pendulum",
 					name: "Double Pendulum Visualization",
-					description: "Inspired by my research as a senior in computational physics, the double pendulum is an excellent example of chaos theory. The notion that even the slightest change in initial conditions can lead to a drastic change in the overall outcome of a system is incredibly interesting. This application relies entirely on the browser to run the model and the user can modify the double pendulum by using sliders. This code can be found on my gitHub.",
+					description: "Inspired by my research as a senior in computational physics, the double pendulum is an excellent example of chaos theory. The simplified idea is that even the slightest change in the initial conditions can lead to a drastic change in the overall outcome of a system is incredibly interesting. This application relies entirely on the browser to run the model and the user can modify the double pendulum by using sliders. This code can be found on my gitHub.",
 					tools: [
 						{ name: "JavaScript", img: JSLogo },
 						{ name: "HTML5", img: HTML5Logo },
@@ -219,9 +209,8 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: DoublePendulumSS,
 					external: { 
-						linkPath: "",
-						img: LinkOutLogo,
-						name: ""
+						linkPath: "/",
+						name: "Double Pendulum Visualization"
 					}
 				}
 			]
@@ -274,12 +263,10 @@ class ProjectsSpecificDetails extends Component {
 									<a href={project.external.linkPath} target="_blank" className="project-linkout">		
 									{project.name}
 									
-										<img 
-											src={project.external.img}
-											title={project.external.name}
-											alt={project.external.name}
-											className="external-link"
-										/>
+									<svg vectorEffect="non-scaling-stroke" xmlns="http://www.w3.org/2000/svg" width="29" height="30px" viewBox="0 0 1289 1181">
+										<rect fill="none" x="-1" y="-1" width="1289" height="1181"/>
+										<path d="m1010.4 714.2l0 244q0 91.3-60.5 156.1t-145.7 64.8l-595.9 0q-85.2 0-145.7-64.8t-60.5-156.1l0-638.1q0-91.3 60.5-156.1t145.7-64.8l504.2 0q10 0 16.5 6.9t6.4 17.6l0 49.1q0 10.7-6.4 17.6t-16.5 6.9l-504.2 0q-47.3 0-80.9 36t-33.7 86.7l0 638.1q0 50.6 33.7 86.7t80.9 36l595.9 0q47.3 0 80.9-36t33.7-86.7l0-245.4q0-10.7 6.4-17.6t16.5-6.9l45.8 0q10 0 16.5 6.9t6.4 17.9zm275-662.9l0 392.7q0 19.9-13.6 34.5t-32.2 14.6 -32.2-14.6l-126.1-135 -467 500q-7.2 7.7-16.5 7.7t-16.5-7.7l-81.6-87.4q-7.2-7.7-7.2-17.6t7.2-17.6l467-500 -126.1-135q-13.6-14.6-13.6-34.5t13.6-34.5 32.2-14.6l366.7 0q18.6 0 32.2 14.6t13.6 34.5z" fill="#333"/>
+									</svg>
 									</a>
 								</div>
 
