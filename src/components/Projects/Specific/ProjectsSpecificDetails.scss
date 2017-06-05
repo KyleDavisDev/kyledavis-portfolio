@@ -36,8 +36,9 @@
         .project-title {
             font-size: 30px;
 
-            .project-linkout:hover img {
-                opacity: 0.7;
+            svg {
+                vertical-align: text-top;
+                margin-left: 10px;
             }
         }
         
