@@ -20,9 +20,14 @@ a {
 	color: #333;
 }
 
-a:hover, a.inline-link:hover {
+a:hover, a.inline-link:hover,
+a:focus, a.inline-link:focus {
 	color: #85cfac;
 	/*color: #81a594;*/
+
+	svg path {
+		fill: #85cfac;
+	}
 }
 
 a.active {
