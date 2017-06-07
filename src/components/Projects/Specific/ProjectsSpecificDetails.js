@@ -16,7 +16,7 @@ class ProjectsSpecificDetails extends Component {
 					urlName: "feature_spotlight",
 					documentTitleName: "Feature Sptlight",
 					name: "Feature Spotlight",
-					description: "This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In producation, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
+					description: "A bit recursive, right? This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In producation, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
 					tools: [
 						{ name: "HTML5", img: Logos.HTML5Logo },
 						{ name: "Bootstrap CSS Library", img: Logos.BootstrapLogo },
