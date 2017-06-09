@@ -10,7 +10,7 @@ import ProjectsSpecificDetails from '../Projects/Specific/ProjectsSpecificDetail
 import Resume from '../Resume/Resume.js'
 import Footer from '../Footer/Footer.js'
 
-import ResumeImage from '../../images/Bonar_Kyle_resume.pdf'
+import ResumeImage from '../../images/Bonar_Kyle_Resume_2017_06.pdf'
 
 class App extends React.Component {
 	render() {
