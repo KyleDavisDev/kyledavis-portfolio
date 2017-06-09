@@ -16,7 +16,7 @@ class ProjectsSpecificDetails extends Component {
 					urlName: "feature_spotlight",
 					documentTitleName: "Feature Sptlight",
 					name: "Feature Spotlight",
-					description: "A bit recursive, right? This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In producation, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
+					description: "This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In producation, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
 					tools: [
 						{ name: "HTML5", img: Logos.HTML5Logo },
 						{ name: "Bootstrap CSS Library", img: Logos.BootstrapLogo },
@@ -32,7 +32,7 @@ class ProjectsSpecificDetails extends Component {
 					urlName: "kyle_bonar_react",
 					documentTitleName: "React Portfolio",
 					name: "ReactJS Portfolio",
-					description: "A complete rewrite of my original portfolio website! This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook's \"create-react-app\", which greatly simplies getting started with ReactJS, however I didn't like the idea of not knowing what was going on under the hood. Because of this, I spent a good while figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole.",
+					description: "A bit recursive, right? This porject was a complete rewrite of my original portfolio website. This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook's \"create-react-app\", which greatly simplies getting started with ReactJS, however I much prefer knowing what was going on under the hood. Because of this, I spent a good while figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole.",
 					tools: [
 						{ name: "NodeJS Server Language", img: Logos.NodeJSLogo },
 						{ name: "ExpressJS Routing", img: Logos.ExpressLogo },
