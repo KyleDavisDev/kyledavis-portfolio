@@ -7,7 +7,7 @@ app.use(express.static('dist'));
 // app.set('views', './build');
 
 app.get('/resume', function(req, res) {
-	res.sendFile(`${process.cwd()}/dist/images/Bonar_Kyle_resume.pdf`);
+	res.sendFile(`${process.cwd()}/dist/images/Bonar_Kyle_Resume_2017_06.pdf`);
 });
 
 app.get('*', function(req, res) {
