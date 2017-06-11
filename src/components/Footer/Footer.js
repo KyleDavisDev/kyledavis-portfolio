@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 
 import './Footer.scss'
 
-//Logos
-import GitHubLogo from '../../images/GitHub-logo.png'
-import LinkedInLogo from '../../images/LinkedIn-logo.png'
+import Images, { Logos } from '../Images/Images.js'
 
 class Footer extends Component {
 	render() {
@@ -12,7 +10,7 @@ class Footer extends Component {
 			<div className="footer-container">
 				<a href="https://github.com/KyleBonar" target="_blank">
 					<img 
-						src={GitHubLogo}
+						src={Logos.GitHubLogo}
 						alt="Kyle Bonar GitHub profile"
 						title="Kyle Bonar GitHub profile"
 						className="footer-image"
@@ -20,7 +18,7 @@ class Footer extends Component {
 				</a>
 				<a href="https://www.linkedin.com/in/kyle-bonar-687276126" target="_blank">
 					<img
-						src={LinkedInLogo}
+						src={Logos.GitHubLogo}
 						alt="Kyle Bonar LinkedIn Profile"
 						title="Kyle Bonar LinkedIn Profile"
 						className="footer-image"
