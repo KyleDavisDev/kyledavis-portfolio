@@ -18,7 +18,7 @@ class Footer extends Component {
 				</a>
 				<a href="https://www.linkedin.com/in/kyle-bonar-687276126" target="_blank">
 					<img
-						src={Logos.GitHubLogo}
+						src={Logos.LinkedInLogo}
 						alt="Kyle Bonar LinkedIn Profile"
 						title="Kyle Bonar LinkedIn Profile"
 						className="footer-image"
