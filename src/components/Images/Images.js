@@ -10,11 +10,11 @@ const Images = {
         PingPongSS: require('../../images/PingPong-SS-min.png'),
         TamuAstronomySS: require('../../images/Tamu-Astronomy-SS-min.png'),
         TamuPhysicsSS: require('../../images/Tamu-Physics-SS-min.png'),
-        WordCounterSS: require('../../images/WordCounter-SS-min.png'),
+        WordCounterSS: require('../../images/WordCounter-SS-min.png')
     },
     Logos: {
         AdobeIllustratorLogo: require('../../images/Adobe-Illustrator-CC-Logo.png'),
-        BootstrapLogo: require('../../images/Bootstrap-logo.png'),
+        BootstrapLogo: require('../../images/Bootstrap-Logo.png'),
         CSS3Logo: require('../../images/CSS3-Logo.png'),
         ExpressLogo: require('../../images/ExpressJS-Logo.png'),
         FoundationLogo: require('../../images/Foundation-Logo.png'),
@@ -28,7 +28,7 @@ const Images = {
         PHPLogo: require('../../images/PHP-Logo.png'),
         ReactJSLogo: require('../../images/ReactJS-Logo.png'),
         SassLogo: require('../../images/Sass-Logo.png'),
-        WordPressLogo: require('../../images/Wordpress-Logo.png'),
+        WordPressLogo: require('../../images/Wordpress-Logo.png')
     }
 }
 
