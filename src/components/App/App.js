@@ -15,25 +15,24 @@ import Footer from '../Footer/Footer.js'
 import ResumeImage from '../../images/Bonar_Kyle_Resume_2017_06.pdf'
 
 
-function logPageView() {
+const logPageView = () => {
   ReactGA.set({ page: window.location.pathname + window.location.search });
   ReactGA.pageview(window.location.pathname + window.location.search);
+  return null;
 }
 
 class App extends React.Component {
 	render() {
 		return(
-			<BrowserRouter onUpdate={logPageView}>
+			<BrowserRouter>
 				<div className="container">
-					<Nav />
+					<Route path="/" component={logPageView} />
 
+					<Nav />
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route exact path="/projects" component={Projects} />
 							<Route path="/projects/details" component={ProjectsSpecificDetails} />
-						<Route exact path="/resume" render={ function() {
-							return( <img src={ResumeImage} />)
-						}} />
 						<Route render={ function () {
 							return <p> Page not found. Sorry! </p>
 						}} />
