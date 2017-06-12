@@ -11,8 +11,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
-    publicPath: 'http://localhost:8080/', //Dev server
-	//publicPath: 'http://kylebonar.com/', //Production server
+    //publicPath: 'http://localhost:8080/', //Dev server
+	publicPath: 'https://kylebonar.com/', //Production server
   },
   module: {
 	rules: [
