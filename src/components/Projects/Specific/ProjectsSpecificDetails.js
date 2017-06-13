@@ -134,7 +134,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.PingPongSS,
 					external: { 
-						linkPath: "/doublePend/index.html",
+						linkPath: "/JSGames/doublePend",
 						name: "Simple Pong Game"
 					}
 				},
@@ -150,7 +150,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.WordCounterSS,
 					external: { 
-						linkPath: "/wordCount/index.html",
+						linkPath: "/JSGames/wordCount",
 						name: "Fun Word Counting Application"
 					}
 				},
@@ -166,7 +166,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.PhyllotaxisSS,
 					external: { 
-						linkPath: "/phyllotaxis/index.html",
+						linkPath: "/JSGames/phyllotaxis",
 						name: "Phyllotaxis Art"
 					}
 				},
@@ -182,7 +182,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.FractalTreesSS,
 					external: { 
-						linkPath: "/fractalTrees/index.html",
+						linkPath: "/JSGames/fractalTrees",
 						name: "Fractal Tree Application"
 					}
 				},
@@ -198,7 +198,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.DoublePendulumSS,
 					external: { 
-						linkPath: "/doublePend/index.html",
+						linkPath: "/JSGames/doublePend",
 						name: "Double Pendulum Visualization"
 					}
 				}
