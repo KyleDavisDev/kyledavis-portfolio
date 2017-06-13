@@ -134,7 +134,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.PingPongSS,
 					external: { 
-						linkPath: "/",
+						linkPath: "/doublePend/index.html",
 						name: "Simple Pong Game"
 					}
 				},
@@ -150,7 +150,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.WordCounterSS,
 					external: { 
-						linkPath: "/",
+						linkPath: "/wordCount/index.html",
 						name: "Fun Word Counting Application"
 					}
 				},
@@ -166,7 +166,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.PhyllotaxisSS,
 					external: { 
-						linkPath: "/",
+						linkPath: "/phyllotaxis/index.html",
 						name: "Phyllotaxis Art"
 					}
 				},
@@ -182,7 +182,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.FractalTreesSS,
 					external: { 
-						linkPath: "/",
+						linkPath: "/fractalTrees/index.html",
 						name: "Fractal Tree Application"
 					}
 				},
@@ -198,7 +198,7 @@ class ProjectsSpecificDetails extends Component {
 					],
 					img: Screenshots.DoublePendulumSS,
 					external: { 
-						linkPath: "/",
+						linkPath: "/doublePend/index.html",
 						name: "Double Pendulum Visualization"
 					}
 				}
