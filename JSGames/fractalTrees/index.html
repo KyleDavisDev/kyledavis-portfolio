@@ -1,7 +1,46 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css"  />
+  <style>
+    html body {
+      background-image: url("http://kylebonar.com/images/overlay.png"), url("http://kylebonar.com/images/blue-gradient.jpg");
+      background-repeat: repeat, no-repeat;
+      background-size: auto auto, 100% 100%;
+      background-attachment: fixed;
+    }
+
+    #contentHolder{
+      width: 900px;
+      margin: 0 auto;
+      background: rgb(255, 255, 255) none repeat scroll 0px 0px;
+      border-radius: 6px;
+      box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+      padding: 10px 15px 15px;
+      font-family: "Rubik",sans-serif;
+    }
+
+    #contentHolder h2 {
+      margin-top: 0px;
+    }
+
+    #contentHolder p {
+      font-family: "Rubik",sans-serif;
+      font-weight: 300;
+    }
+
+    #canvasHolder {
+      width:75%;
+      display: inline;
+    }
+
+    #controlHolder {
+      float: left;
+      width: 22%;
+      display: inline;
+      font-weight: 300;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -27,8 +66,130 @@
 </div>
 
 
-<script src='branch.js'></script>
-<script src='fractal.js'></script>
+<script>
+  //branch object
+function Branch(begin_x, begin_y, angle, width, depth) {
+  this.angle = angle; //in deg
+  this.lw    = width - 1; //line width
+  this.depth = depth - 1;
+  this.drawn = false; //only want to draw branch if not already drawn
+  this.hasChildren = false; //does branch have children?kl
+
+
+  this.begin = { x: begin_x, y: begin_y }; //start x and y
+  this.end   = { x: this.begin.x + 0.8 * branch_length.value * this.depth * Math.cos(this.angle * deg2Rad), y: this.begin.y + 0.8 * branch_length.value * this.depth * Math.sin(this.angle * deg2Rad) }; //end x and y
+
+
+  this.show = function() {
+    if(this.depth!=0){
+      canvasArea.beginPath();
+      canvasArea.moveTo(this.begin.x, this.begin.y); //start of line
+      canvasArea.lineTo(this.end.x, this.end.y); //end of line
+      canvasArea.lineWidth = this.lw; //thickness of branch
+      canvasArea.strokeStyle = "white"; //color
+      canvasArea.closePath();
+      canvasArea.stroke();
+    } else {
+      canvasArea.beginPath(); //ball
+      canvasArea.fillStyle = "pink";
+      canvasArea.arc(this.end.x, this.end.y, 5, 0, 2 * Math.PI, false);
+      canvasArea.fill();
+    }
+
+  };
+
+  //every branch should create two branches
+  this.spawnChildLeft = function() {
+    var theta = this.angle - parseInt(left_angle.value);
+    var left = new Branch(this.end.x, this.end.y, theta, this.lw, this.depth);
+    return left;
+  }
+
+  this.spawnChildRight = function() {
+    var phi = this.angle + parseInt(right_angle.value);
+    var right = new Branch(this.end.x, this.end.y, phi, this.lw, this.depth);
+    return right;
+  }
+}
+
+function resetTree() {
+  canvasArea.fillStyle = "rgb(0,0,0)"; //black background
+  canvasArea.fillRect(0,0,canvas.width,canvas.height); //redraw board
+
+  tree.length=0; //reset array
+  tree.push(new Branch(begin.x, begin.y, -90, 9, 9)); //going to iterate over all branches
+  displayTree(); //draw
+}
+
+function displayTree() {
+  for(var i = 0, length = tree.length; i < length; i++) {
+    if(!tree[i].drawn) { //if already drawn then we don't want to draw again
+      tree[i].show();
+      tree[i].drawn = true;
+    }
+  }
+}
+</script>
+
+
+<script>
+  var canvasElement = document.createElement('canvas');
+canvasElement.width = 600;
+canvasElement.height = 600;
+canvasElement.id = "game-canvas";
+document.getElementById("canvasHolder").appendChild(canvasElement);
+canvas = document.getElementById("game-canvas");
+canvasArea = canvas.getContext('2d');
+canvasArea.fillStyle = "rgb(0,0,0)"; //board
+canvasArea.fillRect(0,0,canvas.width,canvas.height);
+
+var begin = { x: canvas.width / 2, y: canvas.height}; //start middle bottom
+var tree = []; //store all branches
+var deg2Rad = Math.PI / 180.0;
+
+var branch_length = document.getElementById("branch_length");//slider
+var right_angle = document.getElementById("right_angle");//slider
+var left_angle = document.getElementById("left_angle");//slider
+
+var branch_length_val = document.getElementById("branch_length_val");//span
+var right_angle_val = document.getElementById("right_angle_val");//span
+var left_angle_val = document.getElementById("left_angle_val");//span
+
+branch_length_val.innerHTML = branch_length.value
+right_angle_val.innerHTML = right_angle.value
+left_angle_val.innerHTML = left_angle.value
+
+tree.push(new Branch(begin.x, begin.y, -90, 9, 9)); //going to iterate over all branches
+displayTree();
+
+//section for event listeners
+document.getElementById("reset_tree").addEventListener("click", resetTree);
+
+branch_length.addEventListener("change", function(){
+  branch_length_val.innerHTML = this.value;
+});
+
+right_angle.addEventListener("change", function(){
+  right_angle_val.innerHTML = this.value;
+});
+
+left_angle.addEventListener("change", function(){
+  left_angle_val.innerHTML = this.value;
+});
+
+canvas.addEventListener("click", function(e) {
+  for(var i = tree.length-1; i >= 0; i--) {
+    if(!tree[i].hasChildren && tree[i].depth!=0) {
+      tree.push(tree[i].spawnChildLeft()); //spawn left and push into array
+      tree.push(tree[i].spawnChildRight()); //spawn right and push into array
+      tree[i].hasChildren = true; //now branch has children
+    }
+  }
+  displayTree();
+});
+
+
+</script>
 
 </body>
 
