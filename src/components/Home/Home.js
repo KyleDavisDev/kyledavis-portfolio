@@ -24,7 +24,6 @@ class Home extends React.Component {
           I primarily focus on the front-end, I like to make pixel-perfect,
           minimalistic designs, but I also enjoy working with databases and
           server logic.
-          {" "}
         </p>
 
         <p>
