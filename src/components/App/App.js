@@ -1,47 +1,51 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import ReactGA from 'react-ga'
-ReactGA.initialize('UA-100074461-1')
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-100074461-1");
 
-import './App.scss'
+import "./App.scss";
 
-import Nav from '../Navigation/Nav.js'
-import Home from '../Home/Home.js'
-import Projects from '../Projects/All/Projects.js'
-import ProjectsSpecificDetails from '../Projects/Specific/ProjectsSpecificDetails.js'
-import Resume from '../Resume/Resume.js'
-import Footer from '../Footer/Footer.js'
+import Nav from "../Navigation/Nav.js";
+import Home from "../Home/Home.js";
+import Projects from "../Projects/All/Projects.js";
+import ProjectsSpecificDetails from "../Projects/Specific/ProjectsSpecificDetails.js";
+import Resume from "../Resume/Resume.js";
+import Footer from "../Footer/Footer.js";
 
-import ResumeImage from '../../images/Bonar_Kyle_Resume_2017_06.pdf'
-
+import ResumeImage from "../../images/Bonar_Kyle_Resume_2017_06.pdf";
 
 const logPageView = () => {
   ReactGA.set({ page: window.location.pathname + window.location.search });
   ReactGA.pageview(window.location.pathname + window.location.search);
   return null;
-}
+};
 
 class App extends React.Component {
-	render() {
-		return(
-			<BrowserRouter>
-				<div className="container">
-					<Route path="/" component={logPageView} />
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="container">
+          <Route path="/" component={logPageView} />
 
-					<Nav />
-					<Switch>
-						<Route exact path="/" component={Home} />
-						<Route exact path="/projects" component={Projects} />
-							<Route path="/projects/details" component={ProjectsSpecificDetails} />
-						<Route render={ function () {
-							return <p> Page not found. Sorry! </p>
-						}} />
-					</Switch>
-					<Footer />
-				</div>
-			</BrowserRouter>
-		)
-	}
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/projects" component={Projects} />
+            <Route
+              path="/projects/details"
+              component={ProjectsSpecificDetails}
+            />
+            <Route
+              render={function() {
+                return <p> Page not found. Sorry! </p>;
+              }}
+            />
+          </Switch>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
-module.exports = App
+module.exports = App;
