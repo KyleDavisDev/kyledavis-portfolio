@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "prod": "rm -rf dist/ && webpack -p"
+    "prod": "rm -rf dist/ && webpack -p && cp favicon.ico dist/"
   },
   "author": "Kyle Bonar",
   "license": "ISC",
