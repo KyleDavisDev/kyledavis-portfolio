@@ -17,7 +17,7 @@ class ProjectsSpecificDetails extends Component {
           documentTitleName: "Feature Sptlight",
           name: "Feature Spotlight",
           description:
-            "This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In producation, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
+            "This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness, which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In production, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
           tools: [
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "Bootstrap CSS Library", img: Logos.BootstrapLogo },
@@ -35,7 +35,7 @@ class ProjectsSpecificDetails extends Component {
           documentTitleName: "React Portfolio",
           name: "ReactJS Portfolio",
           description:
-            'A bit recursive, right? This porject was a complete rewrite of my original portfolio website. This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook\'s "create-react-app", which greatly simplies getting started with ReactJS, however I much prefer knowing what was going on under the hood. Because of this, I spent a good bit of time figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole. Another awesome aspect of this project is scoring an "A+" in security, which is the highest score, from SSL Labs!',
+            'A bit recursive, right? This project was a complete rewrite of my original portfolio website. This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook\'s "create-react-app", which greatly simplifies getting started with ReactJS, however I much prefer knowing what was going on under the hood. Because of this, I spent a good bit of time figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole. Another awesome aspect of this project is scoring an "A+" in security, which is the highest score, from SSL Labs!',
           tools: [
             { name: "NodeJS Server Language", img: Logos.NodeJSLogo },
             { name: "ExpressJS Routing", img: Logos.ExpressLogo },
@@ -76,7 +76,7 @@ class ProjectsSpecificDetails extends Component {
           documentTitleName: "TAMU Astronomy",
           name: "Texas A&M Astronomy Website",
           description:
-            "As a student Web Development Assistant, I worked on a small team to recreate the Astronomy Department's home domain. We were responsible for migrating years of static content into a MySQL database, for both easier managment and record keeping, while also ensuring that every page be responsive. Several custom Wordpress themes were developed for this project and are actively maintained today.",
+            "As a student Web Development Assistant, I worked on a small team to recreate the Astronomy Department's home domain. We were responsible for migrating years of static content into a MySQL database, for both easier management and record keeping, while also ensuring that every page be responsive. Several custom Wordpress themes were developed for this project and are actively maintained today.",
           tools: [
             { name: "PHP 5.4 Server Language", img: Logos.PHPLogo },
             { name: "Wordpress", img: Logos.WordPressLogo },
@@ -98,7 +98,7 @@ class ProjectsSpecificDetails extends Component {
           documentTitleName: "Original Website",
           name: "Kyle Bonar First Personal Website",
           description:
-            "When I started this project, I simply wanted to show off some projects that I had built, I had no idea the steps involved to put a website out on the internet. Starting from scratch, I had to configure a fresh server, install all of the propor tools, register and connect to the proper domain name, and impliment security protocols. Luckily, with enough documentation and triple-checking each and every step, I was able to create this all my own. The webpage may not be the most visually appealing thing but I am incredibly proud of myself for sticking it out, and not getting overwhelmed by the immense challenge. Lastly, this project was built on the LEMP stack although, as it stands, is mostly just a static webpage.",
+            "When I started this project, I simply wanted to show off some projects that I had built, I had no idea the steps involved to put a website out on the internet. Starting from scratch, I had to configure a fresh server, install all of the proper tools, register and connect to the proper domain name, and implement security protocols. Luckily, with enough documentation and triple-checking each and every step, I was able to create this all my own. The webpage may not be the most visually appealing thing but I am incredibly proud of myself for sticking it out, and not getting overwhelmed by the immense challenge. Lastly, this project was built on the LEMP stack although, as it stands, is mostly just a static webpage.",
           tools: [
             { name: "Linux Server Language", img: Logos.LinuxLogo },
             { name: "Nginx Web Server", img: Logos.NginxLogo },
@@ -118,7 +118,7 @@ class ProjectsSpecificDetails extends Component {
           documentTitleName: "Adobe Illustrator Web Icons",
           name: "Adobe Illustrator Web Icons",
           description:
-            "As a UI/UX Developer for The University of Texas at San Antonio, I have spent a fair amount of time inside of the Adobe Suite. In doing so, I have created many icons, logos, and document designs which are currently being used across UTSA including UTSA Mobile App itself. I have also grown more comfortable in optimizing high resolution images into a more web appropriate form to increase page load times and to decrease page load sizes.",
+            "As a UI/UX Developer for The University of Texas at San Antonio, I have spent a fair amount of time inside of the Adobe Suite. In doing so, I have created many icons, logos, and document designs which are currently being used across UTSA including UTSA Mobile App itself. I have also grown more comfortable in optimizing high-resolution images into a more web appropriate form to increase page load times and to decrease page load sizes.",
           tools: [
             { name: "Adobe Illustrator CC", img: Logos.AdobeIllustratorLogo }
           ],
@@ -126,23 +126,6 @@ class ProjectsSpecificDetails extends Component {
           external: {
             linkPath: "https://github.com/KyleBonar/utsa-icons",
             name: "GitHub of Web Icons"
-          }
-        },
-        {
-          urlName: "Classic_Ping_Pong",
-          documentTitleName: "Ping Pong",
-          name: "Classic Ping Pong Application",
-          description:
-            "A classic arcade game brought to you in a browser! This was my first time messing around with HTML5's canvas as well as creating a very simple A.I.. Users simply need to click on the canvas to start the game, and use the arrow up and down arrow keys to move their paddle. The ball speeds up over time so be careful! This code can be found in my GitHub.",
-          tools: [
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "CSS3", img: Logos.CSS3Logo }
-          ],
-          img: Screenshots.PingPongSS,
-          external: {
-            linkPath: "/JSGames/doublePend",
-            name: "Simple Pong Game"
           }
         },
         {
@@ -211,6 +194,23 @@ class ProjectsSpecificDetails extends Component {
           external: {
             linkPath: "/JSGames/doublePend",
             name: "Double Pendulum Visualization"
+          }
+        },
+        {
+          urlName: "Classic_Ping_Pong",
+          documentTitleName: "Ping Pong",
+          name: "Classic Ping Pong Application",
+          description:
+            "A classic arcade game brought to you in a browser! This was my first time messing around with HTML5's canvas as well as creating a very simple A.I.. Users simply need to click on the canvas to start the game, and use the arrow up and down arrow keys to move their paddle. The ball speeds up over time so be careful! This code can be found in my GitHub.",
+          tools: [
+            { name: "JavaScript", img: Logos.JSLogo },
+            { name: "HTML5", img: Logos.HTML5Logo },
+            { name: "CSS3", img: Logos.CSS3Logo }
+          ],
+          img: Screenshots.PingPongSS,
+          external: {
+            linkPath: "/JSGames/doublePend",
+            name: "Simple Pong Game"
           }
         }
       ]
