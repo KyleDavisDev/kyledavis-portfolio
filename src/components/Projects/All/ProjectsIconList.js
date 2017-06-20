@@ -46,12 +46,6 @@ class ProjectsIconList extends Component {
           linkURL: "illustrator_web_icons"
         },
         {
-          displayName: "Classic Ping Pong",
-          img: Screenshots.PingPongSS,
-          title: "Ping Pong Game",
-          linkURL: "Classic_Ping_Pong"
-        },
-        {
           displayName: "Word Counting App",
           img: Screenshots.WordCounterSS,
           title: "Word Counting App",
@@ -74,6 +68,12 @@ class ProjectsIconList extends Component {
           img: Screenshots.DoublePendulumSS,
           title: "Double Pendulum Visualization",
           linkURL: "Double_Pendulum_Vis"
+        },
+        {
+          displayName: "Classic Ping Pong",
+          img: Screenshots.PingPongSS,
+          title: "Ping Pong Game",
+          linkURL: "Classic_Ping_Pong"
         }
       ]
     };
