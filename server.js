@@ -3,6 +3,7 @@ var app = express();
 
 
 app.use(express.static('dist'));
+app.use(express.static('KyleBonar_2015/'));
 // app.use(express.static('src/images'));
 // app.set('views', './build');
 
