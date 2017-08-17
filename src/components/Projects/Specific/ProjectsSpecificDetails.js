@@ -109,7 +109,7 @@ class ProjectsSpecificDetails extends Component {
           ],
           img: Screenshots.KyleBonarOriginalWebsite,
           external: {
-            linkPath: "/KyleBonar_2015/",
+            linkPath: "/KyleBonar_2015",
             name: "Original Kyle Bonar Website"
           }
         },
