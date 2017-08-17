@@ -27,6 +27,9 @@ app.get('/JSGames/pong', function(req, res) {
 app.get('/JSGames/wordCount', function(req, res) {
 	res.sendFile(`${process.cwd()}/JSGames/wordCount/index.html`)
 })
+app.get('/KyleBonar_2015/', function(req, res) {
+	res.sendFile(`${process.cwd()}/KyleBonar_2015/index.html`)
+})
 
 
 //rest will fall here and be handled by react app
