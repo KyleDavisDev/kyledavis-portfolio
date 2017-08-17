@@ -31,7 +31,6 @@ app.get('/KyleBonar_2015', function(req, res) {
 	res.sendFile(`${process.cwd()}/KyleBonar_2015/index.html`)
 })
 
-
 //rest will fall here and be handled by react app
 app.get('*', function(req, res) {
 	res.sendFile(`${process.cwd()}/dist/index.html`);
