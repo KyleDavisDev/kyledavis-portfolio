@@ -9,7 +9,7 @@ app.use(express.static('KyleBonar_2015/'));
 
 //Send Resume
 app.get('/resume', function(req, res) {
-	res.sendFile(`${process.cwd()}/dist/images/Bonar_Kyle_Resume_2017_09.pdf`);
+	res.sendFile(`${process.cwd()}/dist/images/Bonar_Kyle_2017_09.pdf`);
 });
 
 //Send specific JavaScript game
