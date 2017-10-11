@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Resume.scss";
 
-import ResumeImage from "../../images/Bonar_Kyle_resume.pdf";
+const ResumeImage = require("../../images/Bonar_Kyle_2017_09.pdf");
 
 class Resume extends React.Component {
   componentDidMount() {

@@ -12,7 +12,7 @@ import ProjectsSpecificDetails from "../Projects/Specific/ProjectsSpecificDetail
 import Resume from "../Resume/Resume.js";
 import Footer from "../Footer/Footer.js";
 
-import ResumeImage from "../../images/Bonar_Kyle_2017_06.pdf";
+const ResumeImage = require("../../images/Bonar_Kyle_2017_09.pdf");
 
 const logPageView = () => {
   ReactGA.set({ page: window.location.pathname + window.location.search });
