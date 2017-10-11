@@ -252,9 +252,8 @@ class ProjectsSpecificDetails extends Component {
             return (
               <div key="project.name" className="specific">
                 <div className="left image-holder">
-                  {console.log(project.img)}
                   <img
-                    src={project.img}
+                    src={`/${project.img}`}
                     className="specific-image"
                     title={project.imageTitle}
                   />
