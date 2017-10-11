@@ -12,20 +12,6 @@ const Images = {
     TamuPhysicsSS: require("../../images/Tamu-Physics-SS-min.png"),
     WordCounterSS: require("../../images/WordCounter-SS-min.png")
   },
-  Specific: {
-    CustomWebIcons: "../../../images/Custom-Icons-SS-min.png",
-    CustomWebIcons: "../../../images/Custom-Icons-SS-min.png",
-    DoublePendulumSS: "/../../../images/DoublePendulum-SS-min.png",
-    FeatureSpotlight: "/../../../images/FeatureSpotlight-SS-min.png",
-    FractalTreesSS: "/../../../images/FractalTrees-SS-min.png",
-    KyleBonarReactWebsite: "/../../../images/KyleBonarReactWebsite-SS-min.png",
-    KyleBonarOriginalWebsite: "/../../../images/KyleBonarOriginalWebsite-SS-min.png",
-    PhyllotaxisSS: "/../../../images/Phyllotaxis-SS-min.png",
-    PingPongSS: "/../../../images/PingPong-SS-min.png",
-    TamuAstronomySS: "/../../../images/Tamu-Astronomy-SS-min.png",
-    TamuPhysicsSS: "/../../../images/Tamu-Physics-SS-min.png",
-    WordCounterSS: "/../../../images/WordCounter-SS-min.png"
-  },
   Logos: {
     AdobeIllustratorLogo: require("../../images/Adobe-Illustrator-CC-Logo.png"),
     BootstrapLogo: require("../../images/Bootstrap-Logo.png"),

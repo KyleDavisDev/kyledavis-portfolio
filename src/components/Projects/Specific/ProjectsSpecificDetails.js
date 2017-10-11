@@ -3,11 +3,11 @@ import QueryString from "query-string";
 
 import "./ProjectsSpecificDetails.scss";
 
-import Images, { Specific, Logos } from "../../Images/Images.js";
+import Images, { Screenshots, Logos } from "../../Images/Images.js";
 
 class ProjectsSpecificDetails extends Component {
-	constructor(props) {
-		super(props);
+  constructor(props) {
+    super(props);
 
     this.state = {
       name: "",
@@ -23,7 +23,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "Bootstrap CSS Library", img: Logos.BootstrapLogo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.FeatureSpotlight}`),
+          img: Screenshots.FeatureSpotlight,
           external: {
             linkPath:
               "https://crane.it.utsa.edu:8443/resources/appSpotlight/dining/index.html",
@@ -43,7 +43,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "Sass CSS", img: Logos.SassLogo }
           ],
-          img: require(`${Specific.KyleBonarReactWebsite}`),
+          img: Screenshots.KyleBonarReactWebsite,
           external: {
             linkPath: "/",
             name: "Kyle Bonar ReactJS Portfolio Website"
@@ -65,7 +65,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "Foundation Zurb CSS library", img: Logos.FoundationLogo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.TamuPhysicsSS}`),
+          img: Screenshots.TamuPhysicsSS,
           external: {
             linkPath: "http://physics.tamu.edu",
             name: "TAMU Physics Website"
@@ -87,7 +87,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "Foundation Zurb CSS library", img: Logos.FoundationLogo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.TamuAstronomySS}`),
+          img: Screenshots.TamuAstronomySS,
           external: {
             linkPath: "http://mitchell.physics.tamu.edu",
             name: "TAMU Astronomy Website"
@@ -107,7 +107,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.KyleBonarOriginalWebsite}`),
+          img: Screenshots.KyleBonarOriginalWebsite,
           external: {
             linkPath: "/KyleBonar_2015",
             name: "Original Kyle Bonar Website"
@@ -122,7 +122,7 @@ class ProjectsSpecificDetails extends Component {
           tools: [
             { name: "Adobe Illustrator CC", img: Logos.AdobeIllustratorLogo }
           ],
-          img: require(`${Specific.CustomWebIcons}`),
+          img: Screenshots.CustomWebIcons,
           external: {
             linkPath: "https://github.com/KyleBonar/utsa-icons",
             name: "GitHub of Web Icons"
@@ -139,7 +139,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.WordCounterSS}`),
+          img: Screenshots.WordCounterSS,
           external: {
             linkPath: "/JSGames/wordCount",
             name: "Fun Word Counting Application"
@@ -156,7 +156,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.PhyllotaxisSS}`),
+          img: Screenshots.PhyllotaxisSS,
           external: {
             linkPath: "/JSGames/phyllotaxis",
             name: "Phyllotaxis Art"
@@ -173,7 +173,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.FractalTreesSS}`),
+          img: Screenshots.FractalTreesSS,
           external: {
             linkPath: "/JSGames/fractalTrees",
             name: "Fractal Tree Application"
@@ -190,7 +190,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.DoublePendulumSS}`),
+          img: Screenshots.DoublePendulumSS,
           external: {
             linkPath: "/JSGames/doublePend",
             name: "Double Pendulum Visualization"
@@ -207,7 +207,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(`${Specific.PingPongSS}`),
+          img: Screenshots.PingPongSS,
           external: {
             linkPath: "/JSGames/doublePend",
             name: "Simple Pong Game"
@@ -217,109 +217,108 @@ class ProjectsSpecificDetails extends Component {
     };
   }
 
-	//before render()
-	componentWillMount() {
-		//grab query string from URL, and make lower case
-		let urlString = QueryString.parse(this.props.location.search);
-		urlString = urlString.title.toLowerCase();
+  //before render()
+  componentWillMount() {
+    //grab query string from URL, and make lower case
+    let urlString = QueryString.parse(this.props.location.search);
+    urlString = urlString.title.toLowerCase();
 
-		this.setState({
-			name: urlString
-		});
-	}
+    this.setState({
+      name: urlString
+    });
+  }
 
-	//after render()
-	componentDidMount() {
-		//match url query with specific entry in the state data
-		let activeProject = this.state.allProjects
-			.filter(project => {
-				return this.state.name === project.urlName.toLowerCase();
-			})
-			.map(project => {
-				return project.documentTitleName;
-			});
-		document.title = "Kyle Bonar - " + activeProject;
-	}
+  //after render()
+  componentDidMount() {
+    //match url query with specific entry in the state data
+    let activeProject = this.state.allProjects
+      .filter(project => {
+        return this.state.name === project.urlName.toLowerCase();
+      })
+      .map(project => {
+        return project.documentTitleName;
+      });
+    document.title = "Kyle Bonar - " + activeProject;
+  }
 
-	render() {
-		return (
-			<div className="project-specific-container">
-				{this.state.allProjects
-					.filter(project => {
-						return this.state.name === project.urlName.toLowerCase();
-					})
-					.map(project => {
-						return (
-							<div key="project.name" className="specific">
-								<div className="left image-holder">
-									<img
-										src={project.img}
-										className="specific-image"
-										title={project.imageTitle}
-									/>
-								</div>
+  render() {
+    return (
+      <div className="project-specific-container">
+        {this.state.allProjects
+          .filter(project => {
+            return this.state.name === project.urlName.toLowerCase();
+          })
+          .map(project => {
+            return (
+              <div key="project.name" className="specific">
+                <div className="left image-holder">
+                  {console.log(project.img)}
+                  <img
+                    src={project.img}
+                    className="specific-image"
+                    title={project.imageTitle}
+                  />
+                </div>
 
-								<div className="right text-holder">
-									<div className="project-title droid-bold">
-										<a
-											href={project.external.linkPath}
-											target="_blank"
-											className="project-linkout"
-										>
-											{project.name}
+                <div className="right text-holder">
+                  <div className="project-title droid-bold">
+                    <a
+                      href={project.external.linkPath}
+                      target="_blank"
+                      className="project-linkout"
+                    >
+                      {project.name}
 
-											<svg
-												vectorEffect="non-scaling-stroke"
-												xmlns="http://www.w3.org/2000/svg"
-												width="29"
-												height="30px"
-												viewBox="0 0 1289 1181"
-											>
-												<rect
-													fill="none"
-													x="-1"
-													y="-1"
-													width="1289"
-													height="1181"
-												/>
-												<path
-													d="m1010.4 714.2l0 244q0 91.3-60.5 156.1t-145.7 64.8l-595.9 0q-85.2 0-145.7-64.8t-60.5-156.1l0-638.1q0-91.3 60.5-156.1t145.7-64.8l504.2 0q10 0 16.5 6.9t6.4 17.6l0 49.1q0 10.7-6.4 17.6t-16.5 6.9l-504.2 0q-47.3 0-80.9 36t-33.7 86.7l0 638.1q0 50.6 33.7 86.7t80.9 36l595.9 0q47.3 0 80.9-36t33.7-86.7l0-245.4q0-10.7 6.4-17.6t16.5-6.9l45.8 0q10 0 16.5 6.9t6.4 17.9zm275-662.9l0 392.7q0 19.9-13.6 34.5t-32.2 14.6 -32.2-14.6l-126.1-135 -467 500q-7.2 7.7-16.5 7.7t-16.5-7.7l-81.6-87.4q-7.2-7.7-7.2-17.6t7.2-17.6l467-500 -126.1-135q-13.6-14.6-13.6-34.5t13.6-34.5 32.2-14.6l366.7 0q18.6 0 32.2 14.6t13.6 34.5z"
-													fill="#333"
-												/>
-											</svg>
-										</a>
-									</div>
+                      <svg
+                        vectorEffect="non-scaling-stroke"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="29"
+                        height="30px"
+                        viewBox="0 0 1289 1181"
+                      >
+                        <rect
+                          fill="none"
+                          x="-1"
+                          y="-1"
+                          width="1289"
+                          height="1181"
+                        />
+                        <path
+                          d="m1010.4 714.2l0 244q0 91.3-60.5 156.1t-145.7 64.8l-595.9 0q-85.2 0-145.7-64.8t-60.5-156.1l0-638.1q0-91.3 60.5-156.1t145.7-64.8l504.2 0q10 0 16.5 6.9t6.4 17.6l0 49.1q0 10.7-6.4 17.6t-16.5 6.9l-504.2 0q-47.3 0-80.9 36t-33.7 86.7l0 638.1q0 50.6 33.7 86.7t80.9 36l595.9 0q47.3 0 80.9-36t33.7-86.7l0-245.4q0-10.7 6.4-17.6t16.5-6.9l45.8 0q10 0 16.5 6.9t6.4 17.9zm275-662.9l0 392.7q0 19.9-13.6 34.5t-32.2 14.6 -32.2-14.6l-126.1-135 -467 500q-7.2 7.7-16.5 7.7t-16.5-7.7l-81.6-87.4q-7.2-7.7-7.2-17.6t7.2-17.6l467-500 -126.1-135q-13.6-14.6-13.6-34.5t13.6-34.5 32.2-14.6l366.7 0q18.6 0 32.2 14.6t13.6 34.5z"
+                          fill="#333"
+                        />
+                      </svg>
+                    </a>
+                  </div>
 
-									<div className="project-description">
-										<h2>Description</h2>
-										<p>
-											{project.description}
-										</p>
-									</div>
+                  <div className="project-description">
+                    <h2>Description</h2>
+                    <p>{project.description}</p>
+                  </div>
 
-									<div className="project-technologies">
-										<h2>Tools</h2>
-										<p>
-											{project.tools.map(tool => {
-												return (
-													<img
-														key={tool.name}
-														src={tool.img}
-														className="technology-image"
-														title={tool.name}
-														alt={tool.name}
-													/>
-												);
-											})}
-										</p>
-									</div>
-								</div>
-							</div>
-						);
-					})}
-			</div>
-		);
-	}
+                  <div className="project-technologies">
+                    <h2>Tools</h2>
+                    <p>
+                      {project.tools.map(tool => {
+                        return (
+                          <img
+                            key={tool.name}
+                            src={tool.img}
+                            className="technology-image"
+                            title={tool.name}
+                            alt={tool.name}
+                          />
+                        );
+                      })}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+      </div>
+    );
+  }
 }
 
 module.exports = ProjectsSpecificDetails;
