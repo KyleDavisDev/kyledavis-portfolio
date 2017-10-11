@@ -12,6 +12,19 @@ const Images = {
         TamuPhysicsSS: require('../../images/Tamu-Physics-SS-min.png'),
         WordCounterSS: require('../../images/WordCounter-SS-min.png')
     },
+    Specific: {
+        CustomWebIcons: require('/images/Custom-Icons-SS-min.png'),
+        DoublePendulumSS: require('/images/DoublePendulum-SS-min.png'),
+        FeatureSpotlight: require('/images/FeatureSpotlight-SS-min.png'),
+        FractalTreesSS: require('/images/FractalTrees-SS-min.png'),
+        KyleBonarReactWebsite: require('/images/KyleBonarReactWebsite-SS-min.png'),
+        KyleBonarOriginalWebsite: require('/images/KyleBonarOriginalWebsite-SS-min.png'),
+        PhyllotaxisSS: require('/images/Phyllotaxis-SS-min.png'),
+        PingPongSS: require('/images/PingPong-SS-min.png'),
+        TamuAstronomySS: require('/images/Tamu-Astronomy-SS-min.png'),
+        TamuPhysicsSS: require('/images/Tamu-Physics-SS-min.png'),
+        WordCounterSS: require('/images/WordCounter-SS-min.png')
+    },
     Logos: {
         AdobeIllustratorLogo: require('../../images/Adobe-Illustrator-CC-Logo.png'),
         BootstrapLogo: require('../../images/Bootstrap-Logo.png'),
