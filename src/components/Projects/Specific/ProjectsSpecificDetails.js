@@ -23,7 +23,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "Bootstrap CSS Library", img: Logos.BootstrapLogo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.FeatureSpotlight),
+          img: require(`${Specific.FeatureSpotlight}`),
           external: {
             linkPath:
               "https://crane.it.utsa.edu:8443/resources/appSpotlight/dining/index.html",
@@ -43,7 +43,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "Sass CSS", img: Logos.SassLogo }
           ],
-          img: require(Specific.KyleBonarReactWebsite),
+          img: require(`${Specific.KyleBonarReactWebsite}`),
           external: {
             linkPath: "/",
             name: "Kyle Bonar ReactJS Portfolio Website"
@@ -65,7 +65,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "Foundation Zurb CSS library", img: Logos.FoundationLogo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.TamuPhysicsSS),
+          img: require(`${Specific.TamuPhysicsSS}`),
           external: {
             linkPath: "http://physics.tamu.edu",
             name: "TAMU Physics Website"
@@ -87,7 +87,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "Foundation Zurb CSS library", img: Logos.FoundationLogo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.TamuAstronomySS),
+          img: require(`${Specific.TamuAstronomySS}`),
           external: {
             linkPath: "http://mitchell.physics.tamu.edu",
             name: "TAMU Astronomy Website"
@@ -107,7 +107,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.KyleBonarOriginalWebsite),
+          img: require(`${Specific.KyleBonarOriginalWebsite}`),
           external: {
             linkPath: "/KyleBonar_2015",
             name: "Original Kyle Bonar Website"
@@ -122,7 +122,7 @@ class ProjectsSpecificDetails extends Component {
           tools: [
             { name: "Adobe Illustrator CC", img: Logos.AdobeIllustratorLogo }
           ],
-          img: require(Specific.CustomWebIcons),
+          img: require(`${Specific.CustomWebIcons}`),
           external: {
             linkPath: "https://github.com/KyleBonar/utsa-icons",
             name: "GitHub of Web Icons"
@@ -139,7 +139,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.WordCounterSS),
+          img: require(`${Specific.WordCounterSS}`),
           external: {
             linkPath: "/JSGames/wordCount",
             name: "Fun Word Counting Application"
@@ -156,7 +156,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.PhyllotaxisSS),
+          img: require(`${Specific.PhyllotaxisSS}`),
           external: {
             linkPath: "/JSGames/phyllotaxis",
             name: "Phyllotaxis Art"
@@ -173,7 +173,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.FractalTreesSS),
+          img: require(`${Specific.FractalTreesSS}`),
           external: {
             linkPath: "/JSGames/fractalTrees",
             name: "Fractal Tree Application"
@@ -190,7 +190,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.DoublePendulumSS),
+          img: require(`${Specific.DoublePendulumSS}`),
           external: {
             linkPath: "/JSGames/doublePend",
             name: "Double Pendulum Visualization"
@@ -207,7 +207,7 @@ class ProjectsSpecificDetails extends Component {
             { name: "HTML5", img: Logos.HTML5Logo },
             { name: "CSS3", img: Logos.CSS3Logo }
           ],
-          img: require(Specific.PingPongSS),
+          img: require(`${Specific.PingPongSS}`),
           external: {
             linkPath: "/JSGames/doublePend",
             name: "Simple Pong Game"
