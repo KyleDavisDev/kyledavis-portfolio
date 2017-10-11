@@ -302,7 +302,7 @@ class ProjectsSpecificDetails extends Component {
                         return (
                           <img
                             key={tool.name}
-                            src={tool.img}
+                            src={`/${tool.img}`}
                             className="technology-image"
                             title={tool.name}
                             alt={tool.name}
