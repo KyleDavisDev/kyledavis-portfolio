@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Images, { Screenshots } from "../../Images/Images.js";
 
@@ -82,14 +82,11 @@ class ProjectsIconList extends Component {
   render() {
     return (
       <div className="projects-icon-list-container">
-        {this.state.cards.map(icon =>
-          <NavLink
+        {this.state.cards.map(icon => (
+          <Link
             key={icon.displayName}
             className="project-card"
-            to={{
-              pathname: this.props.match.url + "/details",
-              search: "?title=" + icon.linkURL
-            }}
+            to={`${this.props.match.url}/details/${icon.linkURL}`}
           >
             <img
               src={icon.img}
@@ -98,9 +95,8 @@ class ProjectsIconList extends Component {
               alt={icon.title}
             />
             {icon.displayName}
-          </NavLink>
-        )}
-
+          </Link>
+        ))}
       </div>
     );
   }
