@@ -32,7 +32,8 @@ class App extends React.Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
             <Route
-              path="/projects/details"
+              exact
+              path="/projects/details/:title"
               component={ProjectsSpecificDetails}
             />
             <Route
