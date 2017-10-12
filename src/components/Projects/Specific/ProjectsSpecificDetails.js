@@ -19,11 +19,11 @@ class ProjectsSpecificDetails extends Component {
           description:
             "This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness, which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In production, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
           tools: [
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "Bootstrap CSS Library", img: Logos.BootstrapLogo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "Bootstrap CSS Library", img: require("../../../images/Bootstrap-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.FeatureSpotlight,
+          img: require("../../../images/FeatureSpotlight-SS-min.png"),
           external: {
             linkPath:
               "https://crane.it.utsa.edu:8443/resources/appSpotlight/dining/index.html",
@@ -37,13 +37,13 @@ class ProjectsSpecificDetails extends Component {
           description:
             'A bit recursive, right? This project was a complete rewrite of my original portfolio website. This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook\'s "create-react-app", which greatly simplifies getting started with ReactJS, however I much prefer knowing what was going on under the hood. Because of this, I spent a good bit of time figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole. Another awesome aspect of this project is scoring an "A+" in security, which is the highest score, from SSL Labs!',
           tools: [
-            { name: "NodeJS Server Language", img: Logos.NodeJSLogo },
-            { name: "ExpressJS Routing", img: Logos.ExpressLogo },
-            { name: "ReactJS Library", img: Logos.ReactJSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "Sass CSS", img: Logos.SassLogo }
+            { name: "NodeJS Server Language", img: require("../../../images/NodeJS-Logo.png") },
+            { name: "ExpressJS Routing", img: require("../../../images/ExpressJS-Logo.png") },
+            { name: "ReactJS Library", img: require("../../../images/ReactJS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "Sass CSS", img: require("../../../images/Sass-Logo.png") }
           ],
-          img: Screenshots.KyleBonarReactWebsite,
+          img: require("../../../images/KyleBonarReactWebsite-SS-min.png"),
           external: {
             linkPath: "/",
             name: "Kyle Bonar ReactJS Portfolio Website"
@@ -56,16 +56,16 @@ class ProjectsSpecificDetails extends Component {
           description:
             "In just two short months, the Physics Department's website was given a massive overhaul. Everything from choosing a new server host, to updating the backend logic and databases, to making the design responsive, to providing the staff and faculty members a practical way to update and manage content throughout the site. On a massive team of exactly two people, I played a huge role in getting this project up and running.",
           tools: [
-            { name: "PHP 5.4 Server Language", img: Logos.PHPLogo },
-            { name: "Wordpress", img: Logos.WordPressLogo },
-            { name: "MySQL database", img: Logos.MySQLLogo },
-            { name: "JQuery JavaScript library", img: Logos.JQueryLogo },
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "Foundation Zurb CSS library", img: Logos.FoundationLogo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "PHP 5.4 Server Language", img: require("../../../images/PHP-Logo.png") },
+            { name: "Wordpress", img: require("../../../images/Wordpress-Logo.png") },
+            { name: "MySQL database", img: require("../../../images/MySQL-Logo.png") },
+            { name: "JQuery JavaScript library", img: require("../../../images/JQuery-Logo.png") },
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "Foundation Zurb CSS library", img: require("../../../images/Foundation-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.TamuPhysicsSS,
+          img: require("../../../images/Tamu-Physics-SS-min.png"),
           external: {
             linkPath: "http://physics.tamu.edu",
             name: "TAMU Physics Website"
@@ -78,16 +78,16 @@ class ProjectsSpecificDetails extends Component {
           description:
             "As a student Web Development Assistant, I worked on a small team to recreate the Astronomy Department's home domain. We were responsible for migrating years of static content into a MySQL database, for both easier management and record keeping, while also ensuring that every page be responsive. Several custom Wordpress themes were developed for this project and are actively maintained today.",
           tools: [
-            { name: "PHP 5.4 Server Language", img: Logos.PHPLogo },
-            { name: "Wordpress", img: Logos.WordPressLogo },
-            { name: "MySQL database", img: Logos.MySQLLogo },
-            { name: "JQuery JavaScript library", img: Logos.JQueryLogo },
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "Foundation Zurb CSS library", img: Logos.FoundationLogo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "PHP 5.4 Server Language", img: require("../../../images/PHP-Logo.png") },
+            { name: "Wordpress", img: require("../../../images/Wordpress-Logo.png") },
+            { name: "MySQL database", img: require("../../../images/MySQL-Logo.png") },
+            { name: "JQuery JavaScript library", img: require("../../../images/JQuery-Logo.png") },
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "Foundation Zurb CSS library", img: require("../../../images/Foundation-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.TamuAstronomySS,
+          img: require("../../../images/Tamu-Astronomy-SS-min.png"),
           external: {
             linkPath: "http://mitchell.physics.tamu.edu",
             name: "TAMU Astronomy Website"
@@ -102,12 +102,12 @@ class ProjectsSpecificDetails extends Component {
           tools: [
             { name: "Linux Server Language", img: Logos.LinuxLogo },
             { name: "Nginx Web Server", img: Logos.NginxLogo },
-            { name: "PHP 5.4 Server Language", img: Logos.PHPLogo },
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "PHP 5.4 Server Language", img: require("../../../images/PHP-Logo.png") },
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.KyleBonarOriginalWebsite,
+          img: require("../../../images/KyleBonarOriginalWebsite-SS-min.png"),
           external: {
             linkPath: "/KyleBonar_2015",
             name: "Original Kyle Bonar Website"
@@ -122,7 +122,7 @@ class ProjectsSpecificDetails extends Component {
           tools: [
             { name: "Adobe Illustrator CC", img: Logos.AdobeIllustratorLogo }
           ],
-          img: Screenshots.CustomWebIcons,
+          img: require("../../../images/Custom-Icons-SS-min.png"),
           external: {
             linkPath: "https://github.com/KyleBonar/utsa-icons",
             name: "GitHub of Web Icons"
@@ -135,11 +135,11 @@ class ProjectsSpecificDetails extends Component {
           description:
             "Fun application that counts the number of times each unique word appears within a text area and creates a \"bubble\" with a respective area. Becoming more comfortable with JavaScript's Object Oriented Programming and using JavaScript's canvas method to have a little fun were the main goals of this project. Even with a block of text 32,000 lines long and over 8,000 unique words, the application works like a charm. This code can be found in my gitHub.",
           tools: [
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.WordCounterSS,
+          img: require("../../../images/WordCounter-SS-min.png"),
           external: {
             linkPath: "/JSGames/wordCount",
             name: "Fun Word Counting Application"
@@ -152,11 +152,11 @@ class ProjectsSpecificDetails extends Component {
           description:
             "To create nice phyllotaxis images using only client-side rendering. Users can click anywhere within the canvas to create unique patterns and hopefully learn a bit too! The most common of phyllotaxis plants is the Aloe Polyphylla. This code can be found in my gitHub.",
           tools: [
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.PhyllotaxisSS,
+          img: require("../../../images/Phyllotaxis-SS-min.png"),
           external: {
             linkPath: "/JSGames/phyllotaxis",
             name: "Phyllotaxis Art"
@@ -169,11 +169,11 @@ class ProjectsSpecificDetails extends Component {
           description:
             "To create a nice application which captures the ideas of fractal design. Users can click the canvas and cause a single branch to split into two. When the user clicks again, the branches will split again, so forth and so on. At any time, the tree can reset while sliders allow for customization and design a unique tree. This code can be found on my gitHub.",
           tools: [
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.FractalTreesSS,
+          img: require("../../../images/FractalTrees-SS-min.png"),
           external: {
             linkPath: "/JSGames/fractalTrees",
             name: "Fractal Tree Application"
@@ -186,11 +186,11 @@ class ProjectsSpecificDetails extends Component {
           description:
             "Inspired by my research as a senior in computational physics, the double pendulum is an excellent example of chaos theory. The simplified idea is that even the slightest change in the initial conditions can lead to a drastic change in the overall outcome of a system is incredibly interesting. This application relies entirely on the browser to run the model and the user can modify the double pendulum by using sliders. This code can be found on my gitHub.",
           tools: [
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.DoublePendulumSS,
+          img: require("../../../images/DoublePendulum-SS-min.png"),
           external: {
             linkPath: "/JSGames/doublePend",
             name: "Double Pendulum Visualization"
@@ -203,11 +203,11 @@ class ProjectsSpecificDetails extends Component {
           description:
             "A classic arcade game brought to you in a browser! This was my first time messing around with HTML5's canvas as well as creating a very simple A.I.. Users simply need to click on the canvas to start the game, and use the arrow up and down arrow keys to move their paddle. The ball speeds up over time so be careful! This code can be found in my GitHub.",
           tools: [
-            { name: "JavaScript", img: Logos.JSLogo },
-            { name: "HTML5", img: Logos.HTML5Logo },
-            { name: "CSS3", img: Logos.CSS3Logo }
+            { name: "JavaScript", img: require("../../../images/JS-Logo.png") },
+            { name: "HTML5", img: require("../../../images/HTML5-Logo.png") },
+            { name: "CSS3", img: require("../../../images/CSS3-Logo.png") }
           ],
-          img: Screenshots.PingPongSS,
+          img: require("../../../images/PingPong-SS-min.png"),
           external: {
             linkPath: "/JSGames/doublePend",
             name: "Simple Pong Game"
@@ -215,14 +215,19 @@ class ProjectsSpecificDetails extends Component {
         }
       ]
     };
+
+    this.getActiveProject = this.getActiveProject.bind(this);
   }
 
   //before render()
   componentWillMount() {
     //grab query string from URL, and make lower case
-    let urlString = QueryString.parse(this.props.location.search);
-    urlString = urlString.title.toLowerCase();
+    const urlString = this.props.match.params.title.toLowerCase();
+    const activeProject = this.getActiveProject(urlString);
 
+    if (activeProject.length === 0) {
+      window.location = "/";
+    }
     this.setState({
       name: urlString
     });
@@ -230,14 +235,7 @@ class ProjectsSpecificDetails extends Component {
 
   //after render()
   componentDidMount() {
-    //match url query with specific entry in the state data
-    let activeProject = this.state.allProjects
-      .filter(project => {
-        return this.state.name === project.urlName.toLowerCase();
-      })
-      .map(project => {
-        return project.documentTitleName;
-      });
+    const activeProject = this.getActiveProject(this.state.name);
     document.title = "Kyle Bonar - " + activeProject;
   }
 
@@ -253,7 +251,7 @@ class ProjectsSpecificDetails extends Component {
               <div key="project.name" className="specific">
                 <div className="left image-holder">
                   <img
-                    src={`/${project.img}`}
+                    src={project.img}
                     className="specific-image"
                     title={project.imageTitle}
                   />
@@ -302,7 +300,7 @@ class ProjectsSpecificDetails extends Component {
                         return (
                           <img
                             key={tool.name}
-                            src={`/${tool.img}`}
+                            src={tool.img}
                             className="technology-image"
                             title={tool.name}
                             alt={tool.name}
@@ -317,6 +315,17 @@ class ProjectsSpecificDetails extends Component {
           })}
       </div>
     );
+  }
+
+  getActiveProject(urlString) {
+    //match url query with specific entry in the state data
+    return this.state.allProjects
+      .filter(project => {
+        return urlString === project.urlName.toLowerCase();
+      })
+      .map(project => {
+        return project.documentTitleName;
+      });
   }
 }
 
