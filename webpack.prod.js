@@ -14,7 +14,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: buildPath,
-    filename: "index_bundle.js"
+    filename: "index_bundle.js",
+    publicPath: "/"
   },
   module: {
     rules: [
