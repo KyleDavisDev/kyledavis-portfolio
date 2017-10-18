@@ -2,14 +2,14 @@ import React from "react";
 
 import "./Footer.scss";
 
-import Images, { Logos } from "../Images/Images.js";
-
 const Footer = () => {
+  const GitHubLogo = require("../../images/GitHub-Logo.png");
+  const LinkedInLogo = require("../../images/LinkedIn-Logo.png");
   return (
     <div className="footer-container">
       <a href="https://github.com/KyleBonar" target="_blank">
         <img
-          src={Logos.GitHubLogo}
+          src={GitHubLogo}
           alt="Kyle Bonar GitHub profile"
           title="Kyle Bonar GitHub profile"
           className="footer-image"
@@ -20,7 +20,7 @@ const Footer = () => {
         target="_blank"
       >
         <img
-          src={Logos.LinkedInLogo}
+          src={LinkedInLogo}
           alt="Kyle Bonar LinkedIn Profile"
           title="Kyle Bonar LinkedIn Profile"
           className="footer-image"
