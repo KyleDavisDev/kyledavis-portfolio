@@ -117,7 +117,7 @@ const ProjectList = [
     ],
     img: Screenshots.KyleBonarReactWebsite,
     external: {
-      linkPath: "/",
+      linkPath: "https://kylebonar.com",
       name: "Kyle Bonar ReactJS Portfolio Website"
     }
   },
