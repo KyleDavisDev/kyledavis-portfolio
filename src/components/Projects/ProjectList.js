@@ -64,7 +64,7 @@ const ProjectList = [
     img: Screenshots.SonsofVidya,
     external: {
       linkPath: "https://sonsofvidya.com",
-      name: "Sons of Vidya"
+      name: "Sons of Vidya Fan Website"
     }
   },
   {
