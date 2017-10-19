@@ -7,6 +7,7 @@ const Screenshots = {
   KyleBonarOriginalWebsite: require("../../images/KyleBonarOriginalWebsite-SS-min.png"),
   PhyllotaxisSS: require("../../images/Phyllotaxis-SS-min.png"),
   PingPongSS: require("../../images/PingPong-SS-min.png"),
+  SonsofVidya: require("../../images/SonsofVidya-SS-min.png"),
   TamuAstronomySS: require("../../images/Tamu-Astronomy-SS-min.png"),
   TamuPhysicsSS: require("../../images/Tamu-Physics-SS-min.png"),
   WordCounterSS: require("../../images/WordCounter-SS-min.png")
@@ -34,18 +35,51 @@ const Logos = {
 
 const ProjectList = [
   {
+    url: "sons_of_vidya",
+    documentTitleName: "Sons of Vidya",
+    name: "Sons of Vidya",
+    description:
+      "The 'Sons of Vidya' is a very small channel on YouTube that I have been watching for years now. Most of the videos you will find are of themselves commentating over video games and I find their quirky sense of humor entertaining. After noticing that their website was put together in 2011 (and looked like it!) I decided to offer up my skills and contribute back to the channel. I designed a garage-like style website with an awesome vintage logo, several custom badges each with a common Sons' catchphrase, and a 'Feature Video' section that automatically pulls the most-recent Sons video. The front end consists of React and SCSS, while the backend included Node and Nginx reverse proxying. Additionally, the site has an autorefreshing SSL certificate through Let's Encrypt and has an overall score of \"A+\" from SSL Labs for security.",
+    tools: [
+      {
+        name: "Linux Server Language",
+        img: Logos.LinuxLogo
+      },
+      { name: "Nginx Web Server", img: Logos.NginxLogo },
+      {
+        name: "NodeJS Server Language",
+        img: Logos.NodeJSLogo
+      },
+      {
+        name: "ExpressJS Routing",
+        img: Logos.ExpressLogo
+      },
+      {
+        name: "ReactJS Library",
+        img: Logos.ReactJSLogo
+      },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "Sass CSS", img: Logos.SassLogo }
+    ],
+    img: Screenshots.SonsofVidya,
+    external: {
+      linkPath: "https://sonsofvidya.com",
+      name: "Sons of Vidya"
+    }
+  },
+  {
     url: "feature_spotlight",
     documentTitleName: "Feature Spotlight",
     name: "Feature Spotlight",
     description:
       "This project was originally developed for the UTSA Mobile App in an attempt to battle the feeling of staleness, which existed on the app prior. Originally, the app would open up to a \"What's New\" landing page which would be updated every couple of months but with the new design and layout, any of the app's components can be promoted and shown off at the drop of a hat. In production, this design has been used for the calendar, student registration, a tech conference, and now dining. This design is responsive and will soon be used on other non-mobile platforms as well.",
     tools: [
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
+      { name: "HTML5", img: Logos.HTML5Logo },
       {
         name: "Bootstrap CSS Library",
-        img: require("../../images/Bootstrap-Logo.png")
+        img: Logos.BootstrapLogo
       },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
     img: Screenshots.FeatureSpotlight,
     external: {
@@ -62,21 +96,26 @@ const ProjectList = [
       'A bit recursive, right? This project was a complete rewrite of my original portfolio website. This project has served as a platform for me to get comfortable with a ton of different popular JavaScript technologies and the build tools often associate with them; namely NodeJS, ReactJS, Express, Webpack, and Babel. Originally, I started with Facebook\'s "create-react-app", which greatly simplifies getting started with ReactJS, however I much prefer knowing what was going on under the hood. Because of this, I spent a good bit of time figuring out all of the individually pieces and how they work together. Understanding the ground-level components, I believe, have helped me to not only become a better ReactJS developer, but developer as a whole. Another awesome aspect of this project is scoring an "A+" in security, which is the highest score, from SSL Labs!',
     tools: [
       {
+        name: "Linux Server Language",
+        img: Logos.LinuxLogo
+      },
+      { name: "Nginx Web Server", img: Logos.NginxLogo },
+      {
         name: "NodeJS Server Language",
-        img: require("../../images/NodeJS-Logo.png")
+        img: Logos.NodeJSLogo
       },
       {
         name: "ExpressJS Routing",
-        img: require("../../images/ExpressJS-Logo.png")
+        img: Logos.ExpressLogo
       },
       {
         name: "ReactJS Library",
-        img: require("../../images/ReactJS-Logo.png")
+        img: Logos.ReactJSLogo
       },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
-      { name: "Sass CSS", img: require("../../images/Sass-Logo.png") }
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "Sass CSS", img: Logos.SassLogo }
     ],
-    img: require("../../images/KyleBonarReactWebsite-SS-min.png"),
+    img: Screenshots.KyleBonarReactWebsite,
     external: {
       linkPath: "/",
       name: "Kyle Bonar ReactJS Portfolio Website"
@@ -91,26 +130,26 @@ const ProjectList = [
     tools: [
       {
         name: "PHP 5.4 Server Language",
-        img: require("../../images/PHP-Logo.png")
+        img: Logos.PHPLogo
       },
-      { name: "Wordpress", img: require("../../images/Wordpress-Logo.png") },
+      { name: "Wordpress", img: Logos.WordPressLogo },
       {
         name: "MySQL database",
-        img: require("../../images/MySQL-Logo.png")
+        img: Logos.MySQLLogo
       },
       {
         name: "JQuery JavaScript library",
-        img: require("../../images/JQuery-Logo.png")
+        img: Logos.JQueryLogo
       },
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
       {
         name: "Foundation Zurb CSS library",
-        img: require("../../images/Foundation-Logo.png")
+        img: Logos.FoundationLogo
       },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/Tamu-Physics-SS-min.png"),
+    img: Screenshots.TamuPhysicsSS,
     external: {
       linkPath: "http://physics.tamu.edu",
       name: "TAMU Physics Website"
@@ -125,26 +164,26 @@ const ProjectList = [
     tools: [
       {
         name: "PHP 5.4 Server Language",
-        img: require("../../images/PHP-Logo.png")
+        img: Logos.PHPLogo
       },
-      { name: "Wordpress", img: require("../../images/Wordpress-Logo.png") },
+      { name: "Wordpress", img: Logos.WordPressLogo },
       {
         name: "MySQL database",
-        img: require("../../images/MySQL-Logo.png")
+        img: Logos.MySQLLogo
       },
       {
         name: "JQuery JavaScript library",
-        img: require("../../images/JQuery-Logo.png")
+        img: Logos.JQueryLogo
       },
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
       {
         name: "Foundation Zurb CSS library",
-        img: require("../../images/Foundation-Logo.png")
+        img: Logos.FoundationLogo
       },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/Tamu-Astronomy-SS-min.png"),
+    img: Screenshots.TamuAstronomySS,
     external: {
       linkPath: "http://mitchell.physics.tamu.edu",
       name: "TAMU Astronomy Website"
@@ -159,18 +198,18 @@ const ProjectList = [
     tools: [
       {
         name: "Linux Server Language",
-        img: require("../../images/Linux-Logo.png")
+        img: Logos.LinuxLogo
       },
-      { name: "Nginx Web Server", img: require("../../images/Nginx-Logo.png") },
+      { name: "Nginx Web Server", img: Logos.NginxLogo },
       {
         name: "PHP 5.4 Server Language",
-        img: require("../../images/PHP-Logo.png")
+        img: Logos.PHPLogo
       },
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/KyleBonarOriginalWebsite-SS-min.png"),
+    img: Screenshots.KyleBonarOriginalWebsite,
     external: {
       linkPath: "/KyleBonar_2015",
       name: "Original Kyle Bonar Website"
@@ -185,10 +224,10 @@ const ProjectList = [
     tools: [
       {
         name: "Adobe Illustrator CC",
-        img: require("../../images/Adobe-Illustrator-CC-Logo.png")
+        img: Logos.AdobeIllustratorLogo
       }
     ],
-    img: require("../../images/Custom-Icons-SS-min.png"),
+    img: Screenshots.CustomWebIcons,
     external: {
       linkPath: "https://github.com/KyleBonar/utsa-icons",
       name: "GitHub of Web Icons"
@@ -201,11 +240,11 @@ const ProjectList = [
     description:
       "Fun application that counts the number of times each unique word appears within a text area and creates a \"bubble\" with a respective area. Becoming more comfortable with JavaScript's Object Oriented Programming and using JavaScript's canvas method to have a little fun were the main goals of this project. Even with a block of text 32,000 lines long and over 8,000 unique words, the application works like a charm. This code can be found in my gitHub.",
     tools: [
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/WordCounter-SS-min.png"),
+    img: Screenshots.WordCounterSS,
     external: {
       linkPath: "/JSGames/wordCount",
       name: "Fun Word Counting Application"
@@ -218,11 +257,11 @@ const ProjectList = [
     description:
       "To create nice phyllotaxis images using only client-side rendering. Users can click anywhere within the canvas to create unique patterns and hopefully learn a bit too! The most common of phyllotaxis plants is the Aloe Polyphylla. This code can be found in my gitHub.",
     tools: [
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/Phyllotaxis-SS-min.png"),
+    img: Screenshots.PhyllotaxisSS,
     external: {
       linkPath: "/JSGames/phyllotaxis",
       name: "Phyllotaxis Art"
@@ -235,11 +274,11 @@ const ProjectList = [
     description:
       "To create a nice application which captures the ideas of fractal design. Users can click the canvas and cause a single branch to split into two. When the user clicks again, the branches will split again, so forth and so on. At any time, the tree can reset while sliders allow for customization and design a unique tree. This code can be found on my gitHub.",
     tools: [
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/FractalTrees-SS-min.png"),
+    img: Screenshots.PhyllotaxisSS,
     external: {
       linkPath: "/JSGames/fractalTrees",
       name: "Fractal Tree Application"
@@ -252,11 +291,11 @@ const ProjectList = [
     description:
       "Inspired by my research as a senior in computational physics, the double pendulum is an excellent example of chaos theory. The simplified idea is that even the slightest change in the initial conditions can lead to a drastic change in the overall outcome of a system is incredibly interesting. This application relies entirely on the browser to run the model and the user can modify the double pendulum by using sliders. This code can be found on my gitHub.",
     tools: [
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/DoublePendulum-SS-min.png"),
+    img: Screenshots.DoublePendulumSS,
     external: {
       linkPath: "/JSGames/doublePend",
       name: "Double Pendulum Visualization"
@@ -269,11 +308,11 @@ const ProjectList = [
     description:
       "A classic arcade game brought to you in a browser! This was my first time messing around with HTML5's canvas as well as creating a very simple A.I.. Users simply need to click on the canvas to start the game, and use the arrow up and down arrow keys to move their paddle. The ball speeds up over time so be careful! This code can be found in my GitHub.",
     tools: [
-      { name: "JavaScript", img: require("../../images/JS-Logo.png") },
-      { name: "HTML5", img: require("../../images/HTML5-Logo.png") },
-      { name: "CSS3", img: require("../../images/CSS3-Logo.png") }
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: require("../../images/PingPong-SS-min.png"),
+    img: Screenshots.PingPongSS,
     external: {
       linkPath: "/JSGames/doublePend",
       name: "Simple Pong Game"
