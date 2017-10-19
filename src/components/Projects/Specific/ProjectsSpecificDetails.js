@@ -127,7 +127,7 @@ class ProjectsSpecificDetails extends Component {
               <div className="right text-holder">
                 <RenderTitle
                   external={project.external.linkPath}
-                  name={project.name}
+                  name={project.external.name}
                 />
                 <RenderDescription description={project.description} />
                 <RenderTools tools={project.tools} />
