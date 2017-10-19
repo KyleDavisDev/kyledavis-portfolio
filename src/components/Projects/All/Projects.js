@@ -1,5 +1,6 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import ProjectList from "../ProjectList";
 
 import "./Projects.scss";
@@ -24,7 +25,7 @@ const ProjectsIconList = props => {
         <Link
           key={project.name}
           className="project-card"
-          to={`${props.match.url}/details/${project.url}`}
+          to={`${props.match}/details/${project.url}`}
         >
           <img
             src={project.img}
@@ -38,6 +39,9 @@ const ProjectsIconList = props => {
     </div>
   );
 };
+ProjectsIconList.propTypes = {
+  match: PropTypes.string.isRequired
+};
 
 class Projects extends Component {
   componentDidMount() {
@@ -48,7 +52,7 @@ class Projects extends Component {
       <div className="projects-container">
         <ProjectsTextTop />
 
-        <ProjectsIconList match={this.props.match} />
+        <ProjectsIconList match={this.props.match.url} />
       </div>
     );
   }

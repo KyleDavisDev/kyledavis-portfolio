@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import QueryString from "query-string";
+import Proptypes from "prop-types";
 import ProjectList from "../ProjectList";
 
 import "./ProjectsSpecificDetails.scss";
 
 const RenderImage = props => {
   return <img src={props.src} className="specific-image" title={props.title} />;
+};
+RenderImage.propTypes = {
+  src: Proptypes.string.isRequired,
+  title: Proptypes.string.isRequired
 };
 
 const RenderTitle = props => {
@@ -30,6 +35,9 @@ const RenderTitle = props => {
     </div>
   );
 };
+RenderTitle.propTypes = {
+  external: Proptypes.string.isRequired
+};
 
 const RenderDescription = props => {
   return (
@@ -38,6 +46,9 @@ const RenderDescription = props => {
       <p>{props.description}</p>
     </div>
   );
+};
+RenderDescription.propTypes = {
+  description: Proptypes.string.isRequired
 };
 
 const RenderTools = props => {
@@ -59,6 +70,15 @@ const RenderTools = props => {
       </p>
     </div>
   );
+};
+RenderTools.propTypes = {
+  tools: Proptypes.arrayOf(
+    Proptypes.shape({
+      name: Proptypes.string.isRequired,
+      img: Proptypes.string.isRequired,
+      name: Proptypes.string.isRequired
+    })
+  )
 };
 
 class ProjectsSpecificDetails extends Component {
@@ -99,7 +119,7 @@ class ProjectsSpecificDetails extends Component {
           return (
             <div key="project.name" className="specific">
               <div className="left image-holder">
-                <RenderImage src={project.img} title={project.imageTitle} />
+                <RenderImage src={project.img} title={project.name} />
               </div>
 
               <div className="right text-holder">
