@@ -119,7 +119,9 @@ class ProjectsSpecificDetails extends Component {
           return (
             <div key="project.name" className="specific">
               <div className="left image-holder">
-                <RenderImage src={project.img} title={project.name} />
+                <a href={project.url} target="_blank" title={project.title} className="image-link">
+                  <RenderImage src={project.img} title={project.name} />
+                </a>
               </div>
 
               <div className="right text-holder">
