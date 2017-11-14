@@ -1,12 +1,49 @@
 .home-container {
   display: block;
-  max-width: 960px;
-  margin: 30px auto 100px;
-  width: 95%;
-  @media screen and (min-width: 768px) {
-    width: 60%;
+  // max-width: 960px;
+  // margin: 30px auto 100px;
+  width: 100%;
+
+  .home-header {
+    padding: 30px;
+    background-color: rgba(0, 160, 227, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+    #profile-pic {
+      max-width: 100px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      padding: 7px;
+      background-color: #ebebeb;
+
+      &:hover,
+      &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    h1 {
+      color: #3a4145;
+      font-size: 48px;
+    }
+    h1,
+    h2 {
+      margin: 0px;
+    }
+    h2 {
+      color: grey;
+      font-size: 24px;
+    }
   }
 
+  .home-container {
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+  }
   .home-header {
     font-size: 28px;
     margin-bottom: 0px;
