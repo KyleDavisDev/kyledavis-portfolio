@@ -1,0 +1,47 @@
+@font-face {
+  font-family: droid-bold;
+  src: url("../../fonts/DroidSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: droid-reg;
+  src: url("../../fonts/DroidSans.ttf");
+}
+
+.droid-bold {
+  font-family: droid-bold, Helvetica, Arial, sans-serif;
+}
+
+.droid-reg {
+  font-family: droid-reg, Helvetica, Arial, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grey {
+  color: $grey;
+}
+
+a {
+  text-decoration: none;
+  color: $primaryText;
+}
+
+a:hover,
+a.inline-link:hover,
+a:focus,
+a.inline-link:focus {
+  color: #85cfac;
+  /*color: #81a594;*/
+
+  svg path {
+    fill: #85cfac;
+  }
+}
+
+a.active {
+  color: $primaryLink;
+  /*color: #00628b;*/
+}
