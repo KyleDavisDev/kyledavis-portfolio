@@ -8,12 +8,21 @@
   src: url("../../fonts/DroidSans.ttf");
 }
 
+@font-face {
+  font-family: montserrat-bold;
+  src: url("../../fonts/Montserrat-Bold.ttf");
+}
+
 .droid-bold {
   font-family: droid-bold, Helvetica, Arial, sans-serif;
 }
 
 .droid-reg {
   font-family: droid-reg, Helvetica, Arial, sans-serif;
+}
+
+.mont-bold {
+  font-family: montserrat-bold, Helvetica, Arial, sans-serif;
 }
 
 .text-center {
