@@ -21,6 +21,10 @@ const logPageView = () => {
 };
 
 class App extends React.Component {
+  componentDidMount() {
+    document.title = "Kyle Bonar";
+  }
+
   render() {
     return (
       <BrowserRouter>
