@@ -5,6 +5,7 @@
   width: 100%;
 
   .home-header {
+    margin-bottom: 0px;
     padding: 30px;
     background-color: rgba(0, 160, 227, 0.05);
     display: flex;
@@ -39,13 +40,23 @@
     }
   }
 
-  .home-container {
-    @media screen and (min-width: 768px) {
-      width: 60%;
+  .home-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+
+    #about-me {
+      max-width: 450px;
+      padding: 0 15px;
+    }
+
+    #contact-me {
+      max-width: 150px;
     }
   }
-  .home-header {
-    font-size: 28px;
-    margin-bottom: 0px;
+
+  p {
+    margin: 0 0 16px 0;
   }
 }
