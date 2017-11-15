@@ -54,3 +54,23 @@ a.active {
   color: $primaryLink;
   /*color: #00628b;*/
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0 0 16px 0;
+}
