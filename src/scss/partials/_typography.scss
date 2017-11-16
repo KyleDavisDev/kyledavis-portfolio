@@ -1,28 +1,45 @@
 @font-face {
-  font-family: droid-bold;
-  src: url("../../fonts/DroidSans-Bold.ttf");
-}
-
-@font-face {
-  font-family: droid-reg;
+  font-family: DroidSans;
   src: url("../../fonts/DroidSans.ttf");
 }
 
 @font-face {
-  font-family: montserrat-bold;
+  font-family: DroidSans;
+  src: url("../../fonts/DroidSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: CrimsonText;
+  src: url("../../fonts/CrimsonText-Regular.ttf");
+}
+
+@font-face {
+  font-family: CrimsonText;
+  src: url("../../fonts/CrimsonText-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
   src: url("../../fonts/Montserrat-Bold.ttf");
 }
 
-.droid-bold {
-  font-family: droid-bold, Helvetica, Arial, sans-serif;
+body {
+  font-family: CrimsonText, Helvetica, Arial, sans-serif;
 }
 
-.droid-reg {
-  font-family: droid-reg, Helvetica, Arial, sans-serif;
+.droid {
+  font-family: DroidSans, Helvetica, Arial, sans-serif;
 }
 
-.mont-bold {
-  font-family: montserrat-bold, Helvetica, Arial, sans-serif;
+.mont {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+p.bold,
+span.bold {
+  font-weight: 700;
 }
 
 .text-center {
@@ -73,4 +90,31 @@ h2 {
 
 p {
   margin: 0 0 16px 0;
+}
+
+p,
+ul {
+  font-size: 1rem;
+}
+
+h1.light-black,
+h2.light-black,
+h3.light-black,
+h4.light-black,
+h5.light-black,
+h6.light-black,
+p.light-black,
+span.light-black {
+  color: $light-black;
+}
+
+h1.black,
+h2.black,
+h3.black,
+h4.black,
+h5.black,
+h6.black,
+p.black,
+span.black {
+  color: $black;
 }
