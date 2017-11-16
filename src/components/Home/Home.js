@@ -5,16 +5,16 @@ import "./Home.scss";
 const HomeHeader = () => {
   const profilePic = require("../../images/profile-pic.jpg");
   return (
-    <div className="home-header bg-lt-spash">
+    <div className="home-header p2 bg-lt-spash droid ">
       <a href="/">
         <img src={profilePic} id="profile-pic" />
       </a>
-      <h1 className="droid-bold">Kyle Bonar</h1>
-      <h2>
-        Practicing <span className="droid-bold">UI/UX Developer</span>
+      <h1 className="bold light-black">Kyle Bonar</h1>
+      <h2 className="grey">
+        Practicing <span className="bold">UI/UX Developer</span>
       </h2>
-      <h2>
-        Professional <span className="droid-bold">Coffee Drinker</span>
+      <h2 className="grey">
+        Professional <span className="bold">Coffee Drinker</span>
       </h2>
     </div>
   );
@@ -23,15 +23,15 @@ const HomeHeader = () => {
 const HomeAboutMe = () => {
   return (
     <div id="about-me">
-      <h2>About me</h2>
+      <h2 className="light-black droid bold">About me</h2>
       <p>
-        <span className="droid-bold">Hello world!</span> Welcome to my portfolio
+        <span className="bold">Hello world!</span> Welcome to my portfolio
         website.
       </p>
 
       <p>
-        I am a <span className="droid-bold">Full Stack Dev</span> who likes to
-        work with JavaScript as much as possible.
+        I am a <span className="bold">Full Stack Dev</span> who likes to work
+        with JavaScript as much as possible.
       </p>
 
       <p>
@@ -51,14 +51,21 @@ const HomeAboutMe = () => {
 };
 
 const HomeContact = () => {
-  return <div id="contact-me">This will be contact stuff</div>;
+  return (
+    <div id="contact-me">
+      <h2 className="light-black droid bold">Contact</h2>
+      <ul>
+        <li>Yo</li>
+      </ul>
+    </div>
+  );
 };
 
 const Home = () => {
   return (
     <div className="home-container">
       <HomeHeader />
-      <div className="home-content">
+      <div className="home-content p2">
         <HomeAboutMe />
         <HomeContact />
       </div>
