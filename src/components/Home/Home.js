@@ -23,7 +23,7 @@ const HomeHeader = () => {
 const HomeAboutMe = () => {
   return (
     <div id="about-me">
-      <h2 className="light-black droid bold">About me</h2>
+      <h2 className="light-black droid bold mb1">About me</h2>
       <p>
         <span className="bold">Hello world!</span> Welcome to my portfolio
         website.
@@ -53,7 +53,7 @@ const HomeAboutMe = () => {
 const HomeContact = () => {
   return (
     <div id="contact-me">
-      <h2 className="light-black droid bold">Contact</h2>
+      <h2 className="light-black droid bold mb1">Contact</h2>
       <ul>
         <li>Yo</li>
       </ul>
@@ -65,7 +65,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <HomeHeader />
-      <div className="home-content p2">
+      <div className="home-content p2 droid">
         <HomeAboutMe />
         <HomeContact />
       </div>
