@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import ProjectList from "../ProjectList";
 
-import "./Projects.scss";
-
 const ProjectsTextTop = () => {
   return (
-    <div id="projects" className="bg-lt-splash border-bottom p2 mw">
-      <h2 className="bold"> My Projects </h2>
+    <div id="projects" className="bg-lt-splash border-bottom p2">
+      <div className="mw margin-center">
+        <h2 className="bold"> My Projects </h2>
 
-      <p className="">
-        Check out some of the things that I've created or have been a part of
-        over the years.
-      </p>
+        <p className="">
+          Check out some of the things that I've created or have been a part of
+          over the years.
+        </p>
+      </div>
     </div>
   );
 };
 
 const ProjectsIconList = () => {
   return (
-    <div className="projects-content">
+    <div className="projects-content margin-center">
       {ProjectList.map(project => (
         <Link
           key={project.name}
