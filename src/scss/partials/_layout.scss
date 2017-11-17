@@ -7,13 +7,16 @@ body {
 }
 
 .border-bottom {
-  border-bottom: 1 px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 div.bg-blue {
   background-color: $light-blue;
 }
 
+.mw {
+  max-width: 960px;
+}
 .p1 {
   padding: 1rem;
 }
@@ -33,4 +36,9 @@ div.bg-blue {
 ul {
   list-style-type: none;
   padding: 0px;
+}
+
+.container {
+  width: 100%;
+  display: block;
 }
