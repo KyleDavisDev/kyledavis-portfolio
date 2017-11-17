@@ -4,12 +4,10 @@ import Mail from "react-icons/lib/fa/envelope";
 import GitHub from "react-icons/lib/fa/github-square";
 import LinkedIn from "react-icons/lib/fa/linkedin-square";
 
-import "./Home.scss";
-
 const HomeHeader = () => {
   const profilePic = require("../../images/profile-pic.jpg");
   return (
-    <div className="home-header p2 bg-lt-spash droid ">
+    <div id="home" className="header p2 bg-lt-splash droid border-bottom">
       <a href="/">
         <img src={profilePic} id="profile-pic" />
       </a>
@@ -81,7 +79,7 @@ const HomeContact = () => {
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="container">
       <HomeHeader />
       <div className="home-content p2 droid">
         <HomeAboutMe />
