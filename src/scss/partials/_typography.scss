@@ -1,0 +1,144 @@
+@font-face {
+  font-family: DroidSans;
+  src: url("../../fonts/DroidSans.ttf");
+}
+
+@font-face {
+  font-family: DroidSans;
+  src: url("../../fonts/DroidSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: CrimsonText;
+  src: url("../../fonts/CrimsonText-Regular.ttf");
+}
+
+@font-face {
+  font-family: CrimsonText;
+  src: url("../../fonts/CrimsonText-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../../fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Bitter;
+  src: url("../../fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+  font-family: Bitter;
+  src: url("../../fonts/Bitter-Bold.ttf");
+  font-weight: bold;
+}
+
+body,
+.crimson {
+  font-family: CrimsonText, Helvetica, Arial, sans-serif;
+}
+
+.droid {
+  font-family: DroidSans, Helvetica, Arial, sans-serif;
+}
+
+.mont {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+.bitter {
+  font-family: Bitter, Helvetica, Arial, sans-serif;
+}
+
+p.bold,
+span.bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grey {
+  color: $grey;
+}
+
+a {
+  text-decoration: none;
+  color: $primaryText;
+}
+
+a:hover,
+a.inline-link:hover,
+a:focus,
+a.inline-link:focus {
+  color: #85cfac;
+  /*color: #81a594;*/
+
+  svg path {
+    fill: #85cfac;
+  }
+}
+
+a.active {
+  color: $primaryLink;
+  /*color: #00628b;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0 0 0.5rem 0;
+}
+
+p,
+ul {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+h1.light-black,
+h2.light-black,
+h3.light-black,
+h4.light-black,
+h5.light-black,
+h6.light-black,
+p.light-black,
+span.light-black {
+  color: $light-black;
+}
+
+h1.black,
+h2.black,
+h3.black,
+h4.black,
+h5.black,
+h6.black,
+p.black,
+span.black {
+  color: $black;
+}

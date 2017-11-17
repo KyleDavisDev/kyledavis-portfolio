@@ -3,8 +3,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-100074461-1");
 
-import "./App.scss";
-
 import Nav from "../Navigation/Nav.js";
 import Home from "../Home/Home.js";
 import Projects from "../Projects/All/Projects.js";
