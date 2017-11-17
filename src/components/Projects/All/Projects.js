@@ -7,10 +7,10 @@ import "./Projects.scss";
 
 const ProjectsTextTop = () => {
   return (
-    <div className="projects-text-container">
-      <h2 className="droid-bold text-center"> My Projects </h2>
+    <div id="projects" className="bg-lt-splash border-bottom p2 mw">
+      <h2 className="bold"> My Projects </h2>
 
-      <p className="text-center">
+      <p className="">
         Check out some of the things that I've created or have been a part of
         over the years.
       </p>
@@ -18,29 +18,21 @@ const ProjectsTextTop = () => {
   );
 };
 
-const ProjectsIconList = props => {
+const ProjectsIconList = () => {
   return (
-    <div className="projects-icon-list-container">
+    <div className="projects-content">
       {ProjectList.map(project => (
         <Link
           key={project.name}
-          className="project-card"
-          to={`${props.match}/details/${project.url}`}
+          className="card"
+          to={`projects/details/${project.url}`}
         >
-          <img
-            src={project.img}
-            className="card-image"
-            title={project.name}
-            alt={project.name}
-          />
+          <img src={project.img} title={project.name} alt={project.name} />
           {project.name}
         </Link>
       ))}
     </div>
   );
-};
-ProjectsIconList.propTypes = {
-  match: PropTypes.string.isRequired
 };
 
 class Projects extends Component {
@@ -49,10 +41,10 @@ class Projects extends Component {
   }
   render() {
     return (
-      <div className="projects-container">
+      <div className="container">
         <ProjectsTextTop />
 
-        <ProjectsIconList match={this.props.match.url} />
+        <ProjectsIconList />
       </div>
     );
   }
