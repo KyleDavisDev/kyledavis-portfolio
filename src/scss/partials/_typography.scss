@@ -42,11 +42,11 @@
   font-weight: bold;
 }
 
-body,
 .crimson {
   font-family: CrimsonText, Helvetica, Arial, sans-serif;
 }
 
+body,
 .droid {
   font-family: DroidSans, Helvetica, Arial, sans-serif;
 }
@@ -81,17 +81,15 @@ a:hover,
 a.inline-link:hover,
 a:focus,
 a.inline-link:focus {
-  color: #85cfac;
-  /*color: #81a594;*/
+  color: $olive;
 
   svg path {
-    fill: #85cfac;
+    fill: $olive;
   }
 }
 
 a.active {
   color: $primaryLink;
-  /*color: #00628b;*/
 }
 
 h1,
