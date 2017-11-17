@@ -1,5 +1,9 @@
 import React from "react";
 
+import Mail from "react-icons/lib/fa/envelope";
+import GitHub from "react-icons/lib/fa/github-square";
+import LinkedIn from "react-icons/lib/fa/linkedin-square";
+
 import "./Home.scss";
 
 const HomeHeader = () => {
@@ -55,7 +59,21 @@ const HomeContact = () => {
     <div id="contact-me">
       <h2 className="light-black droid bold mb1">Contact</h2>
       <ul>
-        <li>Yo</li>
+        <li>
+          <a href="mailto:kylewbonar@gmail.com">
+            <Mail /> Mail
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/kylebonar" target="_blank">
+            <GitHub /> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="linkedin.com/in/kyle-bonar-687276126" target="_blank">
+            <LinkedIn /> LinkedIn
+          </a>
+        </li>
       </ul>
     </div>
   );
