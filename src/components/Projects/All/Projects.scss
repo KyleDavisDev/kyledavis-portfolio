@@ -15,43 +15,5 @@
     @media screen and (min-width: 768px) {
       max-width: 50%;
     }
-
-    h2 {
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-  }
-
-  .projects-icon-list-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 960px;
-
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 5px 10px 15px;
-
-      &:hover img,
-      &:focus img {
-        opacity: 0.6;
-      }
-
-      .card-image {
-        height: 300px;
-        width: 300px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 5px;
-
-        @media screen and (min-width: 832px) {
-          height: 250px;
-          width: 250px;
-        }
-      }
-    }
   }
 }
