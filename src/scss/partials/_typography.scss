@@ -60,7 +60,8 @@ body,
 }
 
 p.bold,
-span.bold {
+span.bold,
+a.bold {
   font-weight: 700;
 }
 
@@ -75,21 +76,28 @@ span.bold {
 a {
   text-decoration: none;
   color: $primaryText;
+  display: inline-block;
 }
 
 a:hover,
 a.inline-link:hover,
 a:focus,
 a.inline-link:focus {
-  color: $olive;
+  color: $blue;
 
   svg path {
-    fill: $olive;
+    fill: $blue;
   }
 }
 
 a.active {
   color: $primaryLink;
+}
+
+a.upper,
+span.upper,
+p.upper {
+  text-transform: uppercase;
 }
 
 h1,
@@ -102,21 +110,28 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 0.75em;
 }
 
 p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5em 0;
 }
 
 p,
 ul {
   font-size: 1rem;
-  line-height: 1;
 }
 
 h1.light-black,

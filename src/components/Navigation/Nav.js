@@ -1,40 +1,34 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
-import "./Nav.scss";
-
 const Nav = () => {
   return (
-    <nav className="nav-container">
-      <div id="navBar" className="content-container">
-        <NavLink
-          exact
-          className="home-link droid-bold"
-          activeClassName="active"
-          to="/"
-        >
-          Kyle Bonar
-        </NavLink>
+    <nav className="nav-container border-bottom">
+      <NavLink
+        exact
+        className="menu-item bold mont upper"
+        activeClassName="active"
+        to="/"
+      >
+        <h3>Kyle Bonar</h3>
+      </NavLink>
 
-        <div id="nav">
-          <ul>
-            <li>
-              <NavLink
-                className="menu-link"
-                activeClassName="active"
-                to="/projects"
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <a className="menu-link" target="_blank" href="/resume">
-                Resume
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <NavLink
+            className="menu-item mont upper"
+            activeClassName="active"
+            to="/projects"
+          >
+            <h3>Projects</h3>
+          </NavLink>
+        </li>
+        <li>
+          <a className="menu-item mont upper" target="_blank" href="/resume">
+            <h3>Resume</h3>
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
