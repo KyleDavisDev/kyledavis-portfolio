@@ -5,8 +5,8 @@ import ProjectList from "../ProjectList";
 
 const ProjectsTextTop = () => {
   return (
-    <div id="projects" className="bg-lt-splash border-bottom p2">
-      <div className="mw margin-center">
+    <div id="projects" className="bg-lt-splash border-bottom ">
+      <div className="mw margin-center p2">
         <h2 className="bold"> My Projects </h2>
 
         <p className="">
@@ -20,7 +20,7 @@ const ProjectsTextTop = () => {
 
 const ProjectsIconList = () => {
   return (
-    <div className="projects-content margin-center">
+    <div className="projects-content margin-center p2 mw">
       {ProjectList.map(project => (
         <Link
           key={project.name}
