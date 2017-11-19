@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./Footer.scss";
-
 const Footer = () => {
   const GitHubLogo = require("../../images/GitHub-Logo.png");
   const LinkedInLogo = require("../../images/LinkedIn-Logo.png");
