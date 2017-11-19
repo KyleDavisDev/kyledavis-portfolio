@@ -3,10 +3,8 @@ import QueryString from "query-string";
 import Proptypes from "prop-types";
 import ProjectList from "../ProjectList";
 
-import "./ProjectsSpecificDetails.scss";
-
 const RenderImage = props => {
-  return <img src={props.src} className="specific-image" title={props.title} />;
+  return <img src={props.src} className="project-image" title={props.title} />;
 };
 RenderImage.propTypes = {
   src: Proptypes.string.isRequired,
@@ -15,9 +13,9 @@ RenderImage.propTypes = {
 
 const RenderTitle = props => {
   return (
-    <div className="project-title droid-bold">
-      <a href={props.external} target="_blank" className="project-linkout">
-        {props.name}
+    <div className="title bold">
+      <a href={props.external} target="_blank" className="linkout">
+        <h2>{props.name}</h2>
         <svg
           vectorEffect="non-scaling-stroke"
           xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +39,7 @@ RenderTitle.propTypes = {
 
 const RenderDescription = props => {
   return (
-    <div className="project-description">
+    <div className="description">
       <h2>Description</h2>
       <p>{props.description}</p>
     </div>
@@ -53,7 +51,7 @@ RenderDescription.propTypes = {
 
 const RenderTools = props => {
   return (
-    <div className="project-technologies">
+    <div className="technologies">
       <h2>Tools</h2>
       <p>
         {props.tools.map(tool => {
@@ -112,14 +110,19 @@ class ProjectsSpecificDetails extends Component {
 
   render() {
     return (
-      <div className="project-specific-container">
+      <div className="project-container mw">
         {ProjectList.filter(project => {
           return this.state.name === project.url.toLowerCase();
         }).map(project => {
           return (
-            <div key="project.name" className="specific">
+            <div key={project.name} className="specific">
               <div className="left image-holder">
-                <a href={project.external.linkPath} target="_blank" title={project.name} className="image-link">
+                <a
+                  href={project.external.linkPath}
+                  target="_blank"
+                  title={project.name}
+                  className="image-link"
+                >
                   <RenderImage src={project.img} title={project.name} />
                 </a>
               </div>

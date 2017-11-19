@@ -1,0 +1,51 @@
+.project-container {
+  margin: 30px auto 100px;
+}
+.specific {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  > div {
+    margin: 0 10px;
+  }
+
+  .project-image {
+    height: 250px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  .title {
+    // font-size: 30px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    h2 {
+      display: inline;
+    }
+
+    svg {
+      vertical-align: bottom;
+      margin-left: 10px;
+    }
+  }
+
+  .technology-image {
+    height: 50px;
+    margin: 0 5px;
+  }
+}
