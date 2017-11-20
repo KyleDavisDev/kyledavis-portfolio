@@ -54,7 +54,7 @@ const HomeAboutMe = () => {
 
 const HomeContact = () => {
   return (
-    <div id="contact-me">
+    <div id="contact-me" className="mb2">
       <h2 className="light-black droid bold mb1">Contact</h2>
       <ul>
         <li>

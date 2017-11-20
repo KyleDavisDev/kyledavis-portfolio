@@ -31,8 +31,8 @@ RenderTitle.propTypes = {
 
 const RenderDescription = ({ description }) => {
   return (
-    <div className="description">
-      <h2>Description</h2>
+    <div className="description mb2">
+      <h2 className="mb1">Description</h2>
       <p>{description}</p>
     </div>
   );
@@ -44,7 +44,7 @@ RenderDescription.propTypes = {
 const RenderTools = ({ tools }) => {
   return (
     <div className="technologies">
-      <h2>Tools</h2>
+      <h2 className="mb1">Tools</h2>
       <p>
         {tools.map(tool => {
           return (

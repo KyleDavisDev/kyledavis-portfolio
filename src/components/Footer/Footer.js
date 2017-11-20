@@ -1,13 +1,17 @@
 import React from "react";
 
+import GitHub from "react-icons/lib/fa/github-square";
+import LinkedIn from "react-icons/lib/fa/linkedin-square";
+
 const Footer = () => {
-  const GitHubLogo = require("../../images/GitHub-Logo.png");
-  const LinkedInLogo = require("../../images/LinkedIn-Logo.png");
   return (
-    <div className="footer-container">
-      <a href="https://github.com/KyleBonar" target="_blank">
-        <img
-          src={GitHubLogo}
+    <div className="footer-container border-top">
+      <a
+        href="https://github.com/KyleBonar"
+        target="_blank"
+        className="footer-item"
+      >
+        <GitHub
           alt="Kyle Bonar GitHub profile"
           title="Kyle Bonar GitHub profile"
           className="footer-image"
@@ -16,9 +20,9 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/in/kyle-bonar-687276126"
         target="_blank"
+        className="footer-item"
       >
-        <img
-          src={LinkedInLogo}
+        <LinkedIn
           alt="Kyle Bonar LinkedIn Profile"
           title="Kyle Bonar LinkedIn Profile"
           className="footer-image"

@@ -11,6 +11,9 @@ body {
 .border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
 
 div.bg-blue {
   background-color: $light-blue;
@@ -28,11 +31,11 @@ div.bg-blue {
 }
 
 .mb1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
 }
 
 .mb2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
 }
 
 ul {
@@ -44,6 +47,7 @@ ul {
 .container {
   width: 100%;
   display: block;
+  padding-bottom: 15px;
 }
 
 .margin-center {

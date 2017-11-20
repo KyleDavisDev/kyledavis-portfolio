@@ -10,10 +10,22 @@
     height: 35px;
     width: 35px;
     margin: 10px;
+    background-color: transparent;
+
+    // &:hover,
+    // &:focus {
+    //   background-color: $light-blue;
+    //   color: $blue;
+
+    // }
+  }
+
+  .footer-item {
+    background-color: transparent;
 
     &:hover,
     &:focus {
-      opacity: 0.7;
+      background-color: $light-blue;
     }
   }
 }
