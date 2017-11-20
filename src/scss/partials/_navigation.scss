@@ -13,6 +13,12 @@
     align-items: stretch;
 
     li {
+      display: flex;
+
+      a {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 
