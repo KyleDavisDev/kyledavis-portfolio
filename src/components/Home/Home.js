@@ -26,25 +26,24 @@ const HomeAboutMe = () => {
   return (
     <div id="about-me">
       <h2 className="light-black droid bold mb1">About me</h2>
+      <p>Hello world! Welcome to my portfolio website.</p>
+
       <p>
-        <span className="bold">Hello world!</span> Welcome to my portfolio
-        website.
+        I am a <span className="bold">UI/UX Developer</span> that enjoys working
+        with JavaScript as much as possible. You will, however, often find me
+        learning new languages as well!
       </p>
 
       <p>
-        I am a <span className="bold">Full Stack Dev</span> who likes to work
-        with JavaScript as much as possible.
-      </p>
-
-      <p>
-        I primarily focus on the front-end, I like to make pixel-perfect,
+        I primarily focus on the front-end, where I make pixel-perfect,
         minimalistic designs, but I also enjoy working with databases and server
-        logic.
+        logic. In my projects page, for example, you can find several
+        applications where I wrote the entire stack!
       </p>
 
       <p>
-        The majority of the updates to this site will be focused on the
-        "Projects" section. Stay tuned!
+        The majority of the updates to this site will be focused on the projects
+        page. Stay tuned!
       </p>
 
       <p>-Kyle Bonar</p>
