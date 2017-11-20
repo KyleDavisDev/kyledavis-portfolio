@@ -1,18 +1,29 @@
-.project-container {
-  margin: 30px auto 100px;
-}
-.specific {
+#project-content {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
+  @media (min-width: $break-for-lg) {
     align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  > a {
+    margin-right: 0px;
+    box-sizing: border-box;
+    @media (min-width: $break-for-lg) {
+      margin-right: 10px;
+    }
   }
 
   > div {
-    margin: 0 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    @media (min-width: $break-for-lg) {
+      margin-left: 10px;
+    }
   }
 
   .project-image {
@@ -24,23 +35,6 @@
     &:hover,
     &:focus {
       opacity: 0.6;
-    }
-  }
-
-  .title {
-    // font-size: 30px;
-    text-align: center;
-    @media screen and (min-width: 768px) {
-      text-align: left;
-    }
-
-    h2 {
-      display: inline;
-    }
-
-    svg {
-      vertical-align: bottom;
-      margin-left: 10px;
     }
   }
 
