@@ -65,8 +65,7 @@ RenderTools.propTypes = {
   tools: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      img: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired
+      img: PropTypes.string.isRequired
     })
   )
 };
@@ -85,9 +84,10 @@ class ProjectsSpecificDetails extends Component {
   componentWillMount() {
     //grab query string from URL, and make lower case
     const urlString = this.props.match.params.title.toLowerCase();
+    // find the project that matches with the url
     const activeProject = this.getActiveProject(urlString);
 
-    if (activeProject.length === 0) {
+    if (Object.keys(activeProject).length === 0) {
       window.location = "/";
     }
     this.setState({ project: activeProject });
@@ -130,6 +130,7 @@ class ProjectsSpecificDetails extends Component {
         return ProjectList[i];
       }
     }
+    return {};
   }
 }
 
