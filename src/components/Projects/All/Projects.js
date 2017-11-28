@@ -18,10 +18,10 @@ const ProjectsTextTop = () => {
   );
 };
 
-const ProjectsIconList = () => {
+const ProjectsIconList = ({ projectList }) => {
   return (
     <div className="projects-content margin-center p2 mw">
-      {ProjectList.map(project => (
+      {projectList.map(project => (
         <Link
           key={project.name}
           className="card"
@@ -34,6 +34,13 @@ const ProjectsIconList = () => {
     </div>
   );
 };
+ProjectsIconList.propTypes = {
+  projectList: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  })
+};
 
 class Projects extends Component {
   componentDidMount() {
@@ -44,7 +51,7 @@ class Projects extends Component {
       <div className="container">
         <ProjectsTextTop />
 
-        <ProjectsIconList />
+        <ProjectsIconList projectList={ProjectList} />
       </div>
     );
   }
