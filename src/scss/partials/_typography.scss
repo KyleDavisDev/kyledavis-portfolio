@@ -10,17 +10,6 @@
 }
 
 @font-face {
-  font-family: CrimsonText;
-  src: url("../../fonts/CrimsonText-Regular.ttf");
-}
-
-@font-face {
-  font-family: CrimsonText;
-  src: url("../../fonts/CrimsonText-Bold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
   font-family: Montserrat;
   src: url("../../fonts/Montserrat-Regular.ttf");
 }
@@ -31,21 +20,6 @@
   font-weight: bold;
 }
 
-@font-face {
-  font-family: Bitter;
-  src: url("../../fonts/Bitter-Regular.ttf");
-}
-
-@font-face {
-  font-family: Bitter;
-  src: url("../../fonts/Bitter-Bold.ttf");
-  font-weight: bold;
-}
-
-.crimson {
-  font-family: CrimsonText, Helvetica, Arial, sans-serif;
-}
-
 body,
 .droid {
   font-family: DroidSans, Helvetica, Arial, sans-serif;
@@ -53,10 +27,6 @@ body,
 
 .mont {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
-}
-
-.bitter {
-  font-family: Bitter, Helvetica, Arial, sans-serif;
 }
 
 p.bold,
