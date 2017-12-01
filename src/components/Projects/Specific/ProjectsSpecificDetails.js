@@ -85,9 +85,10 @@ class ProjectsSpecificDetails extends Component {
   componentWillMount() {
     //grab query string from URL, and make lower case
     const urlString = this.props.match.params.title.toLowerCase();
+    //get active project or empty object
     const activeProject = this.getActiveProject(urlString);
 
-    if (activeProject.length === 0) {
+    if (Object.keys(activeProject).length === 0) {
       window.location = "/";
     }
     this.setState({ project: activeProject });
@@ -130,7 +131,8 @@ class ProjectsSpecificDetails extends Component {
         return ProjectList[i];
       }
     }
+    return {};
   }
 }
 
-module.exports = ProjectsSpecificDetails;
+export default ProjectsSpecificDetails;
