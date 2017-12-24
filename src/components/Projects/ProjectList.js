@@ -278,7 +278,7 @@ const ProjectList = [
       { name: "HTML5", img: Logos.HTML5Logo },
       { name: "CSS3", img: Logos.CSS3Logo }
     ],
-    img: Screenshots.PhyllotaxisSS,
+    img: Screenshots.FractalTreesSS,
     external: {
       linkPath: "/JSGames/fractalTrees",
       name: "Fractal Tree Application"
@@ -314,7 +314,7 @@ const ProjectList = [
     ],
     img: Screenshots.PingPongSS,
     external: {
-      linkPath: "/JSGames/doublePend",
+      linkPath: "/JSGames/pong",
       name: "Simple Pong Game"
     }
   }
