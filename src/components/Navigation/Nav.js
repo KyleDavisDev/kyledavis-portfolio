@@ -7,26 +7,26 @@ const Nav = () => {
       <div className="nav-container">
         <NavLink
           exact
-          className="menu-item bold mont upper"
+          className="menu-item"
           activeClassName="active"
           to="/"
         >
-          <h3>Kyle Bonar</h3>
+          <h3 className="bold mont upper">Kyle Bonar</h3>
         </NavLink>
 
         <ul>
           <li>
             <NavLink
-              className="menu-item mont upper"
+              className="menu-item"
               activeClassName="active"
               to="/projects"
             >
-              <h3>Projects</h3>
+              <h3 className="bold mont upper">Projects</h3>
             </NavLink>
           </li>
           <li>
-            <a className="menu-item mont upper" target="_blank" href="/resume">
-              <h3>Resume</h3>
+            <a className="menu-item" target="_blank" href="/resume">
+              <h3 className="bold mont upper">Resume</h3>
             </a>
           </li>
         </ul>

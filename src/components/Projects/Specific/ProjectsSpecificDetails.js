@@ -14,10 +14,10 @@ RenderImage.propTypes = {
 
 const RenderTitle = ({ external, name }) => {
   return (
-    <div className="title bold">
+    <div className="title">
       <a href={external} target="_blank" className="linkout">
-        <h2>{name}</h2>
-        <h3>
+        <h2 className="bold">{name}</h2>
+        <h3 className="bold">
           View <ArrowRight />
         </h3>
       </a>
@@ -32,7 +32,7 @@ RenderTitle.propTypes = {
 const RenderDescription = ({ description }) => {
   return (
     <div className="description mb2">
-      <h2 className="mb1">Description</h2>
+      <h2 className="mb1 bold">Description</h2>
       <p>{description}</p>
     </div>
   );
@@ -44,7 +44,7 @@ RenderDescription.propTypes = {
 const RenderTools = ({ tools }) => {
   return (
     <div className="technologies">
-      <h2 className="mb1">Tools</h2>
+      <h2 className="mb1 bold">Tools</h2>
       <p>
         {tools.map(tool => {
           return (
