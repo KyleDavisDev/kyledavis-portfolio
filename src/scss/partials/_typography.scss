@@ -29,9 +29,17 @@ body,
   font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
+<<<<<<< HEAD
 p.bold,
 span.bold,
 a.bold {
+=======
+.bitter {
+  font-family: Bitter, Helvetica, Arial, sans-serif;
+}
+
+.bold {
+>>>>>>> 9aa3f1b2127b1e62c332d52a81f35fc034c23218
   font-weight: 700;
 }
 
@@ -64,9 +72,7 @@ a.active {
   color: $primaryLink;
 }
 
-a.upper,
-span.upper,
-p.upper {
+.upper {
   text-transform: uppercase;
 }
 
@@ -77,6 +83,7 @@ h4,
 h5,
 h6 {
   margin: 0px;
+  font-weight: 400;
 }
 
 h1 {

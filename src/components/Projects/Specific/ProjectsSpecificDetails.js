@@ -14,10 +14,10 @@ RenderImage.propTypes = {
 
 const RenderTitle = ({ external, name }) => {
   return (
-    <div className="title bold">
+    <div className="title">
       <a href={external} target="_blank" className="linkout">
-        <h2>{name}</h2>
-        <h3>
+        <h2 className="bold">{name}</h2>
+        <h3 className="bold">
           View <ArrowRight />
         </h3>
       </a>
@@ -32,7 +32,7 @@ RenderTitle.propTypes = {
 const RenderDescription = ({ description }) => {
   return (
     <div className="description mb2">
-      <h2 className="mb1">Description</h2>
+      <h2 className="mb1 bold">Description</h2>
       <p>{description}</p>
     </div>
   );
@@ -44,7 +44,7 @@ RenderDescription.propTypes = {
 const RenderTools = ({ tools }) => {
   return (
     <div className="technologies">
-      <h2 className="mb1">Tools</h2>
+      <h2 className="mb1 bold">Tools</h2>
       <p>
         {tools.map(tool => {
           return (
@@ -65,8 +65,7 @@ RenderTools.propTypes = {
   tools: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      img: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired
+      img: PropTypes.string.isRequired
     })
   )
 };
@@ -85,7 +84,11 @@ class ProjectsSpecificDetails extends Component {
   componentWillMount() {
     //grab query string from URL, and make lower case
     const urlString = this.props.match.params.title.toLowerCase();
+<<<<<<< HEAD
     //get active project or empty object
+=======
+    // find the project that matches with the url
+>>>>>>> 9aa3f1b2127b1e62c332d52a81f35fc034c23218
     const activeProject = this.getActiveProject(urlString);
 
     if (Object.keys(activeProject).length === 0) {
