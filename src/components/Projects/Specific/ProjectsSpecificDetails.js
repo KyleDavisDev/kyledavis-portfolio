@@ -84,11 +84,7 @@ class ProjectsSpecificDetails extends Component {
   componentWillMount() {
     //grab query string from URL, and make lower case
     const urlString = this.props.match.params.title.toLowerCase();
-<<<<<<< HEAD
-    //get active project or empty object
-=======
     // find the project that matches with the url
->>>>>>> 9aa3f1b2127b1e62c332d52a81f35fc034c23218
     const activeProject = this.getActiveProject(urlString);
 
     if (Object.keys(activeProject).length === 0) {
