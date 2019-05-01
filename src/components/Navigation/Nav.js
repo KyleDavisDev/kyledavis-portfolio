@@ -5,13 +5,8 @@ const Nav = () => {
   return (
     <nav className="border-bottom">
       <div className="nav-container">
-        <NavLink
-          exact
-          className="menu-item"
-          activeClassName="active"
-          to="/"
-        >
-          <h3 className="bold mont upper">Kyle Bonar</h3>
+        <NavLink exact className="menu-item" activeClassName="active" to="/">
+          <h3 className="bold mont upper">Kyle Davis</h3>
         </NavLink>
 
         <ul>
