@@ -134,4 +134,4 @@ class ProjectsSpecificDetails extends Component {
   }
 }
 
-module.exports = ProjectsSpecificDetails;
+export default ProjectsSpecificDetails;
