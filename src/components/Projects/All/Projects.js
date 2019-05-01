@@ -44,7 +44,7 @@ ProjectsIconList.propTypes = {
 
 class Projects extends Component {
   componentDidMount() {
-    document.title = "Kyle Bonar - Projects";
+    document.title = "Kyle Davis - Projects";
   }
   render() {
     return (
