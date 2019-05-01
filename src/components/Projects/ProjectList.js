@@ -148,8 +148,8 @@ const ProjectList = [
     ],
     img: Screenshots.KyleBonarReactWebsite,
     external: {
-      linkPath: "https://kylebonar.com",
-      name: "Kyle Bonar ReactJS Portfolio Website"
+      linkPath: "https://kyledavisdev.com",
+      name: "Kyle Davis ReactJS Portfolio Website"
     }
   },
   {
@@ -260,7 +260,7 @@ const ProjectList = [
     ],
     img: Screenshots.CustomWebIcons,
     external: {
-      linkPath: "https://github.com/KyleBonar/utsa-icons",
+      linkPath: "https://github.com/KyleDavisDev/utsa-icons",
       name: "GitHub of Web Icons"
     }
   },

@@ -12,8 +12,8 @@ const Footer = () => {
         className="footer-item"
       >
         <GitHub
-          alt="Kyle Bonar GitHub profile"
-          title="Kyle Bonar GitHub profile"
+          alt="Kyle Davis GitHub profile"
+          title="Kyle Davis GitHub profile"
           className="footer-image"
         />
       </a>
@@ -23,8 +23,8 @@ const Footer = () => {
         className="footer-item"
       >
         <LinkedIn
-          alt="Kyle Bonar LinkedIn Profile"
-          title="Kyle Bonar LinkedIn Profile"
+          alt="Kyle Davis LinkedIn Profile"
+          title="Kyle Davis LinkedIn Profile"
           className="footer-image"
         />
       </a>
