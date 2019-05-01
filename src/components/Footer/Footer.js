@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer-container border-top">
       <a
-        href="https://github.com/KyleBonar"
+        href="https://github.com/KyleDavisDev"
         target="_blank"
         className="footer-item"
       >
@@ -18,7 +18,7 @@ const Footer = () => {
         />
       </a>
       <a
-        href="https://www.linkedin.com/in/kyle-bonar-687276126"
+        href="https://www.linkedin.com/in/kyle-davis-687276126/"
         target="_blank"
         className="footer-item"
       >
