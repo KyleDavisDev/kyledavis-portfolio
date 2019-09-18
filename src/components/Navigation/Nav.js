@@ -6,7 +6,11 @@ const Nav = () => {
     <nav className="border-bottom">
       <div className="nav-container">
         <NavLink exact className="menu-item" activeClassName="active" to="/">
+<<<<<<< HEAD
           <h3 className="bold mont upper">Kyle Bonar</h3>
+=======
+          <h3 className="bold mont upper">Kyle Davis</h3>
+>>>>>>> 4c20c65a1018867ff0e6d7288668cea09fad480e
         </NavLink>
 
         <ul>

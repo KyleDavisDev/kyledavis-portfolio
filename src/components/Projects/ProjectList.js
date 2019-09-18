@@ -10,6 +10,7 @@ const Screenshots = {
   SonsofVidya: require("../../images/SonsofVidya-SS-min.png"),
   TamuAstronomySS: require("../../images/Tamu-Astronomy-SS-min.png"),
   TamuPhysicsSS: require("../../images/Tamu-Physics-SS-min.png"),
+  TexasOakWiltSS: require("../../images/Texas-Oak-Wilt-SS-min.png"),
   WordCounterSS: require("../../images/WordCounter-SS-min.png")
 };
 const Logos = {
@@ -35,17 +36,42 @@ const Logos = {
 
 const ProjectList = [
   {
+    url: "texas_oak_wilt",
+    documentTitleName: "Texas Oak Wilt",
+    name: "Texas Oak Wilt",
+    description:
+      "Texas Oak Wilt is a non-profit organization under the Texas Forest Service whose primary goal is to inform homeowners about the devastating effects of Oak Wilt and to provide assistance where they can. This project was a complete overhaul of the previous decade-old website and required custom programming at every level of the application. The site uses Wordpress, custom widgets, custom css, custom forms, custom images, and a custom logo. I was able to increase the average users count by 40%, the average session duration by 95%, while also having the highest SEO score of it's category (oak wilt). I also reduced server costs by 94%, and page loading speed by 89%. This was a really great project and I hope the residents of Texas utilize some of the awesome features built in.",
+    tools: [
+      {
+        name: "PHP 7.3 Server Language",
+        img: Logos.PHPLogo
+      },
+      { name: "Wordpress", img: Logos.WordPressLogo },
+      {
+        name: "MySQL database",
+        img: Logos.MySQLLogo
+      },
+      { name: "JavaScript", img: Logos.JSLogo },
+      { name: "HTML5", img: Logos.HTML5Logo },
+      { name: "CSS3", img: Logos.CSS3Logo },
+      {
+        name: "Linux Server Language",
+        img: Logos.LinuxLogo
+      }
+    ],
+    img: Screenshots.TexasOakWiltSS,
+    external: {
+      linkPath: "https://texasoakwilt.org",
+      name: "Texas Oak Wilt Website"
+    }
+  },
+  {
     url: "sons_of_vidya",
     documentTitleName: "Sons of Vidya",
     name: "Sons of Vidya",
     description:
       "The 'Sons of Vidya' is a very small channel on YouTube that I have been watching for years now. In most of their videos, you will find The Sons commentating over themselves playing video games and I find their quirky sense of humor entertaining. After noticing that their website was put together in 2011 (and looked like it!) I decided to offer up my skills and contribute back to the channel. I designed a garage-like style website with an awesome vintage logo, several custom badges each with a common Sons' catchphrase, and a 'Feature Video' section that automatically pulls the most-recent Sons video. The front end consists of React and SCSS, while the backend includes Node and Nginx reverse proxying. Additionally, the site has an autorefreshing SSL certificate through Let's Encrypt and has an overall score of \"A+\" from SSL Labs for security.",
     tools: [
-      {
-        name: "Linux Server Language",
-        img: Logos.LinuxLogo
-      },
-      { name: "Nginx Web Server", img: Logos.NginxLogo },
       {
         name: "NodeJS Server Language",
         img: Logos.NodeJSLogo
@@ -59,11 +85,16 @@ const ProjectList = [
         img: Logos.ReactJSLogo
       },
       { name: "HTML5", img: Logos.HTML5Logo },
-      { name: "Sass CSS", img: Logos.SassLogo }
+      { name: "Sass CSS", img: Logos.SassLogo },
+      {
+        name: "Linux Server Language",
+        img: Logos.LinuxLogo
+      },
+      { name: "Nginx Web Server", img: Logos.NginxLogo }
     ],
     img: Screenshots.SonsofVidya,
     external: {
-      linkPath: "https://sonsofvidya.com",
+      linkPath: "https://sonsofvidya.kyledavisdev.com",
       name: "Sons of Vidya Fan Website"
     }
   },
@@ -117,8 +148,8 @@ const ProjectList = [
     ],
     img: Screenshots.KyleBonarReactWebsite,
     external: {
-      linkPath: "https://kylebonar.com",
-      name: "Kyle Bonar ReactJS Portfolio Website"
+      linkPath: "https://kyledavisdev.com",
+      name: "Kyle Davis ReactJS Portfolio Website"
     }
   },
   {
@@ -229,7 +260,7 @@ const ProjectList = [
     ],
     img: Screenshots.CustomWebIcons,
     external: {
-      linkPath: "https://github.com/KyleBonar/utsa-icons",
+      linkPath: "https://github.com/KyleDavisDev/utsa-icons",
       name: "GitHub of Web Icons"
     }
   },

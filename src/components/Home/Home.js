@@ -11,9 +11,9 @@ const HomeHeader = () => {
       <a href="/">
         <img src={profilePic} id="profile-pic" />
       </a>
-      <h1 className="bold light-black">Kyle Bonar</h1>
+      <h1 className="bold light-black">Kyle Davis</h1>
       <h2 className="grey">
-        Practicing <span className="bold">UI/UX Developer</span>
+        Practicing <span className="bold">Full Stack Developer</span>
       </h2>
       <h2 className="grey">
         Professional <span className="bold">Coffee Drinker</span>
@@ -29,9 +29,9 @@ const HomeAboutMe = () => {
       <p>Hello world! Welcome to my portfolio website.</p>
 
       <p>
-        I am a <span className="bold">UI/UX Developer</span> that enjoys working
-        with JavaScript as much as possible. You will, however, often find me
-        learning new languages as well!
+        I am a <span className="bold">Full Stack Developer</span> that enjoys
+        working with JavaScript as much as possible. You will, however, often
+        find me learning new languages as well!
       </p>
 
       <p>
@@ -46,7 +46,7 @@ const HomeAboutMe = () => {
         page. Stay tuned!
       </p>
 
-      <p>-Kyle Bonar</p>
+      <p>-Kyle Davis</p>
     </div>
   );
 };
@@ -57,17 +57,20 @@ const HomeContact = () => {
       <h2 className="light-black droid bold mb1">Contact</h2>
       <ul>
         <li>
-          <a href="mailto:kylewbonar@gmail.com">
+          <a href="mailto:kyledavisdev@gmail.com">
             <Mail /> Mail
           </a>
         </li>
         <li>
-          <a href="https://github.com/kylebonar" target="_blank">
+          <a href="https://github.com/kyledavisdev" target="_blank">
             <GitHub /> GitHub
           </a>
         </li>
         <li>
-          <a href="linkedin.com/in/kyle-bonar-687276126" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/kyle-davis-687276126/"
+            target="_blank"
+          >
             <LinkedIn /> LinkedIn
           </a>
         </li>

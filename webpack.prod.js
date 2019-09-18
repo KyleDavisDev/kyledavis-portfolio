@@ -107,7 +107,7 @@ module.exports = {
       // Inject the html into the html-webpack-plugin
       inject: true,
       background: "#fff",
-      title: "Kyle Bonar Official Website",
+      title: "Kyle Davis Official Website",
       icons: {
         android: true,
         appleIcon: true,

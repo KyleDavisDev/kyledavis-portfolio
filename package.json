@@ -1,13 +1,13 @@
 {
   "name": "kylebonar-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Rework of my personal website using a different design and technology.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
     "prod": "webpack -p --config webpack.prod.js"
   },
-  "author": "Kyle Bonar",
+  "author": "Kyle Davis",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
