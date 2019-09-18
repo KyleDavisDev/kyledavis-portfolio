@@ -5,12 +5,7 @@ const Nav = () => {
   return (
     <nav className="border-bottom">
       <div className="nav-container">
-        <NavLink
-          exact
-          className="menu-item"
-          activeClassName="active"
-          to="/"
-        >
+        <NavLink exact className="menu-item" activeClassName="active" to="/">
           <h3 className="bold mont upper">Kyle Bonar</h3>
         </NavLink>
 
@@ -25,7 +20,11 @@ const Nav = () => {
             </NavLink>
           </li>
           <li>
-            <a className="menu-item" target="_blank" href="/resume">
+            <a
+              className="menu-item"
+              target="_blank"
+              href="/images/Davis_Kyle_2019.pdf"
+            >
               <h3 className="bold mont upper">Resume</h3>
             </a>
           </li>
